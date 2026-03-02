@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   // Solo permitimos peticiones POST
@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Método no permitido' });
   }
 
-  // Extraemos el tipo también para personalizar el mensaje
+  // Extraemos los datos del cuerpo de la petición
   const { email, nombre, tipo } = req.body;
 
   // Configuración de Zoho usando las variables de entorno de Vercel
@@ -32,7 +32,7 @@ export default async function handler(req, res) {
           </div>
           <div style="padding: 30px; color: #333; line-height: 1.6;">
             <h2 style="color: #FF8A00;">Hola, ${nombre}</h2>
-            <p>Gracias por registrarte en <strong>CROMÁTICA 2.0</strong> como <strong>${tipo.toUpperCase()}</strong>.</p>
+            <p>Gracias por registrarte en <strong>CROMÁTICA 2.0</strong> como <strong>${tipo ? tipo.toUpperCase() : 'PARTICIPANTE'}</strong>.</p>
             <p>Estamos muy emocionados de contar con tu participación. Tu información ha sido guardada correctamente en nuestra base de datos.</p>
             
             <div style="background: #FFF8F0; border-left: 4px solid #FF8A00; padding: 15px; margin: 20px 0;">
