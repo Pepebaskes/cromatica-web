@@ -2,65 +2,43 @@
  * ==========================================
  * SECCIÓN: PATROCINADORES
  * ==========================================
- * 
- * Muestra logos de patrocinadores.
- * Efecto: escala de grises que se colorea al hacer hover.
- * 
- * 🔧 AGREGAR MÁS PATROCINADORES:
- * Agrega objetos al array 'patrocinadores'
+ * * Muestra logos de patrocinadores con descripción detallada.
+ * Efecto: Tarjetas con hover dinámico y logos que se colorean.
  */
 
 export function PatrocinadoresSection() {
-  // 👉 AGREGA O MODIFICA PATROCINADORES AQUÍ
+  // 👉 CONFIGURA TUS PATROCINADORES AQUÍ
+  // Asegúrate de que las imágenes estén en public/images/
   const patrocinadores = [
     {
       id: 1,
-      nombre: "Empresa 1",
-      logo: "https://via.placeholder.com/200x80/FF00FF/FFFFFF?text=SPONSOR+1",
-      url: "https://ejemplo.com",
+      nombre: "Comité Estudiantil TSJ",
+      logo: "/images/comite.png", 
+      descripcion: "Impulsando el desarrollo académico y cultural de los jóvenes en la región de El Grullo.",
+      url: "https://www.instagram.com/cre_itjmm/",
     },
     {
       id: 2,
-      nombre: "Empresa 2",
-      logo: "https://via.placeholder.com/200x80/00FFFF/000000?text=SPONSOR+2",
+      nombre: "Empresa Creativa 2",
+      logo: "/images/sponsor2.png",
+      descripcion: "Expertos en diseño y producción audiovisual para eventos de alto impacto regional.",
       url: "https://ejemplo.com",
     },
     {
       id: 3,
-      nombre: "Empresa 3",
-      logo: "https://via.placeholder.com/200x80/FFFF00/000000?text=SPONSOR+3",
+      nombre: "Patrocinador Oro 3",
+      logo: "/images/sponsor3.png",
+      descripcion: "Líderes en logística y apoyo a festivales culturales independientes en México.",
       url: "https://ejemplo.com",
     },
     {
       id: 4,
-      nombre: "Empresa 4",
-      logo: "https://via.placeholder.com/200x80/FF6B00/FFFFFF?text=SPONSOR+4",
-      url: "https://ejemplo.com",
-    },
-    {
-      id: 5,
-      nombre: "Empresa 5",
-      logo: "https://via.placeholder.com/200x80/9D00FF/FFFFFF?text=SPONSOR+5",
-      url: "https://ejemplo.com",
-    },
-    {
-      id: 6,
-      nombre: "Empresa 6",
-      logo: "https://via.placeholder.com/200x80/00FF88/000000?text=SPONSOR+6",
+      nombre: "Socio Estratégico 4",
+      logo: "/images/sponsor4.png",
+      descripcion: "Comprometidos con la difusión del arte visual y la danza contemporánea.",
       url: "https://ejemplo.com",
     },
   ];
-
-  /* 
-  👉 PARA AGREGAR UN NUEVO PATROCINADOR:
-  
-  {
-    id: 7,
-    nombre: "Nombre de la empresa",
-    logo: "URL_DEL_LOGO", // Idealmente PNG transparente
-    url: "https://sitio-web.com",
-  },
-  */
 
   return (
     <section
@@ -68,7 +46,7 @@ export function PatrocinadoresSection() {
       className="py-20 md:py-32 relative overflow-hidden bg-[var(--cromatica-bg-darker)]"
     >
       <div className="container-cromatica relative z-10">
-        {/* Título */}
+        {/* Título de la Sección */}
         <div className="text-center mb-16">
           <h2
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-4"
@@ -77,68 +55,75 @@ export function PatrocinadoresSection() {
             Nuestros Patrocinadores
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            Gracias a quienes hacen posible CROMÁTICA 2.0
+            El corazón de CROMÁTICA 2.0 late gracias al apoyo de estas increíbles empresas y organizaciones.
           </p>
         </div>
 
-        {/* Grid de logos */}
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+        {/* Grid de Tarjetas de Patrocinadores */}
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {patrocinadores.map((sponsor) => (
               <a
                 key={sponsor.id}
                 href={sponsor.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-center p-6 bg-[var(--cromatica-bg-card)] rounded-lg transition-all duration-300 hover:scale-110 hover:bg-[var(--cromatica-bg-light)]"
+                className="group flex flex-col bg-[var(--cromatica-bg-card)] rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:border-[var(--cromatica-primary)]/30 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:-translate-y-2"
               >
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.nombre}
-                  className="w-full h-auto max-h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                  loading="lazy"
-                />
+                {/* Contenedor de la Imagen (Grande y adaptable) */}
+                <div className="relative w-full h-52 bg-white/5 flex items-center justify-center p-6 overflow-hidden">
+                  {/* Overlay sutil de brillo al hacer hover */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-[var(--cromatica-primary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  <img
+                    src={sponsor.logo}
+                    alt={sponsor.nombre}
+                    className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 ease-out"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Contenido de Texto */}
+                <div className="p-6 flex flex-col flex-grow bg-gradient-to-b from-transparent to-black/20">
+                  <h4 className="text-xl font-bold text-white mb-3 group-hover:text-[var(--cromatica-primary)] transition-colors duration-300">
+                    {sponsor.nombre}
+                  </h4>
+                  <p className="text-sm text-[var(--cromatica-text-muted)] leading-relaxed mb-4">
+                    {sponsor.descripcion}
+                  </p>
+                  
+                  {/* Indicador visual de "Ver más" */}
+                  <div className="mt-auto pt-4 flex items-center text-xs font-bold uppercase tracking-widest text-[var(--cromatica-primary)] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                    Visitar sitio 
+                    <span className="ml-2">→</span>
+                  </div>
+                </div>
               </a>
             ))}
           </div>
         </div>
 
-        {/* Llamado a patrocinadores */}
-        <div className="mt-16 text-center">
-          <div className="inline-block card-glow p-8 max-w-2xl">
-            <h3 className="text-2xl font-bold mb-4 text-gradient">
-              ¿Quieres ser patrocinador?
-            </h3>
-            <p className="text-[var(--cromatica-text-secondary)] mb-6">
-              Apoya el arte y la cultura independiente mexicana.
-              Contacta con nosotros para conocer nuestros paquetes de patrocinio.
-            </p>
-            <a
-              href="mailto:patrocinios@cromaticafestival.mx"
-              className="btn-cromatica"
-            >
-              📧 Contactar
-            </a>
+        {/* Bloque de Convocatoria */}
+        <div className="mt-24 text-center">
+          <div className="inline-block relative p-[1px] rounded-2xl bg-gradient-to-r from-[var(--cromatica-primary)] via-[var(--cromatica-secondary)] to-[var(--cromatica-tertiary)] overflow-hidden">
+            <div className="bg-[var(--cromatica-bg-darker)] rounded-2xl p-8 md:p-12 max-w-3xl">
+              <h3 className="text-3xl font-bold mb-4 text-gradient">
+                ¿Tu empresa apoya el arte?
+              </h3>
+              <p className="text-[var(--cromatica-text-secondary)] text-lg mb-8">
+                Forma parte de la red cultural más importante de la región. 
+                Tenemos diferentes niveles de patrocinio adaptados a tu marca.
+              </p>
+              <a
+                href="mailto:patrocinios@cromaticafestival.mx"
+                className="btn-cromatica inline-flex items-center gap-2"
+              >
+                📧 Solicitar Información
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-/**
- * ==========================================
- * NOTAS
- * ==========================================
- * 
- * - Los logos aparecen en escala de grises
- * - Al hacer hover se colorean y escalan
- * - Grid responsive: 2 cols móvil, 3 tablet, 6 desktop
- * - Usa logos PNG con fondo transparente para mejor resultado
- * 
- * CÓMO USAR LOGOS REALES:
- * 1. Sube tus logos a un hosting de imágenes
- * 2. Obtén las URLs
- * 3. Reemplaza las URLs en el array 'patrocinadores'
- * 4. Asegúrate que sean PNG con fondo transparente
- */
