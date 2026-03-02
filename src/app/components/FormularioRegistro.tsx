@@ -53,6 +53,27 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
 
       if (error) throw error;
 
+      /**
+       * 📧 INTEGRACIÓN CON VERCEL API (ZOHO MAIL)
+       * Enviamos el correo de bienvenida automáticamente tras el registro exitoso.
+       */
+      try {
+        await fetch('/api/enviar', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email: formData.email,
+            nombre: formData.nombre,
+            tipo: tipo
+          }),
+        });
+      } catch (mailError) {
+        // Logueamos el error de correo pero no interrumpimos el flujo de éxito
+        console.error('Error al solicitar envío de correo:', mailError);
+      }
+
       // Mostrar mensaje de éxito
       alert('¡Registro enviado con éxito! Recibirás un correo de confirmación pronto.');
       
@@ -244,8 +265,7 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
  * - La tabla en Supabase DEBE llamarse 'registros'.
  * - Columnas necesarias: id (int8/uuid), tipo (text), nombre (text), 
  * email (text), telefono (text), descripcion (text), created_at (timestamptz).
- * * 2. NOTIFICACIONES POR EMAIL:
- * - En el dashboard de Supabase, ve a Database -> Webhooks.
- * - Crea un webhook para "INSERT" en la tabla 'registros'.
- * - Conecta ese webhook con un servicio como Zapier, Make o una Edge Function.
+ * * 2. NOTIFICACIONES POR EMAIL (IMPLEMENTADO VÍA VERCEL API):
+ * - Se realiza una petición POST a /api/enviar tras el insert en Supabase.
+ * - Requiere variables EMAIL_USER y EMAIL_PASS configuradas en el dashboard de Vercel.
  */

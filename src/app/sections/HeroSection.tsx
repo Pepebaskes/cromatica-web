@@ -103,8 +103,8 @@ export function HeroSection() {
             </span>
           </div>
 
-{/* Logo CROMÁTICA con texto */}
-<div className="animate-fade-in-up w-full overflow-hidden" style={{ animationDelay: '0.4s' }}>
+        {/* Logo CROMÁTICA con texto */}
+        <div className="animate-fade-in-up w-full overflow-hidden" style={{ animationDelay: '0.4s' }}>
   <h1
     className="text-[12vw] sm:text-7xl md:text-8xl lg:text-9xl font-black text-gradient text-center"
     style={{ 
@@ -115,7 +115,7 @@ export function HeroSection() {
   >
     CROMÁTICA
   </h1>
-</div>
+            </div>
 
           {/* Subtítulo "2.0" */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
