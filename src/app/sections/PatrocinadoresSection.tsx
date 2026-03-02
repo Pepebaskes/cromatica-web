@@ -85,7 +85,7 @@ export function PatrocinadoresSection() {
 
                 {/* Contenido de Texto */}
                 <div className="p-6 flex flex-col flex-grow bg-gradient-to-b from-transparent to-black/20">
-                  <h4 className="text-xl font-bold text-white mb-3 group-hover:text-[var(--cromatica-primary)] transition-colors duration-300">
+                  <h4 className="text-xl font-bold text-black mb-3 group-hover:text-[var(--cromatica-primary)] transition-colors duration-300">
                     {sponsor.nombre}
                   </h4>
                   <p className="text-sm text-[var(--cromatica-text-muted)] leading-relaxed mb-4">
