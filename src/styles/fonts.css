@@ -1,0 +1,32 @@
+/**
+ * ==========================================
+ * CROMÁTICA 2.0 - TIPOGRAFÍA
+ * ==========================================
+ * 
+ * Este archivo importa las fuentes de Google Fonts.
+ * 
+ * 🎨 FUENTES UTILIZADAS:
+ * 
+ * 1. Fredoka One - Para el logo "CROMÁTICA" (efecto bubble/3D)
+ * 2. Poppins - Para títulos y subtítulos (moderna y limpia)
+ * 3. Inter - Para texto de cuerpo (legibilidad)
+ * 
+ * 🔧 CÓMO AGREGAR MÁS FUENTES:
+ * 1. Ve a https://fonts.google.com
+ * 2. Selecciona tu fuente
+ * 3. Copia el @import
+ * 4. Pégalo AQUÍ ARRIBA
+ * 5. Úsala con font-family en tu CSS
+ */
+
+/* Fredoka One - Fuente principal para logo CROMÁTICA */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* Poppins - Para títulos y subtítulos */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
+
+/* Inter - Para texto de cuerpo */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Baloo 2 - Alternativa para títulos divertidos */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap');
