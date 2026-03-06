@@ -36,23 +36,23 @@ export function EmprendedoresSection() {
     },
     {
       id: 3,
-      nombre: "Vinilos MX",
-      categoria: "Música & Retro",
-      descripcion: "Joyas musicales en formato físico y equipo de sonido vintage.",
-      ubicacion: "Zona Central",
-      imagen: "https://images.unsplash.com/photo-1539375665275-f9ad415ef9ac?w=800&h=600&fit=crop",
+      nombre: "PENDIENTE",
+      categoria: "",
+      descripcion: "",
+      ubicacion: "",
+      imagen: "",
       color: "var(--cromatica-tertiary)",
-      instagram: "vinilos.mx"
+      instagram: ""
     },
     {
       id: 4,
-      nombre: "Sabor a Fuego",
-      categoria: "Gastronomía",
-      descripcion: "Hamburguesas premium con ingredientes de productores locales.",
-      ubicacion: "Zona Food Trucks",
-      imagen: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop",
+      nombre: "PENDIENTE",
+      categoria: "",
+      descripcion: "",
+      ubicacion: "",
+      imagen: "",
       color: "var(--cromatica-accent)",
-      instagram: "saborafuego"
+      instagram: ""
     }
   ];
 
