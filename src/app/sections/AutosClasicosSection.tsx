@@ -34,12 +34,12 @@ export function AutosClasicosSection() {
     },
     {
       id: 3,
-      imagen: "",
-      marca: "PENDIENTE",
-      modelo: "",
-      anio: "",
-      dueno: "",
-      descripcion: "",
+      imagen: "/public/images/jorgeRodriguez.jpeg",
+      marca: "Chevrolet",
+      modelo: "Corsa",
+      anio: "2005",
+      dueno: "Jorge Rodríguez",
+      descripcion: "Auto retro en excelente estado, con mantenimiento regular.",
     },
     {
       id: 4,

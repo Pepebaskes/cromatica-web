@@ -11,17 +11,18 @@
 
 import { DisenadorCard } from '../components/DisenadorCard';
 
+
 export function DisenadoresSection() {
   // 👉 AGREGA O MODIFICA DISEÑADORES AQUÍ
   const disenadores = [
     {
       id: 1,
-      imagen: "",
-      marca: "PENDIENTE",
-      disenador: "",
-      estilo: "|",
-      descripcion: "",
-      instagram: "",
+      imagen: "/public/images/ferchoLogo.jpeg",
+      marca: "Felipe Lopez",
+      disenador: "Felipe Loperz Martinez",
+      estilo: "Gala",
+      descripcion: "Diseñador de alta gama, especializado en vestidos de gala, 100% grullense.",
+      instagram: "felipelopez9734",
     },
     {
       id: 2,

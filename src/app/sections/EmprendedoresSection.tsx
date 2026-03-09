@@ -67,7 +67,6 @@ export function EmprendedoresSection() {
         {/* Título de la sección */}
         <div className="text-center mb-16">
           <span className="badge-cromatica mb-4 inline-flex items-center gap-2">
-            <Store className="w-4 h-4" />
             Mercado
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-4">
