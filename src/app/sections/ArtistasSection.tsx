@@ -17,7 +17,7 @@ export function ArtistasSection() {
   const artistas = [
     {
       id: 1,
-      imagen: "/public/images/lepeImg.jpg",
+      imagen: "/images/lepeImg.jpg",
       nombre: "Andrea Lepe",
       especialidad: "Diseñadora Gráfica",
       descripcion: "Diseñadora e ilustradora grullense, con un estilo vibrante y colorido que refleja la esencia de CROMÁTICA.",
@@ -25,7 +25,7 @@ export function ArtistasSection() {
     },
     {
       id: 2,
-      imagen: "/public/images/bugambiliaTextilLogo.jpeg",
+      imagen: "/images/bugambiliaTextilLogo.jpeg",
       nombre: "Bugambilia Textil",
       especialidad: "Crochet y Bordado",
       descripcion: "Artista de crochet y bordado, creando piezas únicas que fusionan tradición y modernidad.",

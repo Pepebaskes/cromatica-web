@@ -34,7 +34,7 @@ export function AutosClasicosSection() {
     },
     {
       id: 3,
-      imagen: "/public/images/jorgeRodriguez.jpeg",
+      imagen: "/images/jorgeRodriguez.jpeg",
       marca: "Chevrolet",
       modelo: "Corsa",
       anio: "2005",
