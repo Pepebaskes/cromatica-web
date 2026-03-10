@@ -18,9 +18,9 @@ export function ArtistasSection() {
     {
       id: 1,
       imagen: "/images/lepeImg.jpg",
-      nombre: "Andrea Lepe",
+      nombre: "Lepe",
       especialidad: "Diseñadora Gráfica",
-      descripcion: "Diseñadora e ilustradora grullense, con un estilo vibrante y colorido que refleja la esencia de CROMÁTICA.",
+      descripcion: "Diseñadora e ilustradora grullense, trabajó y colaboró con Alquimía Gráfica, desde guadalajara, hasta CROMÁTICA 2.0.",
       instagram: "xlepex",
     },
     {
@@ -33,11 +33,11 @@ export function ArtistasSection() {
     },
     {
       id: 3,
-      imagen: "",
-      nombre: "PENDIENTE",
-      especialidad: "",
-      descripcion: "",
-      instagram: "",
+      imagen: "/images/yulsGarciaTtuaje.jpg",
+      nombre: "Yulss García",
+      especialidad: "Tatuaje",
+      descripcion: "Tatuadora desde hace 6 años y estudiante de Artes. Explora la piel y el lienzo como espacios de expresión artística.",
+      instagram: "yulsstattoo_",
     },
     {
       id: 4,
