@@ -41,11 +41,11 @@ export function ArtistasSection() {
     },
     {
       id: 4,
-      imagen: "",
-      nombre: "PENDIENTE",
-      especialidad: "",
-      descripcion: "",
-      instagram: "",
+      imagen: "/images/maruvu.png",
+      nombre: "Marsuvu",
+      especialidad: "Dibujo e Ilustración",
+      descripcion: "Ilustración de libros, cómic, fanart y objetos hechos a mano: pines, aretes, llaveros y merch ilustrada.",
+      instagram: "mars.uvu",
     },
     {
       id: 5,
