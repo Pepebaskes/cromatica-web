@@ -24,9 +24,9 @@ export function ConvocatoriaSection() {
     {
       id: 1,
       categoria: "Artistas Visuales",
-      fechaApertura: "15 de Abril",
-      fechaCierre: "20 de Mayo",
-      descripcion: "Pintores, ilustradores, escultores, fotógrafos y más. Exhibe tu obra en nuestro espacio de galería.",
+      fechaApertura: "12 de Marzo",
+      fechaCierre: "15 de Mayo",
+      descripcion: "Pintores, ilustradores, escultores, fotógrafos y más. Exhibe tu obra en nuestro espacio especifico para artistas, en tu stand serás libre de exponerte como quieras.",
       costo: "$50 MXN",
       icono: "🎨",
       color: "var(--cromatica-primary)",
@@ -34,9 +34,9 @@ export function ConvocatoriaSection() {
     {
       id: 2,
       categoria: "Bandas y Músicos",
-      fechaApertura: "15 de Abril",
-      fechaCierre: "20 de Abril",
-      descripcion: "Bandas emergentes y artistas independientes de todos los géneros. Presenta tu música en nuestro escenario principal.",
+      fechaApertura: "12 de marzo",
+      fechaCierre: "15 de mayo",
+      descripcion: "Bandas emergentes y artistas independientes de todos los géneros. Presenta tu música en nuestro escenario principal, lleva a tu público. ",
       costo: "$50 MXN",
       icono: "🎸",
       color: "var(--cromatica-secondary)",
@@ -44,9 +44,9 @@ export function ConvocatoriaSection() {
     {
       id: 3,
       categoria: "Diseñadores de Moda",
-      fechaApertura: "15 de Abril",
-      fechaCierre: "20 de Mayo",
-      descripcion: "Diseñadores independientes, marcas de ropa, accesorios y moda sustentable.",
+      fechaApertura: "12 de marzo",
+      fechaCierre: "15 de mayo",
+      descripcion: "Diseñadores independientes, marcas de ropa, accesorios y moda sustentable. Tendrán un espacio para poder participar en la pasarela de moda.",
       costo: "$50 MXN",
       icono: "✨",
       color: "var(--cromatica-tertiary)",
@@ -54,9 +54,9 @@ export function ConvocatoriaSection() {
     {
       id: 4,
       categoria: "Empresarios y Stands",
-      fechaApertura: "1 de Abril",
-      fechaCierre: "20 de Mayo",
-      descripcion: "Emprendedores, negocios locales, food trucks, artesanías y productos creativos.",
+      fechaApertura: "12 de marzo",
+      fechaCierre: "15 de mayo",
+      descripcion: "Emprendedores, negocios locales, food trucks, artesanías y productos creativos. Ve y vende, dale reconocimiento a tu marca.",
       costo: "$100 MXN",
       icono: "🎪",
       color: "var(--cromatica-accent)",
@@ -64,9 +64,9 @@ export function ConvocatoriaSection() {
     {
       id: 5,
       categoria: "Show de Autos Clásicos",
-      fechaApertura: "15 de Abril",
-      fechaCierre: "20 de Mayo",
-      descripcion: "Exhibición de autos clásicos, modificados y vintage. Muestra tu pasión automotriz.",
+      fechaApertura: "12 de marzo",
+      fechaCierre: "15 de Mayo",
+      descripcion: "Exhibición de autos clásicos, modificados y vintage. Muestra tu pasión automotriz. El tuning también es cultura",
       costo: "$50 MXN",
       icono: "🚗",
       color: "var(--cromatica-purple)",
@@ -74,9 +74,9 @@ export function ConvocatoriaSection() {
     {
       id: 6,
       categoria: "Danza",
-      fechaApertura: "15 de Abril",
-      fechaCierre: "20 de Mayo",
-      descripcion: "Grupos de danza tradicional mexicana. Celebra nuestras raíces culturales.",
+      fechaApertura: "12 de marzo",
+      fechaCierre: "15 de Mayo",
+      descripcion: "Grupos de danza tradicional mexicana, urbana, contemporanea. Ven y expresáte con el cuerpo. ",
       costo: "$50 MXN",
       icono: "💃",
       color: "var(--cromatica-green)",
@@ -109,7 +109,10 @@ export function ConvocatoriaSection() {
             Convocatorias Abiertas
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            Forma parte de CROMÁTICA 2.0 y muestra tu talento
+            Al participar, recibirás un stand individual dentro de la expo, donde podrás exponer tu trabajo, 
+            vender tu arte, promocionar tu marca y conectar con otros artistas y asistentes. Este espacio está 
+            pensado para que cada creador tenga un lugar digno donde mostrar su propuesta artística y crecer dentro
+            de la comunidad creativa.
           </p>
         </div>
 

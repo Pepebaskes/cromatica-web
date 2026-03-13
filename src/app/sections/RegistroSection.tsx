@@ -36,8 +36,8 @@ export function RegistroSection() {
             </span>
           </span>
 
-          <h2
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-4"
+         <h2
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-4 pb-2 leading-tight md:leading-normal"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
             Registro

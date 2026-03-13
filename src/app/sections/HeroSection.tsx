@@ -31,10 +31,10 @@ import { Sparkles, Calendar, Users, Music, Palette } from 'lucide-react';
 
 export function HeroSection() {
   // 👉 PERSONALIZA ESTOS TEXTOS AQUÍ
-  const fechaEvento = "22 de Mayo, 2026";
-  const horaEvento = "11:00 AM - 11:00 PM";
+  const fechaEvento = "23 de Mayo, 2026";
+  const horaEvento = "11:00 AM - 1:00 AM";
   const fraseImpactante = "Arte, Cultura, Música y Emprendimiento al aire libre";
-  const descripcionCorta = "Segunda edición del festival independiente más vibrante de México";
+  const descripcionCorta = "Segunda edición del festival independiente más vibrante de la región";
 
   return (
     <section
@@ -204,7 +204,7 @@ export function HeroSection() {
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FF8A00] to-[#FF6B9D] flex items-center justify-center shadow-lg">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <p className="text-4xl md:text-5xl font-black text-gradient">50+</p>
+              <p className="text-4xl md:text-5xl font-black text-gradient">+</p>
               <p className="text-sm font-medium text-[var(--cromatica-text-secondary)]">
                 Artistas Participantes
               </p>

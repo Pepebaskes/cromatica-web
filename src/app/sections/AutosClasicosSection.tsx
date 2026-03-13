@@ -16,13 +16,14 @@ export function AutosClasicosSection() {
   const autos = [
     {
       id: 1,
-      imagen: "",
-      marca: "PENDIENTE",
-      modelo: "",
-      anio: "",
-      dueno: "",
-      descripcion: "",
+      imagen: "/images/jorgeRodriguez.jpeg",
+      marca: "Chevrolet",
+      modelo: "Corsa",
+      anio: "2005",
+      dueno: "Jorge Rodríguez",
+      descripcion: "Auto retro en excelente estado, con mantenimiento regular.",
     },
+   /** 
     {
       id: 2,
       imagen: "",
@@ -34,12 +35,12 @@ export function AutosClasicosSection() {
     },
     {
       id: 3,
-      imagen: "/images/jorgeRodriguez.jpeg",
-      marca: "Chevrolet",
-      modelo: "Corsa",
-      anio: "2005",
-      dueno: "Jorge Rodríguez",
-      descripcion: "Auto retro en excelente estado, con mantenimiento regular.",
+      imagen: "",
+      marca: "",
+      modelo: "",
+      anio: "",
+      dueno: "",
+      descripcion: "",
     },
     {
       id: 4,
@@ -68,6 +69,7 @@ export function AutosClasicosSection() {
       dueno: "",
       descripcion: "",
     },
+   */
   ];
 
   /* 
@@ -133,7 +135,7 @@ export function AutosClasicosSection() {
         <div className="mt-16 text-center">
           <div className="inline-block card-glow p-8 max-w-2xl">
             <h3 className="text-xl font-bold mb-3 text-[var(--cromatica-primary)]">
-              🚗 ¿Tienes un auto clásico?
+              🚗 ¿Tienes un auto tuneado?
             </h3>
             <p className="text-[var(--cromatica-text-secondary)] mb-6">
               Exhibe tu auto en CROMÁTICA 2.0. Aceptamos autos clásicos,

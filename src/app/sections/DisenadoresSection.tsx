@@ -24,6 +24,7 @@ export function DisenadoresSection() {
       descripcion: "Diseñador de alta gama, especializado en vestidos de gala, 100% grullense.",
       instagram: "felipelopez9734",
     },
+    /** 
     {
       id: 2,
       imagen: "",
@@ -51,6 +52,7 @@ export function DisenadoresSection() {
       descripcion: "",
       instagram: "",
     },
+    */
   ];
 
   /* 

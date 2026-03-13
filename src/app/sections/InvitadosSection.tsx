@@ -14,13 +14,14 @@ export function InvitadosSection() {
   const invitados = [
     {
       id: 1,
-      imagen: "",
-      nombre: "",
-      titulo: "",
-      descripcion: "",
+      imagen: "/images/ferchoLogo.jpeg",
+      nombre: "Felipe López Martinez",
+      titulo: "Diseñador de moda",
+      descripcion: "Reconociendo su trayectoria dentro de la comunidad de El Grullo Jalisco, su apoyo y su gran talento como artista",
       conferencia: "",
       horario: "",
     },
+    /** 
     {
       id: 2,
       imagen: "",
@@ -39,6 +40,7 @@ export function InvitadosSection() {
       conferencia: "",
       horario: "",
     },
+    */
   ];
 
   /* 
@@ -76,7 +78,8 @@ export function InvitadosSection() {
             Invitados Especiales
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            Conferencias magistrales y talleres con expertos de la industria
+            Personas que apoyan y mueven tanto a la organización de CROMÁTICA como a la 
+            comunidad artística en general, homenajeamos su trayectoria.
           </p>
         </div>
 
@@ -117,13 +120,13 @@ export function InvitadosSection() {
                   {/* Conferencia */}
                   <div className="bg-[var(--cromatica-bg-light)] p-4 rounded-lg">
                     <p className="text-sm text-[var(--cromatica-text-muted)] mb-1">
-                      Conferencia
+                      
                     </p>
                     <p className="text-lg font-bold mb-2">
-                      📢 {invitado.conferencia}
+                       {invitado.conferencia}
                     </p>
                     <p className="text-sm text-[var(--cromatica-secondary)] font-semibold">
-                      🕐 {invitado.horario}
+                       {invitado.horario}
                     </p>
                   </div>
                 </div>
@@ -136,8 +139,7 @@ export function InvitadosSection() {
         <div className="mt-16 text-center">
           <div className="inline-block card-glow p-8 max-w-2xl">
             <p className="text-[var(--cromatica-text-secondary)]">
-              Las conferencias se realizarán en el Auditorio Principal.
-              Entrada incluida con tu boleto al festival.
+              Nuestros invitados especiales son parte fundamental de nuestro evento, dudas y sugerencias al correo de CROMÁTICA
             </p>
           </div>
         </div>

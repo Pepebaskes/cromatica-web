@@ -19,11 +19,12 @@ export function PatrocinadoresSection() {
     },
     {
       id: 2,
-      nombre: "Empresa Creativa 2",
-      logo: "/images/sponsor2.png",
-      descripcion: "Expertos en diseño y producción audiovisual para eventos de alto impacto regional.",
-      url: "https://ejemplo.com",
+      nombre: "Boreal Eventos",
+      logo: "/images/BorealEventos.jpg",
+      descripcion: "Expertos en decoración, organización y logística para tus eventos privados",
+      url: "https://www.instagram.com/eventosboreal/",
     },
+    /** 
     {
       id: 3,
       nombre: "Patrocinador Oro 3",
@@ -38,6 +39,7 @@ export function PatrocinadoresSection() {
       descripcion: "Comprometidos con la difusión del arte visual y la danza contemporánea.",
       url: "https://ejemplo.com",
     },
+    */
   ];
 
   return (
@@ -68,24 +70,25 @@ export function PatrocinadoresSection() {
                 href={sponsor.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col bg-[var(--cromatica-bg-card)] rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:border-[var(--cromatica-primary)]/30 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:-translate-y-2"
+                className="group flex flex-col bg-[var(--cromatica-bg-card)] rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:border-[var(--cromatica-primary)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:-translate-y-2"
               >
                 {/* Contenedor de la Imagen (Grande y adaptable) */}
-                <div className="relative w-full h-52 bg-white/5 flex items-center justify-center p-6 overflow-hidden">
+                <div className="relative w-full h-52 bg-white flex items-center justify-center overflow-hidden">
+                  
                   {/* Overlay sutil de brillo al hacer hover */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-[var(--cromatica-primary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-[var(--cromatica-primary)]/20 via-[var(--cromatica-secondary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   <img
                     src={sponsor.logo}
                     alt={sponsor.nombre}
-                    className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 ease-out"
+                    className="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>
 
                 {/* Contenido de Texto */}
-                <div className="p-6 flex flex-col flex-grow bg-gradient-to-b from-transparent to-black/20">
-                  <h4 className="text-xl font-bold text-black mb-3 group-hover:text-[var(--cromatica-primary)] transition-colors duration-300">
+                <div className="p-6 flex flex-col flex-grow bg-gradient-to-b from-transparent to-[var(--cromatica-bg-darker)]/30">
+                  <h4 className="text-xl font-bold text-[var(--cromatica-text-primary)] mb-3 group-hover:text-[var(--cromatica-primary)] transition-colors duration-300">
                     {sponsor.nombre}
                   </h4>
                   <p className="text-sm text-[var(--cromatica-text-muted)] leading-relaxed mb-4">

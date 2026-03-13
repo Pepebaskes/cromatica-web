@@ -13,7 +13,7 @@ export function Navigation() {
     { label: 'Artistas', href: '#artistas' },
     { label: 'Diseñadores', href: '#disenadores' },
     { label: 'Emprendedores', href: '#emprendedores' },
-    { label: 'Clásicos', href: '#autos' },
+    { label: 'Autos', href: '#autos' },
     { label: 'Ubicación', href: '#ubicacion' },
     { label: 'Registro', href: '#registro' },
   ];
@@ -44,13 +44,16 @@ export function Navigation() {
           <div className="flex items-center justify-between py-4">
 
             {/* LOGO */}
-            <a
+           <a
               href="#hero"
               className="flex items-center gap-3 shrink-0"
             >
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#FF8A00] to-[#FF6B9D] flex items-center justify-center shadow-md">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
+              {/* Aquí pusimos la Mascota reemplazando el cuadro y las Sparkles */}
+              <img 
+                src="/images/favicon.png" 
+                alt="Mascota Cromática" 
+                className="w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-md hover:scale-110 transition-transform duration-300 scale-[1.5] origin-center" 
+              />
 
               <div className="flex flex-col leading-tight">
                 <span

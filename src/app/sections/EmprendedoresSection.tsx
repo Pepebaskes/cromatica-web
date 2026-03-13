@@ -34,6 +34,7 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-secondary)",
       instagram: "cafeteria_elefante"
     },
+    /** 
     {
       id: 3,
       nombre: "PENDIENTE",
@@ -54,6 +55,7 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-accent)",
       instagram: ""
     }
+      */
   ];
 
   return (

@@ -22,10 +22,11 @@ import { BandCard } from '../components/BandCard';
 export function ConciertosSection() {
   // 👉 AGREGA O MODIFICA BANDAS AQUÍ
   const bandas = [
+    
     {
       id: 1,
-      imagen: "",
-      nombre: "PENDIENTE",
+      imagen: "/images/favicon.png",
+      nombre: "PARTICIPA TU, TU GRUPO, TU BANDA Y MUESTRALA AQUÍ",
       genero: "",
       horario: "18:00 - 19:00",
       descripcion: "",
@@ -34,6 +35,7 @@ export function ConciertosSection() {
         spotify: "https://spotify.com",
       },
     },
+    /** 
     {
       id: 2,
       imagen: "",
@@ -94,7 +96,11 @@ export function ConciertosSection() {
         spotify: "https://spotify.com",
         youtube: "https://youtube.com",
       },
+      
+      
     },
+    */
+    
   ];
 
   /* 

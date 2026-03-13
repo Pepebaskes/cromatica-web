@@ -47,6 +47,7 @@ export function ArtistasSection() {
       descripcion: "Ilustración de libros, cómic, fanart y objetos hechos a mano: pines, aretes, llaveros y merch ilustrada.",
       instagram: "mars.uvu",
     },
+    /** 
     {
       id: 5,
       imagen: "",
@@ -63,6 +64,7 @@ export function ArtistasSection() {
       descripcion: "",
       instagram: "",
     },
+    */
   ];
 
   /* 
