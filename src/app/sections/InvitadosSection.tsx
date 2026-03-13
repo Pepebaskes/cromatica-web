@@ -17,20 +17,21 @@ export function InvitadosSection() {
       imagen: "/images/felipeLopezCara.jpeg",
       nombre: "Felipe López Martinez",
       titulo: "Diseñador de moda",
-      descripcion: "Reconociendo su trayectoria dentro de la comunidad artística de El Grullo Jalisco, su apoyo y su gran talento commo diseñador de moda, especializado en vestidos de gala.",
+      descripcion: "Reconociendo su trayectoria dentro de la comunidad artística de El Grullo Jalisco, su apoyo y su gran talento como diseñador de moda, especializado en vestidos de gala.",
       conferencia: "",
       horario: "",
     },
-    /** 
+     
     {
       id: 2,
-      imagen: "",
-      nombre: "Pendiente",
-      titulo: "",
-      descripcion: "",
+      imagen: "/images/aleDuranFundadora.jpg",
+      nombre: "Alexandra Durán Solís ",
+      titulo: "Fundadora de la primera edición de CROMÁTICA",
+      descripcion: "Un pequeño homenaje a una de nuestras fundadoras originales y pieza clave en la creación de CROMÁTICA.",
       conferencia: "",
       horario: "",
     },
+    /**
     {
       id: 3,
       imagen: "",
