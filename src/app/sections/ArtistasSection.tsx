@@ -20,7 +20,7 @@ export function ArtistasSection() {
       imagen: "/images/lepeImg.jpg",
       nombre: "Lepe",
       especialidad: "Diseñadora Gráfica",
-      descripcion: "Diseñadora e ilustradora grullense, trabajó y colaboró con Alquimía Gráfica, desde guadalajara, hasta CROMÁTICA 2.0.",
+      descripcion: "Diseñadora e ilustradora Grullense, trabajó y colaboró con Alquimía Gráfica, desde Guadalajara, hasta CROMÁTICA 2.0.",
       instagram: "xlepex",
     },
     {
