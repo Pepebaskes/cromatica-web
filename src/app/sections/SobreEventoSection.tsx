@@ -38,7 +38,7 @@ export function SobreEventoSection() {
             Sobre CROMÁTICA 2.0
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            Un festival que celebra la diversidad artística y cultural de México
+            Un festival que celebra la diversidad artística y cultural de la región. 
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export function SobreEventoSection() {
                   </h3>
                   <p className="text-[var(--cromatica-text-secondary)] leading-relaxed">
                     CROMÁTICA es un festival independiente que reúne lo mejor del arte, 
-                    la cultura, la música y el emprendimiento mexicano en un solo espacio. 
+                    la cultura, la música y el emprendimiento regional en un solo espacio. 
                     Es una celebración de la creatividad, la diversidad y el talento local 
                     que busca conectar a artistas, empresarios y público en general.
                   </p>

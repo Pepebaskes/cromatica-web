@@ -14,10 +14,10 @@ export function InvitadosSection() {
   const invitados = [
     {
       id: 1,
-      imagen: "/images/ferchoLogo.jpeg",
+      imagen: "/images/felipeLopezCara.jpeg",
       nombre: "Felipe López Martinez",
       titulo: "Diseñador de moda",
-      descripcion: "Reconociendo su trayectoria dentro de la comunidad de El Grullo Jalisco, su apoyo y su gran talento como artista",
+      descripcion: "Reconociendo su trayectoria dentro de la comunidad artística de El Grullo Jalisco, su apoyo y su gran talento commo diseñador de moda, especializado en vestidos de gala.",
       conferencia: "",
       horario: "",
     },

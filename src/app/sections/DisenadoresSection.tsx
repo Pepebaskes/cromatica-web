@@ -17,9 +17,9 @@ export function DisenadoresSection() {
   const disenadores = [
     {
       id: 1,
-      imagen: "/public/images/ferchoLogo.jpeg",
+      imagen: "/images/ferchoLogo.jpeg",
       marca: "Felipe Lopez",
-      disenador: "Felipe Loperz Martinez",
+      disenador: "Felipe López Martinez",
       estilo: "Gala",
       descripcion: "Diseñador de alta gama, especializado en vestidos de gala, 100% grullense.",
       instagram: "felipelopez9734",
