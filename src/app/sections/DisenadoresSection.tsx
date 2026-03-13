@@ -24,16 +24,17 @@ export function DisenadoresSection() {
       descripcion: "Diseñador de alta gama, especializado en vestidos de gala, 100% grullense.",
       instagram: "felipelopez9734",
     },
-    /** 
+    
     {
       id: 2,
-      imagen: "",
-      marca: "PENDIENTE ",
-      disenador: "",
-      estilo: "",
-      descripcion: "",
-      instagram: "",
+      imagen: "/images/AleDussaLogo.jpg",
+      marca: "Alexandra Durán",
+      disenador: "Alexandra Durán",
+      estilo: "Contemporánea artesanal",
+      descripcion: "Proyecto de joyería artesanal enfocado en la creación de piezas únicas con inspiración simbólica y orgánica",
+      instagram: "aledussa",
     },
+    /** 
     {
       id: 3,
       imagen: "",
