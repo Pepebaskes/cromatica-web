@@ -147,7 +147,7 @@ export function ConciertosSection() {
             Conciertos
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            Disfruta de 6 bandas en vivo en nuestros 3 escenarios
+            Registra a tu banda o artista independiente para formar parte del line-up del festival. ¡Queremos escuchar tu música!
           </p>
         </div>
 
