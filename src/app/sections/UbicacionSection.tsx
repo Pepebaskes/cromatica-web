@@ -49,7 +49,7 @@ export function UbicacionSection() {
             ¿Dónde Nos Encontramos?
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            El festival se realizará a las afueras de El Grullo, Jalisco, en un hermoso espacio al aire libre que celebra la naturaleza y la cultura local.
+            El festival se realizará a las afueras de El Grullo, Jalisco, en un hermoso espacio al aire libre que celebra la naturaleza y la cultura local. Salón de eventos Don Quijote, la prinicpal obra de arte es ese salón, gracias al señor Alfredo Pimienta por el espacio. .
           </p>
         </div>
 
