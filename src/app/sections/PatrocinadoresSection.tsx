@@ -24,14 +24,15 @@ export function PatrocinadoresSection() {
       descripcion: "Expertos en decoración, organización y logística para tus eventos privados",
       url: "https://www.instagram.com/eventosboreal/",
     },
-    /** 
+    
     {
       id: 3,
-      nombre: "Patrocinador Oro 3",
-      logo: "/images/sponsor3.png",
-      descripcion: "Líderes en logística y apoyo a festivales culturales independientes en México.",
-      url: "https://ejemplo.com",
+      nombre: "Foro 9",
+      logo: "/images/Foro9.png",
+      descripcion: "Foro 9, es un espacio cultural en El Grullo con más de 10 años de trayectoria. Destaca por su cerveza artesanal, música en vivo de rock clásico y su apoyo a artistas emergentes.",
+      url: "https://www.instagram.com/foro_cheve9/",
     },
+    /** 
     {
       id: 4,
       nombre: "Socio Estratégico 4",

@@ -47,7 +47,7 @@ export function Footer() {
             <div className="inline-flex flex-col gap-1 md:gap-2 px-4 py-3 bg-white rounded-xl shadow-sm border border-[#FF8A00]/20 mx-auto md:mx-0">
               <div className="flex items-center justify-center md:justify-start gap-2 text-[#FF8A00]">
                 <Calendar className="w-3.5 h-3.5" />
-                <span className="font-bold text-xs md:text-sm">22 de Mayo, 2026</span>
+                <span className="font-bold text-xs md:text-sm">23 de Mayo, 2026</span>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2 text-[var(--cromatica-text-secondary)]">
                 <MapPin className="w-3.5 h-3.5" />
