@@ -25,7 +25,11 @@ export function Footer() {
           <div className="text-center md:text-left lg:col-span-1">
             <div className="flex items-center justify-center md:justify-start gap-2 md:gap-3 mb-3 md:mb-4">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-[#FF8A00] to-[#FF6B9D] flex items-center justify-center shadow-lg">
-                <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                <img 
+                  src="/images/favicon.png" 
+                  alt="Logo Cromática" 
+                  className="w-7 h-7 md:w-8 md:h-8 object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <h3
