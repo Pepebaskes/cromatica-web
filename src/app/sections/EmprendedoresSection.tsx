@@ -34,17 +34,18 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-secondary)",
       instagram: "cafeteria_elefante"
     },
-    /** 
+    
     {
       id: 3,
-      nombre: "PENDIENTE",
-      categoria: "",
-      descripcion: "",
-      ubicacion: "",
-      imagen: "",
+      nombre: "Magiaacrochet",
+      categoria: "Artesanías",
+      descripcion: "De tu imaginación al crochet ✨ Hacemos realidad tus ideas favoritas personalizando cada detalle. Piezas tan únicas como tú.💞",
+      ubicacion: "Zona de ventas",
+      imagen: "/images/Crochet.jpeg",
       color: "var(--cromatica-tertiary)",
       instagram: ""
     },
+    /** 
     {
       id: 4,
       nombre: "PENDIENTE",
