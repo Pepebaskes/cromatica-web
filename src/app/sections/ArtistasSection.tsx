@@ -47,15 +47,16 @@ export function ArtistasSection() {
       descripcion: "Ilustración de libros, cómic, fanart y objetos hechos a mano: pines, aretes, llaveros y merch ilustrada.",
       instagram: "mars.uvu",
     },
-    /** 
+    
     {
       id: 5,
-      imagen: "",
-      nombre: "",
-      especialidad: "",
-      descripcion: "",
-      instagram: "",
+      imagen: "/images/lizQuinteroBA.jpeg",
+      nombre: "Liz Quintero",
+      especialidad: "Body Art y Perforación",
+      descripcion: "Perforadora desde 2021 en BlackStone con ambicion de convertirse en modificadora corporal. ",
+      instagram: "@lizquintero_bodyart",
     },
+    /** 
     {
       id: 6,
       imagen: "",

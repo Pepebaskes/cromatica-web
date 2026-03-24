@@ -31,16 +31,17 @@ export function InvitadosSection() {
       conferencia: "",
       horario: "",
     },
-    /**
+    
     {
       id: 3,
-      imagen: "",
-      nombre: "PENDIENTE",
-      titulo: "",
-      descripcion: "",
+      imagen: "/images/lizQuinteroIE.jpeg",
+      nombre: "Liz Quintero",
+      titulo: "Directora del Tianguis cultural de Autlán y productora general del colectivo Fuerte.",
+      descripcion: "Persona fundamental en la escena artística de la región, su trabajo como productora y promotora cultural ha sido clave para el crecimiento de la comunidad artística local.",
       conferencia: "",
       horario: "",
     },
+    /**
     */
   ];
 
