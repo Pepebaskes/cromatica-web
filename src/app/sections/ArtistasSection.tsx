@@ -54,17 +54,36 @@ export function ArtistasSection() {
       nombre: "Liz Quintero",
       especialidad: "Body Art y Perforación",
       descripcion: "Perforadora desde 2021 en BlackStone con ambicion de convertirse en modificadora corporal. ",
-      instagram: "@lizquintero_bodyart",
+      instagram: "lizquintero_bodyart",
     },
-    /** 
+     
     {
       id: 6,
-      imagen: "",
-      nombre: "PENDIENTE",
-      especialidad: "",
-      descripcion: "",
-      instagram: "",
+      imagen: "/images/juliaEster.jpeg",
+      nombre: "Julia Esther Hernandez Contreras ",
+      especialidad: "Artista visual",
+      descripcion: "Estudiante de artes con aspiraciones en animación, disfruto de usar varios medios en el arte con una afinidad a la tinta y pluma de inmersión.",
+      instagram: "tey04040404",
     },
+
+      {
+    id: 7, 
+    imagen: "/images/nueve.jpeg",
+    nombre: "nueve",
+    especialidad: "Tatuador",
+    descripcion: "Tatuador con 7 años de experiencia en el desarrollo de piezas personalizadas, enfocado en la creación de diseños únicos dentro del estilo blackwork.",
+    instagram: "9uno",
+  },
+
+  /**
+   *   {
+    id: 8, // Incrementa el número
+    imagen: "URL_IMAGEN",
+    nombre: "Nombre del Artista",
+    especialidad: "Tipo de arte",
+    descripcion: "Bio del artista...",
+    instagram: "username",
+  },
     */
   ];
 
