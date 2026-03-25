@@ -19,7 +19,7 @@ export function EmprendedoresSection() {
       nombre: "El Pase",
       categoria: "Elotes y Mixología",
       descripcion: "Las mejores botanas, elotes y bebidas para disfrutar",
-      ubicacion: "Zona de Ventas",
+      ubicacion: "Zona de Comida",
       imagen: "/images/elPaseElote.png", // Ejemplo de imagen local
       color: "var(--cromatica-primary)",
       instagram: "el_pase05"
@@ -29,7 +29,7 @@ export function EmprendedoresSection() {
       nombre: "Cafetería Elefante",
       categoria: "Café & Postres",
       descripcion: "El mejor café de especialidad y postres artesanales",
-      ubicacion: "Zona de Ventas",
+      ubicacion: "Zona de Comida",
       imagen: "/images/elElefante.jpeg", // Ejemplo de imagen local
       color: "var(--cromatica-secondary)",
       instagram: "cafeteria_elefante"
@@ -40,22 +40,23 @@ export function EmprendedoresSection() {
       nombre: "Magiaacrochet",
       categoria: "Artesanías",
       descripcion: "De tu imaginación al crochet ✨ Hacemos realidad tus ideas favoritas personalizando cada detalle. Piezas tan únicas como tú.💞",
-      ubicacion: "Zona de ventas",
+      ubicacion: "Zona de Ventas",
       imagen: "/images/Crochet.jpeg",
       color: "var(--cromatica-tertiary)",
-      instagram: ""
+      instagram: "magiaacrochet_"
     },
-    /** 
+    
     {
       id: 4,
-      nombre: "PENDIENTE",
-      categoria: "",
-      descripcion: "",
-      ubicacion: "",
-      imagen: "",
+      nombre: "Kuro Shop",
+      categoria: "Tienda Alternativa",
+      descripcion: "Emprendimiento con gran variedad de productos, su fuerte son accesorios alternativos y productos de anime; un lugar seguro y con productos para todas las personas con gustos mas extravagantes y fuera de la norma (al mismo tiempo generan ingreso para sus gatitos)",
+      ubicacion: "Zona de Ventas",
+      imagen: "/images/kuroShop.jpeg",
       color: "var(--cromatica-accent)",
-      instagram: ""
+      instagram: "kuroshopmx"
     }
+    /** 
       */
   ];
 

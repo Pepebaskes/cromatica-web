@@ -82,7 +82,14 @@ export function ArtistasSection() {
     descripcion: "Elaboro ilustraciones sobre personajes de películas o series, sobre mitologías, artistas, entre otros temas. Vendo mercancía de los trabajos que hago. Hice un libro de cuentos escritos e ilustrados por mí y un cómic breve.",
     instagram: "alex.artes33",
   },
-  
+   {
+    id: 9, // Incrementa el número
+    imagen: "/images/ChrisSanchez.jpeg",
+    nombre: "Christian Sánchez",
+    especialidad: "Pintura",
+    descripcion: "Aartista visual enfocado en la pintura y el dibujo, mi trabajo se desarrolla mediante la emocionalidad del color y el claroscuro.",
+    instagram: "cs_artemania",
+  },
 
   /**
 
