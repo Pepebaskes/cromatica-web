@@ -74,16 +74,16 @@ export function ArtistasSection() {
     descripcion: "Tatuador con 7 años de experiencia en el desarrollo de piezas personalizadas, enfocado en la creación de diseños únicos dentro del estilo blackwork.",
     instagram: "9uno",
   },
-
-  /**
-   *   {
-    id: 8, // Incrementa el número
-    imagen: "URL_IMAGEN",
-    nombre: "Nombre del Artista",
-    especialidad: "Tipo de arte",
-    descripcion: "Bio del artista...",
-    instagram: "username",
+    {
+    id: 8, 
+    imagen: "/images/alexisLandin.jpeg",
+    nombre: "Alexis Landin",
+    especialidad: "Dibujo",
+    descripcion: "Elaboro ilustraciones sobre personajes de películas o series, sobre mitologías, artistas, entre otros temas. Vendo mercancía de los trabajos que hago. Hice un libro de cuentos escritos e ilustrados por mí y un cómic breve.",
+    instagram: "alex.artes33",
   },
+/**
+
     */
   ];
 
