@@ -82,7 +82,9 @@ export function ArtistasSection() {
     descripcion: "Elaboro ilustraciones sobre personajes de películas o series, sobre mitologías, artistas, entre otros temas. Vendo mercancía de los trabajos que hago. Hice un libro de cuentos escritos e ilustrados por mí y un cómic breve.",
     instagram: "alex.artes33",
   },
-/**
+  
+
+  /**
 
     */
   ];

@@ -25,14 +25,14 @@ export function ConciertosSection() {
     
     {
       id: 1,
-      imagen: "/images/favicon.png",
-      nombre: "PARTICIPA TU, TU GRUPO, TU BANDA Y MUESTRALA AQUÍ",
-      genero: "",
-      horario: "18:00 - 19:00",
-      descripcion: "",
+      imagen: "/images/theTheeves.jpeg",
+      nombre: "The theeves",
+      genero: "Rock Alternativo / Dark pop",
+      horario: "20:00 - 21:00",
+      descripcion: "De las raíces de Traumatismo Floral surge The Theeves, una propuesta de rock alternativo y dark pop con una identidad inconfundible. Tras conquistar la escena regional, el cuarteto liderado por Marco Camacho y Roberto Jiménez se proyecta hacia la escena nacional este 2026 con un sonido maduro, tres nuevos sencillos y un EP que marca el inicio de su nueva era. Oscuridad, ritmo y evolución.",
       redesSociales: {
-        instagram: "https://instagram.com",
-        spotify: "https://spotify.com",
+        instagram: "https://www.instagram.com/the_theeves?igsh=MTR5ZmgzZWZjdGdodg==",
+        spotify: "https://open.spotify.com/intl-es/artist/7oCWzo0qZvvdva9tRTAxTH",
       },
     },
     /** 
