@@ -35,19 +35,21 @@ export function ConciertosSection() {
         spotify: "https://open.spotify.com/intl-es/artist/7oCWzo0qZvvdva9tRTAxTH",
       },
     },
-    /** 
+     
     {
       id: 2,
-      imagen: "",
-      nombre: "PENDIENTE",
-      genero: "",
+      imagen: "/images/Clave4.jpeg",
+      nombre: "Clave 4",
+      genero: "Sierreño",
       horario: "",
-      descripcion: "",
+      descripcion: "Fusionamos regional con sonidos alternativos para crear una propuesta fresca y auténtica que conecta con todo tipo de público.",
       redesSociales: {
-        instagram: "https://instagram.com",
-        youtube: "https://youtube.com",
+        instagram: "https://www.instagram.com/clave_4tro?igsh=czU5dDl6bzEzOWtq"
+        //youtube: "https://youtube.com",
       },
+      
     },
+    /**
     {
       id: 3,
       imagen: "",
