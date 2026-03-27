@@ -41,7 +41,7 @@ export function ConciertosSection() {
       imagen: "/images/Clave4.jpeg",
       nombre: "Clave 4",
       genero: "Sierreño",
-      horario: "",
+      horario: "21:00-22:00",
       descripcion: "Fusionamos regional con sonidos alternativos para crear una propuesta fresca y auténtica que conecta con todo tipo de público.",
       redesSociales: {
         instagram: "https://www.instagram.com/clave_4tro?igsh=czU5dDl6bzEzOWtq"
