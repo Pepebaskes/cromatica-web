@@ -90,6 +90,14 @@ export function ArtistasSection() {
     descripcion: "Aartista visual enfocado en la pintura y el dibujo, mi trabajo se desarrolla mediante la emocionalidad del color y el claroscuro.",
     instagram: "cs_artemania",
   },
+   {
+    id: 10, // Incrementa el número
+    imagen: "/images/DMAcademy.jpeg",
+    nombre: "DM COMPANY ",
+    especialidad: "Fusión jazz urbana",
+    descripcion: "Estudio de danza y modelaje que se dedica a la formación de bailarines y modelos ademas de la creación coreográfica y de shows  personalizados ",
+    instagram: "dmcompany__",
+  },
 
   /**
 
