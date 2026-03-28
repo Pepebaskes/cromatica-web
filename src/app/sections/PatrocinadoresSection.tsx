@@ -32,14 +32,16 @@ export function PatrocinadoresSection() {
       descripcion: "Foro 9, es un espacio cultural en El Grullo con más de 10 años de trayectoria. Destaca por su cerveza artesanal, música en vivo de rock clásico y su apoyo a artistas emergentes.",
       url: "https://www.instagram.com/foro_cheve9/",
     },
-    /** 
+    
     {
       id: 4,
-      nombre: "Socio Estratégico 4",
-      logo: "/images/sponsor4.png",
-      descripcion: "Comprometidos con la difusión del arte visual y la danza contemporánea.",
-      url: "https://ejemplo.com",
+      nombre: "HIjos de María Morales",
+      logo: "/images/hijosDeMariaMorales.jpeg",
+      descripcion: "Hijos de María Morales Shot es una marca mexicana de licor de agave saborizado, presentado en sabores como fresa, maracuyá, melón, jamaica, horchata y coco. Se comercializa como un shot de México, ideal para consumirse frío o en coctelería, destacando por sabores auténticos y tradicionales en cada trago.",
+      url: "https://www.hijosdemariamorales.com.mx/index.php/inicio",
     },
+
+    /** 
     */
   ];
 
