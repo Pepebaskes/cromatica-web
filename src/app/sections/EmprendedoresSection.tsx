@@ -55,7 +55,17 @@ export function EmprendedoresSection() {
       imagen: "/images/kuroShop.jpeg",
       color: "var(--cromatica-accent)",
       instagram: "kuroshopmx"
+    },   {
+      id: 5,
+      nombre: "Bell",
+      categoria: "Productos asiáticos",
+      descripcion: "Sabores asiáticos auténticos: ramen, dumplings, banderillas y más.",
+      ubicacion: "Zona de Comida",
+      imagen: "/images/Bell.jpeg",
+      color: "var(--cromatica-accent)",
+      instagram: "bell._.shop09"
     }
+
     /** 
       */
   ];
