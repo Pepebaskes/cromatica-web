@@ -34,16 +34,17 @@ export function DisenadoresSection() {
       descripcion: "Proyecto de joyería artesanal enfocado en la creación de piezas únicas con inspiración simbólica y orgánica",
       instagram: "aledussa",
     },
-    /** 
+    
     {
       id: 3,
-      imagen: "",
-      marca: "PENDIENTE",
-      disenador: "",
-      estilo: "",
-      descripcion: "",
-      instagram: "",
+      imagen: "/images/verania.jpeg",
+      marca: "Berry Dreams",
+      disenador: "Verania Ramírez",
+      estilo: "Upcycling y vestuarios escénicos",
+      descripcion: "Berry Dreams es una marca con el estilo Upcycling que busca la renovación de prendas preexistentes mediante la modificación o la añadidura de detalles ya sea de telas, texturas, diseños, apoyando a la sustentabilidad, así mismo también se enfoca en la realización de vestuarios escénicos para danza",
+      instagram: "berry_dreams",
     },
+    /** 
     {
       id: 4,
       imagen: "",

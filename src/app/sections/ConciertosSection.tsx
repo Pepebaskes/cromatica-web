@@ -49,19 +49,20 @@ export function ConciertosSection() {
       },
       
     },
-    /**
+    
     {
       id: 3,
-      imagen: "",
-      nombre: "PENDIENTE",
-      genero: "",
-      horario: "",
-      descripcion: "",
+      imagen: "/images/khembo.jpeg",
+      nombre: "KHEMBÖ ",
+      genero: "Rock alternativo, Pop",
+      horario: "22:00 - 23:00",
+      descripcion: "Khembö no pide permiso: irrumpe. Entre guitarra, teclado, bajo, batería, violín y voces crudas, crea ritmos que golpean con una vibra indie sin filtro. La banda mezcla rock alternativo, pop, entre otras variaciones. Dejando que cada integrante imprima su esencia en cada canción. No son temas de fondo: son para gritar, para sentir. Khembö no busca lo bonito en el sonido, sino la verdad en nuestra resonancia.",
       redesSociales: {
-        facebook: "https://facebook.com",
-        spotify: "https://spotify.com",
+        instagram: "https://www.instagram.com/_khembo_?igsh=OXB1amR2Njk1N2Fz",
+       // spotify: "https://spotify.com",
       },
     },
+    /**
     {
       id: 4,
       imagen: "",
