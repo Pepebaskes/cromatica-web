@@ -62,20 +62,21 @@ export function ConciertosSection() {
        // spotify: "https://spotify.com",
       },
     },
-    /**
+    
     {
       id: 4,
-      imagen: "",
-      nombre: "PENDIENTE",
-      genero: "",
-      horario: "",
-      descripcion: "",
+      imagen: "/images/ROB.jpeg",
+      nombre: "ROB (Return Of The Beast)",
+      genero: "Rock",
+      horario: "23:00 - 00:00",
+      descripcion: "ROB es una Banda Emergente de Rock/Alternativo relativamente *Nueva* pero con un bagaje importante de sus integrantes en la escena Underground del Grullo de ya varios años en las que han participado con diferentes proyectos que a su vez dieron la pauta para que se formará ROB qué es la culminación de la Necesidad de seguir creando y haciendo música para disfrutar.",
       redesSociales: {
-        instagram: "https://instagram.com",
-        spotify: "https://spotify.com",
-        youtube: "https://youtube.com",
+        instagram: "https://www.instagram.com/return_ofthebeast?igsh=MXNsZHRnd2o5YXNvbA==",
+        //spotify: "https://spotify.com",
+        //youtube: "https://youtube.com",
       },
     },
+    /**
     {
       id: 5,
       imagen: "",
