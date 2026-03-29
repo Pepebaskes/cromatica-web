@@ -55,7 +55,8 @@ export function EmprendedoresSection() {
       imagen: "/images/kuroShop.jpeg",
       color: "var(--cromatica-accent)",
       instagram: "kuroshopmx"
-    },   {
+    },  
+     {
       id: 5,
       nombre: "Bell",
       categoria: "Productos asiáticos",
@@ -64,6 +65,17 @@ export function EmprendedoresSection() {
       imagen: "/images/Bell.jpeg",
       color: "var(--cromatica-accent)",
       instagram: "bell._.shop09"
+    },
+
+    {
+      id: 6,
+      nombre: "Drinks Coquetos",
+      categoria: "Mixología y Coctelería",
+      descripcion: "Drinks coquetos es un comercio dedicado a la elaboración y venta de coctelería con un envase reutilizable y creativo ",
+      ubicacion: "Zona de Comida",
+      imagen: "/images/drinksCoquetos.png",
+      color: "var(--cromatica-accent)",
+      instagram: "drinks.coquetos_"
     }
 
     /** 
