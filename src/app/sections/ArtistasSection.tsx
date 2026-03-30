@@ -99,6 +99,15 @@ export function ArtistasSection() {
     instagram: "dmcompany__",
   },
 
+    {
+    id: 11, // Incrementa el número
+    imagen: "/images/ariadnaBarreto.jpeg",
+    nombre: "Ariadna Barreto",
+    especialidad: "Dibujo",
+    descripcion: "Arte alternativo en forma de stickers y separadores, inspirado en subculturas como el gótico, punk y dark. Su estilo combina lo oscuro con lo simbólico, creando piezas con las que las personas alternativas pueden identificarse.",
+    instagram: "dark._.M0th",
+  },
+
   /**
 
     */
