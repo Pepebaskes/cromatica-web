@@ -108,6 +108,17 @@ export function ArtistasSection() {
     instagram: "dark._.M0th",
   },
 
+    {
+    id: 12, // Incrementa el número
+    imagen: "/images/Christian.jpeg",
+    nombre: "Christian",
+    especialidad: "Diseño gráfico",
+    descripcion: "Diseñador gráfico que presenta ilustraciones y obra gráfica experimentando con estilos variados y técnicas de impresión como la serigrafía.",
+    instagram: "jonathan.indd",
+  },
+
+  
+
   /**
 
     */
