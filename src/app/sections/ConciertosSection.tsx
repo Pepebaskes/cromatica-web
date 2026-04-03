@@ -76,19 +76,20 @@ export function ConciertosSection() {
         //youtube: "https://youtube.com",
       },
     },
-    /**
+    
     {
       id: 5,
-      imagen: "",
-      nombre: "PENDIENTE",
-      genero: "",
-      horario: "",
-      descripcion: "",
+      imagen: "/images/insurrection.jpeg",
+      nombre: "INSURRECTION",
+      genero: "Rock",
+      horario: "00:00 - 1:00",
+      descripcion: "Banda de rock originada en El Grullo en 2025, que maneja covers con un estilo propio, presencia escénica, experiencia en diferentes escenarios y pasión por el metal, nu metal, grunge, glam rock entre otros.",
       redesSociales: {
-        instagram: "https://instagram.com",
-        facebook: "https://facebook.com",
+        instagram: "instagram.com/insurrectionrockband?igsh=MWJ5b29vcXVjZzJtMg==",
+        //facebook: "https://facebook.com",
       },
     },
+    /**
     {
       id: 6,
       imagen: "",

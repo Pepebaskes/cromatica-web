@@ -116,8 +116,14 @@ export function ArtistasSection() {
     descripcion: "Diseñador gráfico que presenta ilustraciones y obra gráfica experimentando con estilos variados y técnicas de impresión como la serigrafía.",
     instagram: "jonathan.indd",
   },
-
-  
+   {
+    id: 13, // Incrementa el número
+    imagen: "/images/mordret.jpeg",
+    nombre: "Mordred",
+    especialidad: "ILustradora",
+    descripcion: "Es una tatuadora e ilustradora de GDL, enfocada en ilustrar pequeñas cosas de la vida que se vuelven extraordinarias, convirtiéndolas en algo mágico",
+    instagram: "mordred.art",
+  },
 
   /**
 
