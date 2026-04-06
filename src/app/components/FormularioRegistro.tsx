@@ -1,16 +1,15 @@
 /**
  * ==========================================
- * COMPONENTE: FORMULARIO DE REGISTRO
+ * COMPONENTE: FORMULARIO DE REGISTRO (ACTUALIZADO)
  * ==========================================
- * * Componente reutilizable para formularios de registro.
- * Se usa en la RegistroSection con diferentes configuraciones.
- * * 🎯 PROPS:
- * - tipo: Tipo de registro (artista, banda, empresario, etc.)
- * - onSubmit: Función que se ejecuta al enviar el formulario
+ * Cambios realizados:
+ * 1. 🛑 Lógica de Cierre: Se añadió 'categoriasCerradas' para gestionar cupos.
+ * 2. 🛡️ Protección de Handler: 'handleSubmit' ahora ignora envíos si la categoría está cerrada.
+ * 3. 🎨 UI Dinámica: El formulario se reemplaza por un mensaje de "Cupo Lleno".
+ * 4. 🏷️ Etiquetas de Estado: El badge de costo cambia a "CUPO LLENO" y color neutro.
  */
 
 import { useState } from 'react';
-// Importamos la instancia de supabase desde tu carpeta lib
 import { supabase } from '../../lib/supabase.ts';
 
 interface FormularioRegistroProps {
@@ -18,6 +17,11 @@ interface FormularioRegistroProps {
 }
 
 export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
+  // --- GESTIÓN DE CUPOS ---
+  // Agrega aquí los tipos que desees desactivar
+  const categoriasCerradas = ['banda']; 
+  const estaCerrado = categoriasCerradas.includes(tipo);
+
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -25,44 +29,35 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
     descripcion: '',
   });
 
-  // Estado para controlar el envío y feedback visual
   const [enviando, setEnviando] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Seguridad adicional: si la categoría está cerrada, no procesar nada
+    if (estaCerrado) return;
+
     setEnviando(true);
 
     try {
-      /**
-       * 👉 INTEGRACIÓN CON SUPABASE
-       * Inserta los datos en la tabla 'registros'.
-       * Asegúrate de que los nombres de las columnas en Supabase coincidan.
-       */
       const { error } = await supabase
         .from('registros')
         .insert([
           { 
-           tipo: tipo, 
+            tipo: tipo, 
             nombre: formData.nombre, 
             email: formData.email, 
             telefono: formData.telefono, 
             descripcion: formData.descripcion 
-            // ❌ NO pongas created_at aquí. Supabase lo llenará solo.
           }
         ]);
 
       if (error) throw error;
 
-      /**
-       * 📧 INTEGRACIÓN CON VERCEL API (ZOHO MAIL)
-       * Enviamos el correo de bienvenida automáticamente tras el registro exitoso.
-       */
       try {
         await fetch('/api/enviar', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             email: formData.email,
             nombre: formData.nombre,
@@ -70,14 +65,11 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
           }),
         });
       } catch (mailError) {
-        // Logueamos el error de correo pero no interrumpimos el flujo de éxito
         console.error('Error al solicitar envío de correo:', mailError);
       }
 
-      // Mostrar mensaje de éxito
       alert('¡Registro enviado con éxito! Recibirás un correo de confirmación pronto.');
       
-      // Limpiar formulario
       setFormData({
         nombre: '',
         email: '',
@@ -100,7 +92,6 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
     });
   };
 
-  // Configuración según el tipo
   const config = {
     artista: {
       titulo: 'Registro de Artista Visual',
@@ -111,7 +102,7 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
     banda: {
       titulo: 'Registro de Banda/Músico',
       icono: '🎸',
-      costo: '$50 MXN',
+      costo: 'CUPO LLENO', // Cambiado visualmente
       placeholder: 'Nombre de la banda o artista',
     },
     empresario: {
@@ -157,7 +148,8 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
         <span
           className="inline-block px-4 py-2 rounded-full font-bold"
           style={{
-            background: 'var(--cromatica-gradient-1)',
+            // Si está cerrado, usamos un color grisáceo, si no, el gradiente original
+            background: estaCerrado ? '#4b5563' : 'var(--cromatica-gradient-1)',
             color: 'white',
           }}
         >
@@ -165,107 +157,100 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
         </span>
       </div>
 
-      {/* Formulario */}
-      <form onSubmit={handleSubmit} className="space-y-4">
-        {/* Nombre */}
-        <div>
-          <label htmlFor={`nombre-${tipo}`} className="block text-sm font-medium mb-2">
-            Nombre *
-          </label>
-          <input
-            type="text"
-            id={`nombre-${tipo}`}
-            name="nombre"
-            value={formData.nombre}
-            onChange={handleChange}
-            placeholder={currentConfig.placeholder}
-            required
-            disabled={enviando}
-            className="w-full px-4 py-3 bg-[var(--cromatica-bg-light)] border border-[var(--cromatica-primary)]/30 rounded-lg focus:outline-none focus:border-[var(--cromatica-primary)] transition-colors disabled:opacity-50"
-          />
+      {/* Condicional de Renderizado */}
+      {estaCerrado ? (
+        <div className="text-center p-8 bg-black/20 rounded-xl border border-white/10">
+          <p className="text-lg font-medium text-[var(--cromatica-primary)] mb-2">
+            Convocatoria Finalizada
+          </p>
+          <p className="text-sm text-[var(--cromatica-text-muted)]">
+            Lo sentimos, el cupo para esta categoría se ha llenado. 
+            ¡Mantente al tanto de nuestras redes para futuras ediciones!
+          </p>
         </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label htmlFor={`nombre-${tipo}`} className="block text-sm font-medium mb-2">
+              Nombre *
+            </label>
+            <input
+              type="text"
+              id={`nombre-${tipo}`}
+              name="nombre"
+              value={formData.nombre}
+              onChange={handleChange}
+              placeholder={currentConfig.placeholder}
+              required
+              disabled={enviando}
+              className="w-full px-4 py-3 bg-[var(--cromatica-bg-light)] border border-[var(--cromatica-primary)]/30 rounded-lg focus:outline-none focus:border-[var(--cromatica-primary)] transition-colors disabled:opacity-50"
+            />
+          </div>
 
-        {/* Email */}
-        <div>
-          <label htmlFor={`email-${tipo}`} className="block text-sm font-medium mb-2">
-            Email *
-          </label>
-          <input
-            type="email"
-            id={`email-${tipo}`}
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="tu@email.com"
-            required
+          <div>
+            <label htmlFor={`email-${tipo}`} className="block text-sm font-medium mb-2">
+              Email *
+            </label>
+            <input
+              type="email"
+              id={`email-${tipo}`}
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="tu@email.com"
+              required
+              disabled={enviando}
+              className="w-full px-4 py-3 bg-[var(--cromatica-bg-light)] border border-[var(--cromatica-primary)]/30 rounded-lg focus:outline-none focus:border-[var(--cromatica-primary)] transition-colors disabled:opacity-50"
+            />
+          </div>
+
+          <div>
+            <label htmlFor={`telefono-${tipo}`} className="block text-sm font-medium mb-2">
+              Teléfono *
+            </label>
+            <input
+              type="tel"
+              id={`telefono-${tipo}`}
+              name="telefono"
+              value={formData.telefono}
+              onChange={handleChange}
+              placeholder="55 1234 5678"
+              required
+              disabled={enviando}
+              className="w-full px-4 py-3 bg-[var(--cromatica-bg-light)] border border-[var(--cromatica-primary)]/30 rounded-lg focus:outline-none focus:border-[var(--cromatica-primary)] transition-colors disabled:opacity-50"
+            />
+          </div>
+
+          <div>
+            <label htmlFor={`descripcion-${tipo}`} className="block text-sm font-medium mb-2">
+              Cuéntanos sobre ti *
+            </label>
+            <textarea
+              id={`descripcion-${tipo}`}
+              name="descripcion"
+              value={formData.descripcion}
+              onChange={handleChange}
+              placeholder="Describe tu trabajo, experiencia, estilo..."
+              rows={4}
+              required
+              disabled={enviando}
+              className="w-full px-4 py-3 bg-[var(--cromatica-bg-light)] border border-[var(--cromatica-primary)]/30 rounded-lg focus:outline-none focus:border-[var(--cromatica-primary)] transition-colors resize-none disabled:opacity-50"
+            />
+          </div>
+
+          <button
+            type="submit"
             disabled={enviando}
-            className="w-full px-4 py-3 bg-[var(--cromatica-bg-light)] border border-[var(--cromatica-primary)]/30 rounded-lg focus:outline-none focus:border-[var(--cromatica-primary)] transition-colors disabled:opacity-50"
-          />
-        </div>
+            className="btn-cromatica w-full disabled:grayscale"
+          >
+            {enviando ? 'Enviando...' : 'Enviar Registro'}
+          </button>
 
-        {/* Teléfono */}
-        <div>
-          <label htmlFor={`telefono-${tipo}`} className="block text-sm font-medium mb-2">
-            Teléfono *
-          </label>
-          <input
-            type="tel"
-            id={`telefono-${tipo}`}
-            name="telefono"
-            value={formData.telefono}
-            onChange={handleChange}
-            placeholder="55 1234 5678"
-            required
-            disabled={enviando}
-            className="w-full px-4 py-3 bg-[var(--cromatica-bg-light)] border border-[var(--cromatica-primary)]/30 rounded-lg focus:outline-none focus:border-[var(--cromatica-primary)] transition-colors disabled:opacity-50"
-          />
-        </div>
-
-        {/* Descripción */}
-        <div>
-          <label htmlFor={`descripcion-${tipo}`} className="block text-sm font-medium mb-2">
-            Cuéntanos sobre ti *
-          </label>
-          <textarea
-            id={`descripcion-${tipo}`}
-            name="descripcion"
-            value={formData.descripcion}
-            onChange={handleChange}
-            placeholder="Describe tu trabajo, experiencia, estilo..."
-            rows={4}
-            required
-            disabled={enviando}
-            className="w-full px-4 py-3 bg-[var(--cromatica-bg-light)] border border-[var(--cromatica-primary)]/30 rounded-lg focus:outline-none focus:border-[var(--cromatica-primary)] transition-colors resize-none disabled:opacity-50"
-          />
-        </div>
-
-        {/* Botón de envío */}
-        <button
-          type="submit"
-          disabled={enviando}
-          className="btn-cromatica w-full disabled:grayscale"
-        >
-          {enviando ? 'Enviando...' : 'Enviar Registro'}
-        </button>
-
-        <p className="text-xs text-[var(--cromatica-text-muted)] text-center mt-4">
-          Al registrarte, aceptas nuestros términos y condiciones.
-          Recibirás un correo de confirmación.
-        </p>
-      </form>
+          <p className="text-xs text-[var(--cromatica-text-muted)] text-center mt-4">
+            Al registrarte, aceptas nuestros términos y condiciones.
+          </p>
+        </form>
+      )}
     </div>
   );
 }
-
-/**
- * ==========================================
- * GUÍA DE INTEGRACIÓN CON BACKEND (MODIFICADA)
- * ==========================================
- * * 1. SUPABASE (IMPLEMENTADO):
- * - La tabla en Supabase DEBE llamarse 'registros'.
- * - Columnas necesarias: id (int8/uuid), tipo (text), nombre (text), 
- * email (text), telefono (text), descripcion (text), created_at (timestamptz).
- * * 2. NOTIFICACIONES POR EMAIL (IMPLEMENTADO VÍA VERCEL API):
- * - Se realiza una petición POST a /api/enviar tras el insert en Supabase.
- * - Requiere variables EMAIL_USER y EMAIL_PASS configuradas en el dashboard de Vercel.
- */
