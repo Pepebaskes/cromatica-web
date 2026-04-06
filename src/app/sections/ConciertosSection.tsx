@@ -17,6 +17,7 @@
  * - Formato: JPG o PNG
  */
 
+import { Instagram } from 'lucide-react';
 import { BandCard } from '../components/BandCard';
 
 export function ConciertosSection() {
@@ -68,7 +69,7 @@ export function ConciertosSection() {
       imagen: "/images/ROB.jpeg",
       nombre: "ROB (Return Of The Beast)",
       genero: "Rock",
-      horario: "23:00 - 00:00",
+      horario: "1:00 - 2:00",
       descripcion: "ROB es una Banda Emergente de Rock/Alternativo relativamente *Nueva* pero con un bagaje importante de sus integrantes en la escena Underground del Grullo de ya varios años en las que han participado con diferentes proyectos que a su vez dieron la pauta para que se formará ROB qué es la culminación de la Necesidad de seguir creando y haciendo música para disfrutar.",
       redesSociales: {
         instagram: "https://www.instagram.com/return_ofthebeast?igsh=MXNsZHRnd2o5YXNvbA==",
@@ -89,21 +90,20 @@ export function ConciertosSection() {
         //facebook: "https://facebook.com",
       },
     },
-    /**
+    
     {
       id: 6,
-      imagen: "",
-      nombre: "PENDIENTE",
-      genero: "",
-      horario: "",
-      descripcion: "",
+      imagen: "/images/anuar.jpeg",
+      nombre: "Anuar Ramírez ",
+      genero: "Regional Méxicano",
+      horario: "23:00 - 00:00",
+      descripcion: "Cantante de música ranchera con 3 años de experiencia. Actualmente estudiante de artes especializado en música.Mediante la voz, expresa el amor a las raíces de la cultura mexicana.",
       redesSociales: {
-        spotify: "https://spotify.com",
-        youtube: "https://youtube.com",
+        Instagram: "https://www.instagram.com/anu4r_ramirez?igsh=NWI1MmFyenQ4a3Ni&utm_source=qr",
+        //youtube: "https://youtube.com",
       },
-      
-      
     },
+    /**
     */
     
   ];
