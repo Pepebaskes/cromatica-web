@@ -78,8 +78,7 @@ export function EmprendedoresSection() {
       instagram: "drinks.coquetos_"
     }
 
-    /** 
-      */
+    /** */
   ];
 
   return (
@@ -103,20 +102,27 @@ export function EmprendedoresSection() {
           </p>
         </div>
 
-        {/* Grid de Emprendedores */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        {/* Grid de Emprendedores - 3 columnas (Igual que Artistas) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {emprendedores.map((emp, index) => (
             <div 
               key={emp.id} 
               className="card-glow group overflow-hidden flex flex-col h-full animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Contenedor de Imagen */}
-              <div className="relative h-48 overflow-hidden">
+              {/* Contenedor de Imagen Relativo */}
+              {/* CAMBIO CLAVE: 
+                  1. Quitamos 'h-72' (altura fija).
+                  2. Usamos 'aspect-square' para que el contenedor sea un cuadrado perfecto basado en el ancho.
+              */}
+              <div className="relative w-full aspect-square overflow-hidden bg-white">
                 <img 
                   src={emp.imagen} 
                   alt={emp.nombre}
-                  className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+                  /* 'object-cover' hará que la imagen cubra todo el cuadrado. 
+                    Al ser cuadrada la proporción, tus logos circulares se adaptarán mucho mejor.
+                  */
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute top-4 left-4">
                   <span 
@@ -133,7 +139,8 @@ export function EmprendedoresSection() {
                 <h3 className="text-xl font-bold mb-2 text-[var(--cromatica-text-primary)]">
                   {emp.nombre}
                 </h3>
-                <p className="text-[var(--cromatica-text-secondary)] text-sm mb-6 line-clamp-2">
+                {/* Descripción completa */}
+                <p className="text-[var(--cromatica-text-secondary)] text-sm mb-6 leading-relaxed">
                   {emp.descripcion}
                 </p>
 
@@ -163,7 +170,7 @@ export function EmprendedoresSection() {
           ))}
         </div>
 
-        {/* CTA para nuevos emprendedores */}
+        {/* CTA */}
         <div className="mt-20 text-center">
           <div className="bg-white/50 backdrop-blur-sm border border-white p-8 rounded-3xl shadow-xl inline-block max-w-xl">
             <h4 className="text-lg font-bold mb-2 text-[var(--cromatica-text-primary)]">¿Quieres un espacio para tu marca?</h4>
