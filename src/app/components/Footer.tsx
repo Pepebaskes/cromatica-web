@@ -122,7 +122,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:prensa@cromaticafestival.mx" className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm text-[var(--cromatica-text-secondary)] hover:text-[var(--cromatica-primary)] transition-all duration-300 font-medium">
+                <a href="mailto:expocromatica@outlook.com" className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm text-[var(--cromatica-text-secondary)] hover:text-[var(--cromatica-primary)] transition-all duration-300 font-medium">
                   <div className="w-6 h-6 md:w-8 md:h-8 rounded-md md:rounded-lg bg-gradient-to-br from-[#FF6B9D] to-[#F48FB1] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shrink-0">
                     <Mic className="w-3 h-3 md:w-4 md:h-4 text-white" />
                   </div>
@@ -145,15 +145,20 @@ export function Footer() {
                 <Instagram className="w-5 h-5 md:w-6 md:h-6 text-pink-500" />
                 <span className="hidden md:block text-[10px] font-bold text-[var(--cromatica-text-secondary)]">Instagram</span>
               </a>
+              
+              {/* Redes sociales adicionales 
               <a href="https://facebook.com/cromaticafestival" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center justify-center gap-1 p-2 md:p-3 bg-white rounded-xl shadow-sm md:shadow-md hover:scale-105 transition-all border border-transparent hover:border-blue-600">
                 <Facebook className="w-5 h-5 md:w-6 md:h-6 text-blue-600" />
                 <span className="hidden md:block text-[10px] font-bold text-[var(--cromatica-text-secondary)]">Facebook</span>
               </a>
+              
               <a href="https://twitter.com/cromaticafest" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center justify-center gap-1 p-2 md:p-3 bg-white rounded-xl shadow-sm md:shadow-md hover:scale-105 transition-all border border-transparent hover:border-sky-500">
                 <Twitter className="w-5 h-5 md:w-6 md:h-6 text-sky-500" />
                 <span className="hidden md:block text-[10px] font-bold text-[var(--cromatica-text-secondary)]">Twitter</span>
               </a>
-              <a href="https://tiktok.com/@cromaticafestival" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center justify-center gap-1 p-2 md:p-3 bg-white rounded-xl shadow-sm md:shadow-md hover:scale-105 transition-all border border-transparent hover:border-purple-600">
+                  */}
+
+              <a href="https://tiktok.com/@cromática_expo" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center justify-center gap-1 p-2 md:p-3 bg-white rounded-xl shadow-sm md:shadow-md hover:scale-105 transition-all border border-transparent hover:border-purple-600">
                 <Mic className="w-5 h-5 md:w-6 md:h-6 text-purple-600" />
                 <span className="hidden md:block text-[10px] font-bold text-[var(--cromatica-text-secondary)]">TikTok</span>
               </a>
