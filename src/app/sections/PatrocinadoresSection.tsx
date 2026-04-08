@@ -121,7 +121,7 @@ export function PatrocinadoresSection() {
                 Tenemos diferentes niveles de patrocinio adaptados a tu marca.
               </p>
               <a
-                href="mailto:expocromatica@outlook.com"
+                href="mailto:tesoreria@expocromatica.com"
                 className="btn-cromatica inline-flex items-center gap-2"
               >
                 📧 Solicitar Información

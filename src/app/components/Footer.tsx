@@ -114,7 +114,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:patrocinios@cromaticafestival.mx" className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm text-[var(--cromatica-text-secondary)] hover:text-[var(--cromatica-primary)] transition-all duration-300 font-medium">
+                <a href="mailto:tesoreria@expocromatica.com" className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm text-[var(--cromatica-text-secondary)] hover:text-[var(--cromatica-primary)] transition-all duration-300 font-medium">
                   <div className="w-6 h-6 md:w-8 md:h-8 rounded-md md:rounded-lg bg-gradient-to-br from-[#26A69A] to-[#66BB6A] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shrink-0">
                     <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-white" />
                   </div>
@@ -122,7 +122,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:expocromatica@outlook.com" className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm text-[var(--cromatica-text-secondary)] hover:text-[var(--cromatica-primary)] transition-all duration-300 font-medium">
+                <a href="mailto:tesoreria@expocromatica.com" className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm text-[var(--cromatica-text-secondary)] hover:text-[var(--cromatica-primary)] transition-all duration-300 font-medium">
                   <div className="w-6 h-6 md:w-8 md:h-8 rounded-md md:rounded-lg bg-gradient-to-br from-[#FF6B9D] to-[#F48FB1] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shrink-0">
                     <Mic className="w-3 h-3 md:w-4 md:h-4 text-white" />
                   </div>
