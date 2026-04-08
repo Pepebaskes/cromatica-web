@@ -158,7 +158,7 @@ export function Footer() {
               </a>
                   */}
 
-              <a href="https://tiktok.com/@cromática_expo" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center justify-center gap-1 p-2 md:p-3 bg-white rounded-xl shadow-sm md:shadow-md hover:scale-105 transition-all border border-transparent hover:border-purple-600">
+              <a href="https://tiktok.com/@expo_cromatica" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center justify-center gap-1 p-2 md:p-3 bg-white rounded-xl shadow-sm md:shadow-md hover:scale-105 transition-all border border-transparent hover:border-purple-600">
                 <Mic className="w-5 h-5 md:w-6 md:h-6 text-purple-600" />
                 <span className="hidden md:block text-[10px] font-bold text-[var(--cromatica-text-secondary)]">TikTok</span>
               </a>
