@@ -124,6 +124,14 @@ export function ArtistasSection() {
     descripcion: "Es una tatuadora e ilustradora de GDL, enfocada en ilustrar pequeñas cosas de la vida que se vuelven extraordinarias, convirtiéndolas en algo mágico",
     instagram: "mordred.art",
   },
+   {
+    id: 14, // Incrementa el número
+    imagen: "/images/kdPaws.jpeg",
+    nombre: "KDPaws",
+    especialidad: "Baile",
+    descripcion: "Desde nuestra fundación en 2023, KD Paws se ha consolidado como un grupo de baile con una profunda pasión por el K-pop que, aunque es el corazón de nuestra identidad, nos mantenemos abiertos a explorar nuevos géneros, lo que nos permite adaptarnos y destacar en cualquier escenario.",
+    instagram: "kd.paws",
+  },
 
   /**
 

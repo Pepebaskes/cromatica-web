@@ -63,7 +63,7 @@ export function EmprendedoresSection() {
       descripcion: "Sabores asiáticos auténticos: ramen, dumplings, banderillas y más.",
       ubicacion: "Zona de Comida",
       imagen: "/images/Bell.jpeg",
-      color: "var(--cromatica-accent)",
+      color: "var(--cromatica-primary)",
       instagram: "bell._.shop09"
     },
 
@@ -74,8 +74,29 @@ export function EmprendedoresSection() {
       descripcion: "Drinks coquetos es un comercio dedicado a la elaboración y venta de coctelería con un envase reutilizable y creativo ",
       ubicacion: "Zona de Comida",
       imagen: "/images/drinksCoquetos.png",
-      color: "var(--cromatica-accent)",
+      color: "var(--cromatica-secondary)",
       instagram: "drinks.coquetos_"
+    },
+
+        {
+      id: 7,
+      nombre: "Ara Studio",
+      categoria: "Taller Creativo",
+      descripcion: "Crear, conectar y compartir. Mucho más que una maquiladora de bolsos. Personaliza tu tote en nuestros talleres o diviértete en casa con nuestros kits de yeso. ✨ Maquila | Talleres | Kits para niños. Lo que imaginas, lo creamos juntos. 🫶🏻",
+      ubicacion: "Zona de Ventas",
+      imagen: "/images/araStudio.jpeg",
+      color: "var(--cromatica-tertiary)",
+      instagram: "ara_stud.o"
+    },
+        {
+      id: 8,
+      nombre: "Suggar Miel",
+      categoria: "Snacks Saludables",
+      descripcion: "Se busca ofrecer postres o snacks salados, dulces e incluso opciones más saludables para personas que no consumen azucar o harinas. No sé tiene que sacrificar el sabor por lo saludable",
+      ubicacion: "Zona de Comida",
+      imagen: "/images/suggarMiel.png",
+      color: "var(--cromatica-accent)",
+      instagram: "suggar_miel"
     }
 
     /** */
