@@ -40,9 +40,16 @@ export function PatrocinadoresSection() {
       descripcion: "Hijos de María Morales Shot es una marca mexicana de licor de agave saborizado, presentado en sabores como fresa, maracuyá, melón, jamaica, horchata y coco. Se comercializa como un shot de México, ideal para consumirse frío o en coctelería, destacando por sabores auténticos y tradicionales en cada trago.",
       url: "https://www.hijosdemariamorales.com.mx/index.php/inicio",
     },
+     {
+      id: 5, // Corregido ID duplicado
+      nombre: "Ham Urbans",
+      logo: "/images/hadUrbans.png",
+      descripcion: "HAM URBANS es más que ropa, es una forma de expresión. Nos dedicamos a crear prendas únicas que combinan estilo, calidad y personalidad, pensadas para quienes quieren destacar y sentirse auténticos en cada momento , negocio o evento . Cada diseño refleja creatividad, detalle y pasión por lo que hacemos, cuidando tanto la estética como la comodidad. Nuestro objetivo es que cada persona que use nuestras prendas se sienta segura, diferente y conectada con su propio estilo.",
+      url: "https://www.instagram.com/accounts/login/?next=%2Fham_urbans_&source=omni_redirect",
+      
+    },
 
-    /** 
-    */
+    /** */
   ];
 
   return (
@@ -66,6 +73,7 @@ export function PatrocinadoresSection() {
 
         {/* Grid de Tarjetas de Patrocinadores */}
         <div className="max-w-7xl mx-auto">
+          {/* Mantenemos grid de 4 para logos de patrocinadores, pero con comportamiento responsivo */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {patrocinadores.map((sponsor) => (
               <a
@@ -75,16 +83,18 @@ export function PatrocinadoresSection() {
                 rel="noopener noreferrer"
                 className="group flex flex-col bg-[var(--cromatica-bg-card)] rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:border-[var(--cromatica-primary)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:-translate-y-2"
               >
-                {/* Contenedor de la Imagen (Grande y adaptable) */}
-                <div className="relative w-full h-52 bg-white flex items-center justify-center overflow-hidden">
+                {/* Contenedor de la Imagen (Adaptable y Cuadrado) */}
+                {/* CAMBIO CLAVE: Usamos aspect-square para que sea relativo y no recorte */}
+                <div className="relative w-full aspect-square bg-white flex items-center justify-center overflow-hidden">
                   
                   {/* Overlay sutil de brillo al hacer hover */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-[var(--cromatica-primary)]/20 via-[var(--cromatica-secondary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-[var(--cromatica-primary)]/20 via-[var(--cromatica-secondary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                   
                   <img
                     src={sponsor.logo}
                     alt={sponsor.nombre}
-                    className="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105"
+                    /* CAMBIO CLAVE: object-cover para llenar el espacio relativo */
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
                 </div>
@@ -94,6 +104,7 @@ export function PatrocinadoresSection() {
                   <h4 className="text-xl font-bold text-[var(--cromatica-text-primary)] mb-3 group-hover:text-[var(--cromatica-primary)] transition-colors duration-300">
                     {sponsor.nombre}
                   </h4>
+                  {/* Descripción completa sin restricciones de altura */}
                   <p className="text-sm text-[var(--cromatica-text-muted)] leading-relaxed mb-4">
                     {sponsor.descripcion}
                   </p>
