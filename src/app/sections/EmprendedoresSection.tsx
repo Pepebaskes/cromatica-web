@@ -97,7 +97,19 @@ export function EmprendedoresSection() {
       imagen: "/images/suggarMiel.png",
       color: "var(--cromatica-accent)",
       instagram: "suggar_miel"
+    },
+
+            {
+      id: 9,
+      nombre: "Mishitu",
+      categoria: "Tienda de accesorios",
+      descripcion: "Mishitu es una tiendita kawaii y vintage con pines metálicos, miniaturas y papelería especial. Desde 2021 creamos un espacio para expresar identidad y estilo propio bajo el lema: al Mishitu lo que le acomode.",
+      ubicacion: "Zona de Ventas",
+      imagen: "/images/mishitos.jpeg",
+      color: "var(--cromatica-primary)",
+      instagram: "mishi_tuu"
     }
+
 
     /** */
   ];
