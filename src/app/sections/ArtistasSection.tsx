@@ -132,6 +132,14 @@ export function ArtistasSection() {
     descripcion: "Desde nuestra fundación en 2023, KD Paws se ha consolidado como un grupo de baile con una profunda pasión por el K-pop que, aunque es el corazón de nuestra identidad, nos mantenemos abiertos a explorar nuevos géneros, lo que nos permite adaptarnos y destacar en cualquier escenario.",
     instagram: "kd.paws",
   },
+    {
+    id: 15, // Incrementa el número
+    imagen: "/images/allStarBaile.jpeg",
+    nombre: "All Star",
+    especialidad: "Baile",
+    descripcion: "All Star es un grupo de dance cover enfocado en el K-pop, dedicado a la recreación de coreografías de distintos artistas del género. Su trabajo se centra en la precisión, la sincronización y la expresión escénica, buscando representar de manera fiel la esencia de cada performance.A través de la práctica constante, el grupo ha desarrollado disciplina, coordinación y presencia en el escenario, cuidando cada detalle para lograr presentaciones dinámicas y de calidad. Su propuesta combina energía, estilo y conexión con el público, adaptándose a distintos escenarios y manteniendo una evolución continua en cada presentación.",
+    instagram: "allstar.grouppage",
+  },
 
   /**
 

@@ -44,16 +44,17 @@ export function DisenadoresSection() {
       descripcion: "Berry Dreams es una marca con el estilo Upcycling que busca la renovación de prendas preexistentes mediante la modificación o la añadidura de detalles ya sea de telas, texturas, diseños, apoyando a la sustentabilidad, así mismo también se enfoca en la realización de vestuarios escénicos para danza",
       instagram: "berry_dreams",
     },
-    /** 
+    
     {
       id: 4,
-      imagen: "",
-      marca: "PENDIENTE",
-      disenador: "",
-      estilo: "",
-      descripcion: "",
-      instagram: "",
+      imagen: "/images/hadUrbans.png",
+      marca: "Ham Urbans",
+      disenador: "Andrea Hernández",
+      estilo: "Urban",
+      descripcion: "HAM URBANS es más que ropa, es una forma de expresión. Nos dedicamos a crear prendas únicas que combinan estilo, calidad y personalidad, pensadas para quienes quieren destacar y sentirse auténticos en cada momento , negocio o evento . Cada diseño refleja creatividad, detalle y pasión por lo que hacemos, cuidando tanto la estética como la comodidad. Nuestro objetivo es que cada persona que use nuestras prendas se sienta segura, diferente y conectada con su propio estilo.",
+      instagram: "ham_urbans_",
     },
+    /** 
     */
   ];
 
