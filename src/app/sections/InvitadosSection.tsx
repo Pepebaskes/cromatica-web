@@ -44,7 +44,7 @@ export function InvitadosSection() {
      {
     id: 4,
     imagen: "/images/dulcePerez.jpeg",
-    nombre: "DulcePérez",
+    nombre: "Dulce Pérez",
     titulo: "Fundadora de la primera edición de CROMÁTICA",
     descripcion: "Se le reconoce su trayectoria dentro de la comunidad artística de El Grullo Jalisco, su apoyo y su gran talento como artista, también por ser una de las fundadoras originales de CROMÁTICA.",
     conferencia: "",
