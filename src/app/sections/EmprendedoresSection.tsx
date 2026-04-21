@@ -108,6 +108,16 @@ export function EmprendedoresSection() {
       imagen: "/images/mishitos.jpeg",
       color: "var(--cromatica-primary)",
       instagram: "mishi_tuu"
+    },
+           {
+      id: 10,
+      nombre: "Metusia",
+      categoria: "Tienda de accesorios",
+      descripcion: "Metusia elabora bebidas artesanales desde cero, destacando el concentrado de cold brew y chai natural. Ya sea que lleves nuestros concentrados a casa o disfrutes de las bebidas preparadas, te garantizamos calidad en cada sorbo. Además, compartimos nuestra pasión creando experiencias únicas a través de nuestros talleres, catas y degustaciones guiadas",
+      ubicacion: "Zona de Comida",
+      imagen: "/images/metusia.jpeg",
+      color: "var(--cromatica-secondary)",
+      instagram: "metusia._"
     }
 
 

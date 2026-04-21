@@ -140,6 +140,14 @@ export function ArtistasSection() {
     descripcion: "All Star es un grupo de dance cover enfocado en el K-pop, dedicado a la recreación de coreografías de distintos artistas del género. Su trabajo se centra en la precisión, la sincronización y la expresión escénica, buscando representar de manera fiel la esencia de cada performance.A través de la práctica constante, el grupo ha desarrollado disciplina, coordinación y presencia en el escenario, cuidando cada detalle para lograr presentaciones dinámicas y de calidad. Su propuesta combina energía, estilo y conexión con el público, adaptándose a distintos escenarios y manteniendo una evolución continua en cada presentación.",
     instagram: "allstar.grouppage",
   },
+   {
+    id: 16, // Incrementa el número
+    imagen: "/images/arzola.jpeg",
+    nombre: "Patricio Arzola Huerta",
+    especialidad: "Fotografía",
+    descripcion: "Soy un fotógrafo versátil que empezó en Julio del 2025, con un estilo oscuro pero me adapto a todo, y soy mas de retrato.",
+    instagram: "arzola_fotos",
+  },
 
   /**
 
