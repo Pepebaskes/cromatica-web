@@ -148,6 +148,14 @@ export function ArtistasSection() {
     descripcion: "Soy un fotógrafo versátil que empezó en Julio del 2025, con un estilo oscuro pero me adapto a todo, y soy mas de retrato.",
     instagram: "arzola_fotos",
   },
+   {
+    id: 17, // Incrementa el número
+    imagen: "/images/alefari.jpeg",
+    nombre: "Nefertari Chávez ó Alefari",
+    especialidad: "Pintura/ Ilustración",
+    descripcion: "Soy una artista plástica que estudia actualmente en la Licenciatura en Artes, amo la naturaleza, la magia, el terror y las brujas. Me encanta la acuarela, la tinta y la pintura acrílica, desarrollándome principalmente en estas técnicas, aunque también suelo ser muy experimental, pues no me cierro a nuevas formas de hacer arte.",
+    instagram: "alefari.exe",
+  },
 
   /**
 

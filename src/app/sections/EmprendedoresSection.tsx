@@ -118,7 +118,29 @@ export function EmprendedoresSection() {
       imagen: "/images/metusia.jpeg",
       color: "var(--cromatica-secondary)",
       instagram: "metusia._"
-    }
+    },
+          {
+      id: 11,
+      nombre: "Grath Shop",
+      categoria: "Joyería",
+      descripcion: "Grath Shop es un emprendimiento dedicado a la venta de joyería, maquillaje y productos de skincare coreano, enfocada en ofrecer artículos de tendencia y alta calidad para el cuidado personal y la belleza. Opero principalmente a través de Instagram, lo que me permite brindar una atención cercana, rápida y personalizada a mis clientes. Mi objetivo es resaltar la belleza de cada persona mediante productos accesibles, confiables y en constante innovación.",
+      ubicacion: "Zona de Ventas",
+      imagen: "/images/grathShop.jpeg",
+      color: "var(--cromatica-tertiary)",
+      instagram: "grathshopp"
+    },
+           {
+      id: 12,
+      nombre: "Dulce Esencia",
+      categoria: "Postres",
+      descripcion: " Endulzamos tus antojos!, Venta de postres caseros en El Grullo: carlotas de limón y oreo, flanes, chocoflanes y brownies esponjosos. Hechos con cariño, perfectos para regalar o consentirte.",
+      ubicacion: "Zona de Comida",
+      imagen: "/images/dulceEscencia.png",
+      color: "var(--cromatica-accent)",
+      instagram: "Paola_g_e_"
+    },
+    
+    
 
 
     /** */
