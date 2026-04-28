@@ -146,7 +146,7 @@ export function EmprendedoresSection() {
       descripcion: " Este emprendimiento fue creado por Mariela y Gloria, dos hermanas estudiantes de administración y arquitectura que decidieron unir su creatividad para ofrecer un concepto fresco y original. Su negocio destaca por sus Tostitos con aguachile, reconocidos por su gran sabor, y sus raspados con toppings, que permiten a cada cliente personalizar su experiencia. Su propuesta ha sido muy bien recibida, reflejando su pasión por emprender.",
       imagen: "/images/conMayeya.PNG",
       color: "var(--cromatica-primary)",
-      instagram: "Paola_g_e_"
+      instagram: "con_mayeya"
     },
     
 
