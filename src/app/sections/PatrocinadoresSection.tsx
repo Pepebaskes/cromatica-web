@@ -48,6 +48,14 @@ export function PatrocinadoresSection() {
       url: "https://www.instagram.com/accounts/login/?next=%2Fham_urbans_&source=omni_redirect",
       
     },
+     {
+      id: 5, // Corregido ID duplicado
+      nombre: "El Pase",
+      logo: "/images/elPaseElote.png",
+      descripcion: "La mejor mixología y botanas con elotes del mundo, ",
+      url: "https://www.instagram.com/el_pase05/",
+      
+    },
 
     /** */
   ];
