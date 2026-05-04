@@ -148,7 +148,15 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-primary)",
       instagram: "con_mayeya"
     },
-    
+                   {
+      id: 14,
+      nombre: "VOUS",
+      categoria: "Perfumes y joyería",
+      descripcion: "Marca enfocada en perfumes y joyería que busca acercar el estilo y la elegancia a la vida diaria con productos de calidad, accesibles y pensados para distintos gustos. Más que vender un producto, nos enfocamos en asesorar de forma cercana y personalizada para que cada persona encuentre justo lo que necesita, ya sea para expresar su estilo, complementar su imagen o regalar algo verdaderamente especial. ",
+      imagen: "/images/vous.jpeg",
+      color: "var(--cromatica-secondary)",
+      instagram: "vous_lux"
+    },
 
 
     /** */
