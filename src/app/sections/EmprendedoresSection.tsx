@@ -166,6 +166,15 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-tertiary)",
       instagram: "corazondehilo3"
     },
+                           {
+      id: 16,
+      nombre: "Fotocabina ",
+      categoria: "Fotografía ",
+      descripcion: "BSomos una cabina de fotos instantáneas con estilo retro/vintage que busca capturar el momento en eventos, ofrecemos una experiencia interactiva que permite a los invitados llevarse un recuerdo físico, digital y único.",
+      imagen: "/images/fotoCabina.jpg",
+      color: "var(--cromatica-accent)",
+      instagram: "fotocabina_photobooth"
+    },
 
 
     /** */
