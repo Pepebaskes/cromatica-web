@@ -157,6 +157,15 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-secondary)",
       instagram: "vous_lux"
     },
+                       {
+      id: 15,
+      nombre: "Corazón de Hilo",
+      categoria: "Bordados",
+      descripcion: "Bordados en punto de cruz hechos con el corazón 🩷. Creación de llaveros y pines personalizados ✨ ",
+      imagen: "/images/corazonDeHilo.jpeg",
+      color: "var(--cromatica-tertiary)",
+      instagram: "corazondehilo3"
+    },
 
 
     /** */
