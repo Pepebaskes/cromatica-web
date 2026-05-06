@@ -156,6 +156,14 @@ export function ArtistasSection() {
     descripcion: "Soy una artista plástica que estudia actualmente en la Licenciatura en Artes, amo la naturaleza, la magia, el terror y las brujas. Me encanta la acuarela, la tinta y la pintura acrílica, desarrollándome principalmente en estas técnicas, aunque también suelo ser muy experimental, pues no me cierro a nuevas formas de hacer arte.",
     instagram: "alefari.exe",
   },
+    {
+    id: 18, // Incrementa el número
+    imagen: "/images/pixieDust.jpeg",
+    nombre: "Pixie Dust",
+    especialidad: "Pintura y Dibujo",
+    descripcion: "Soy una artista plástica emergente, actualmente estoy estudiando la Lic. en Artes, formó parte del colectivo CAPOS, me gusta pintar en acuarela y pasteles grasos, soy una artista queer por lo tanto mi obra trata temas de la comunidad LGBTQIA+,  cultura pop, naturaleza y animaciones. Mi escencia es el color, el brillo y magia son elementos que se encuentran en todas mis obras ✨ Actualmente estoy interesada en involucrarme en proyectos que busquen acercar el arte pictórico a las personas 💖",
+    instagram: "pixi_edust08",
+  },
 
   /**
 
