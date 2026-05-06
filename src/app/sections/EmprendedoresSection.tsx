@@ -170,10 +170,19 @@ export function EmprendedoresSection() {
       id: 16,
       nombre: "Fotocabina ",
       categoria: "Fotografía ",
-      descripcion: "BSomos una cabina de fotos instantáneas con estilo retro/vintage que busca capturar el momento en eventos, ofrecemos una experiencia interactiva que permite a los invitados llevarse un recuerdo físico, digital y único.",
+      descripcion: "Somos una cabina de fotos instantáneas con estilo retro/vintage que busca capturar el momento en eventos, ofrecemos una experiencia interactiva que permite a los invitados llevarse un recuerdo físico, digital y único.",
       imagen: "/images/fotoCabina.jpg",
       color: "var(--cromatica-accent)",
       instagram: "fotocabina_photobooth"
+    },
+                            {
+      id: 17,
+      nombre: "Cero Ocho aguas ",
+      categoria: "Bebidas",
+      descripcion: "Cero Ochos aguas el antojo que hidrata, la bebida como un símbolo de la cultura mexicana, un festín ideal para refrescar cualquier día",
+      imagen: "/images/ceroOcho.jpeg",
+      color: "var(--cromatica-primary)",
+      instagram: "_08cero"
     },
 
 

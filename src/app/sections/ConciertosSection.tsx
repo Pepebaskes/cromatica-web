@@ -103,6 +103,18 @@ export function ConciertosSection() {
         //youtube: "https://youtube.com",
       },
     },
+      {
+    id: 7, // Incrementa el número
+    imagen: "/images/djBrayan.png",
+    nombre: "DJ Brayan",
+    genero: "House",
+    horario: "02:00 - 04:00",
+    descripcion: "DJ enfocado en musica House, con un estilo fresco y enérgico que busca hacer bailar a todos los asistentes. Con una selección musical cuidadosamente curada, DJ Brayan promete cerrar la noche con una experiencia inolvidable llena de ritmo y buena vibra.",
+    redesSociales: {
+      instagram: "https://www.instagram.com/brayan_dj29/", // Opcional
+    },
+  },
+    
     /**
     */
     
