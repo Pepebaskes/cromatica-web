@@ -54,6 +54,15 @@ export function DisenadoresSection() {
       descripcion: "HAM URBANS es más que ropa, es una forma de expresión. Nos dedicamos a crear prendas únicas que combinan estilo, calidad y personalidad, pensadas para quienes quieren destacar y sentirse auténticos en cada momento , negocio o evento . Cada diseño refleja creatividad, detalle y pasión por lo que hacemos, cuidando tanto la estética como la comodidad. Nuestro objetivo es que cada persona que use nuestras prendas se sienta segura, diferente y conectada con su propio estilo.",
       instagram: "ham_urbans_",
     },
+        {
+      id: 5,
+      imagen: "/images/dressa.jpeg",
+      marca: "Dressa",
+      disenador: "Xiommara Espinosa",
+      estilo: "Lifestyle",
+      descripcion: "En DRESSA encontrarás piezas para cada versión de ti. ✨ Ropa deportiva para sentirte cómoda, accesorios para complementar tu look y vestidos de noche en venta y renta para brillar en ocasiones especiales.",
+      instagram: "dressa.styles",
+    },
     /** 
     */
   ];

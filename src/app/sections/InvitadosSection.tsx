@@ -50,6 +50,15 @@ export function InvitadosSection() {
     conferencia: "",
     horario: "",
   },
+    {
+    id: 4,
+    imagen: "/images/xiommaraEspinosa.jpeg",
+    nombre: "Xiommara Espinosa",
+    titulo: "Embajadora de la cultura 2026 de El Grullo Jalisco",
+    descripcion: "Nuestra actual Embajadora de la Cultura y fundadora de la primera edición de Expo Cromática. Emprendedora, diseñadora, bailarina y artista en cada aspecto de su esencia. Una personalidad auténtica, creativa y con una trayectoria que inspira dentro y fuera del escenario.",
+    conferencia: "",
+    horario: "",
+  },
     /**
     */
   ];

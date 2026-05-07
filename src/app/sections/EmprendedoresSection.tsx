@@ -184,6 +184,15 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-primary)",
       instagram: "_08cero"
     },
+                                {
+      id: 18,
+      nombre: "Doux Delice  ",
+      categoria: "Postres",
+      descripcion: "Roles de canela artesanales, suaves y llenos de un delicioso sabor, hechos con ingredientes de calidad y mucho cuidado en cada detalle. Perfectos para endulzar cualquier momento.",
+      imagen: "/images/douxDelice.jpg",
+      color: "var(--cromatica-secondary)",
+      instagram: "doux_deliceee"
+    },
 
 
     /** */

@@ -114,6 +114,17 @@ export function ConciertosSection() {
       instagram: "https://www.instagram.com/brayan_dj29/", // Opcional
     },
   },
+        {
+    id: 8, // Incrementa el número
+    imagen: "/images/djTumy.png",
+    nombre: "DJ Tumy",
+    genero: "Electronica",
+    horario: "02:00 - 04:00",
+    descripcion: "Dj Tumy es un talentoso DJ de música electrónica, conocido por su habilidad para mezclar ritmos envolventes y crear una atmósfera vibrante en cada presentación. Con una pasión por la música electrónica y una energía contagiosa, Dj Tumy se ha ganado un lugar destacado en la escena local, ofreciendo sets que mantienen a la audiencia bailando toda la noche.",
+    redesSociales: {
+      instagram: "https://www.instagram.com/tumyglez/", // Opcional
+    },
+  },
     
     /**
     */
