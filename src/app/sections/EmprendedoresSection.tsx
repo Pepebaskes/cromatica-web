@@ -193,9 +193,32 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-secondary)",
       instagram: "doux_deliceee"
     },
+         {
+      id: 19,
+      nombre: " LA TERRAZA ",
+      categoria: "Snacks y bebidas",
+      descripcion: "La Terraza es una pequeña empresa dedicada a la venta de snacks (alitas, Boneless y sus acompañamientos) y sodas italianas! Brindamos calidad y un sabor inigualable en cada bocado!! ",
+      imagen: "/images/laTerraza.jpeg",
+      color: "var(--cromatica-tertiary)",
+      instagram: "laterraza_snacksss"
+    },
 
 
-    /** */
+
+
+    /**
+     * 
+     {
+      id: 18,
+      nombre: "  ",
+      categoria: "",
+      descripcion: "",
+      imagen: "/images/",
+      color: "var(--cromatica-secondary)",
+      instagram: ""
+    },
+
+     */
   ];
 
   return (

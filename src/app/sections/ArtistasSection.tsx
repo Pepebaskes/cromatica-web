@@ -164,6 +164,38 @@ export function ArtistasSection() {
     descripcion: "Soy una artista plástica emergente, actualmente estoy estudiando la Lic. en Artes, formó parte del colectivo CAPOS, me gusta pintar en acuarela y pasteles grasos, soy una artista queer por lo tanto mi obra trata temas de la comunidad LGBTQIA+,  cultura pop, naturaleza y animaciones. Mi escencia es el color, el brillo y magia son elementos que se encuentran en todas mis obras ✨ Actualmente estoy interesada en involucrarme en proyectos que busquen acercar el arte pictórico a las personas 💖",
     instagram: "pixi_edust08",
   },
+    {
+    id: 19, // Incrementa el número
+    imagen: "/images/eveDelgadillo.jpg",
+    nombre: "Eve Delgadillo",
+    especialidad: "Dibujo y pintura tradicional",
+    descripcion: "Artista plástica emergente y actualmente estudiante de la Licenciatura en Artes. Dedicada principalmente al dibujo y pintura tradicional, disfruto expresar y compartir mi fascinación por la naturaleza y los animales en mis obras a través de distintas técnicas.",
+    instagram: "eve_art25",
+  },
+    {
+    id: 20, // Incrementa el número
+    imagen: "/images/andyCVR.jpg",
+    nombre: "Andy CVR",
+    especialidad: "Ilustradora y artista plástico ",
+    descripcion: "Obras elaboradas a mano desde papelería creativa hasta objetos variados con detalle y alma. Mi trabajo explora técnicas mixtas para dar vida a temas de cultura general, naturaleza y figura humana.",
+    instagram: "_.artcvr._",
+  },
+   {
+    id: 21, // Incrementa el número
+    imagen: "/images/alejandroBibriesca.jpeg",
+    nombre: "Alejandro Emanuel Bribiesca Silva",
+    especialidad: "Dibujo e Ilustración",
+    descripcion: "Artista emergente enfocado en el dibujo realista y la pintura, con temática militar y cultural. Mi trabajo captura la emoción y la historia utilizando técnicas como grafito, carboncillo, color y pintura acrílica.",
+    instagram: "art_belico",
+  },
+    {
+    id: 7, // Incrementa el número
+    imagen: "/images/stepUp.jpeg",
+    nombre: "Step Up",
+    especialidad: "Danza",
+    descripcion: "STEP UP es un espacio donde el baile, la energía y la pasión se unen para ayudarte a crecer y disfrutar cada clase. Trabajamos diferentes estilos como urbano, hip hop, jazz y más, fortaleciendo coordinación, confianza, expresión y actitud.",
+    instagram: "step.up.studioo",
+  },
 
   /**
 
