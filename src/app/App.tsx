@@ -48,6 +48,8 @@
 
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
+import { Routes, Route } from 'react-router';
+import { StorePage } from './pages/StorePage';
 
 // Importar todas las secciones
 import { HeroSection } from './sections/HeroSection';
@@ -63,7 +65,7 @@ import { UbicacionSection } from './sections/UbicacionSection';
 import { RegistroSection } from './sections/RegistroSection';
 import { EmprendedoresSection } from './sections/EmprendedoresSection';
 
-export default function App() {
+function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* ==========================================
@@ -147,6 +149,15 @@ export default function App() {
       */}
       <Footer />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/tienda" element={<StorePage />} />
+    </Routes>
   );
 }
 

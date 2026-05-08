@@ -1,21 +1,21 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Menu, ShoppingBag, X } from 'lucide-react';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
-    { label: 'Inicio', href: '#hero' },
-    { label: '¿Cromática?', href: '#sobre' },
-    { label: 'Convocatoria', href: '#convocatoria' },
-    { label: 'Conciertos', href: '#conciertos' },
-    { label: 'Artistas', href: '#artistas' },
-    { label: 'Diseñadores', href: '#disenadores' },
-    { label: 'Emprendedores', href: '#emprendedores' },
-    { label: 'Autos', href: '#autos' },
-    { label: 'Ubicación', href: '#ubicacion' },
-    { label: 'Registro', href: '#registro' },
+    { label: 'Inicio', href: '/#hero' },
+    { label: '¿Cromática?', href: '/#sobre' },
+    { label: 'Convocatoria', href: '/#convocatoria' },
+    { label: 'Conciertos', href: '/#conciertos' },
+    { label: 'Artistas', href: '/#artistas' },
+    { label: 'Diseñadores', href: '/#disenadores' },
+    { label: 'Emprendedores', href: '/#emprendedores' },
+    { label: 'Autos', href: '/#autos' },
+    { label: 'Ubicación', href: '/#ubicacion' },
+    { label: 'Tienda', href: '/tienda', icon: ShoppingBag },
   ];
 
   useEffect(() => {
@@ -40,19 +40,12 @@ export function Navigation() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6">
-          {/* Quitamos altura fija y usamos padding vertical */}
           <div className="flex items-center justify-between py-4">
-
-            {/* LOGO */}
-           <a
-              href="#hero"
-              className="flex items-center gap-3 shrink-0"
-            >
-              {/* Aquí pusimos la Mascota reemplazando el cuadro y las Sparkles */}
-              <img 
-                src="/images/favicon.png" 
-                alt="Mascota Cromática" 
-                className="w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-md hover:scale-110 transition-transform duration-300 scale-[1.5] origin-center" 
+            <a href="/#hero" className="flex items-center gap-3 shrink-0">
+              <img
+                src="/images/favicon.png"
+                alt="Mascota Cromática"
+                className="w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-md hover:scale-110 transition-transform duration-300 scale-[1.5] origin-center"
               />
 
               <div className="flex flex-col leading-tight">
@@ -68,23 +61,30 @@ export function Navigation() {
               </div>
             </a>
 
-            {/* LINKS DESKTOP */}
-            <div className="hidden xl:flex items-center gap-6 ml-12">
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="text-sm font-semibold text-gray-600 hover:text-[#FF8A00] transition-colors duration-300"
-                >
-                  {item.label}
-                </a>
-              ))}
+            <div className="hidden 2xl:flex items-center gap-5 ml-10">
+              {navItems.map((item) => {
+                const Icon = item.icon;
+
+                return (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className={`inline-flex items-center gap-1.5 text-sm font-semibold transition-colors duration-300 ${
+                      item.href === '/tienda'
+                        ? 'text-[#AB47BC] hover:text-[#FF8A00]'
+                        : 'text-gray-600 hover:text-[#FF8A00]'
+                    }`}
+                  >
+                    {Icon && <Icon className="w-4 h-4" />}
+                    {item.label}
+                  </a>
+                );
+              })}
             </div>
 
-            {/* BOTÓN DESKTOP */}
-            <div className="hidden xl:flex items-center ml-6">
+            <div className="hidden 2xl:flex items-center ml-5">
               <a
-                href="#registro"
+                href="/#registro"
                 className="px-7 py-3 text-sm font-bold text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
                 style={{
                   background:
@@ -95,10 +95,11 @@ export function Navigation() {
               </a>
             </div>
 
-            {/* HAMBURGUESA */}
             <button
+              type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="xl:hidden p-2 text-gray-700 hover:text-[#FF8A00] transition"
+              className="2xl:hidden p-2 text-gray-700 hover:text-[#FF8A00] transition"
+              aria-label={isOpen ? 'Cerrar menu' : 'Abrir menu'}
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -106,16 +107,15 @@ export function Navigation() {
         </div>
       </nav>
 
-      {/* SIDEBAR MOBILE */}
       <div
-        className={`fixed inset-0 z-40 xl:hidden transition-all duration-300 ${
+        className={`fixed inset-0 z-40 2xl:hidden transition-all duration-300 ${
           isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
         <div
           className="absolute inset-0 bg-black/50 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
-        ></div>
+        />
 
         <div
           className={`absolute top-0 right-0 bottom-0 w-[320px] bg-white shadow-2xl transform transition-transform duration-500 ${
@@ -123,19 +123,24 @@ export function Navigation() {
           }`}
         >
           <nav className="p-6 space-y-4">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                onClick={handleNavClick}
-                className="block text-base font-bold text-gray-700 hover:text-white hover:bg-gradient-to-r from-[#FF8A00] to-[#FF6B9D] px-4 py-3 rounded-lg transition"
-              >
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={handleNavClick}
+                  className="flex items-center gap-2 text-base font-bold text-gray-700 hover:text-white hover:bg-gradient-to-r from-[#FF8A00] to-[#FF6B9D] px-4 py-3 rounded-lg transition"
+                >
+                  {Icon && <Icon className="w-4 h-4" />}
+                  {item.label}
+                </a>
+              );
+            })}
 
             <a
-              href="#registro"
+              href="/#registro"
               onClick={handleNavClick}
               className="block mt-6 px-6 py-4 text-center font-black text-white rounded-xl"
               style={{
