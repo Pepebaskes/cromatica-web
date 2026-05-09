@@ -189,7 +189,7 @@ export function ArtistasSection() {
     instagram: "art_belico",
   },
     {
-    id: 7, // Incrementa el número
+    id: 22, // Incrementa el número
     imagen: "/images/stepUp.jpeg",
     nombre: "Step Up",
     especialidad: "Danza",

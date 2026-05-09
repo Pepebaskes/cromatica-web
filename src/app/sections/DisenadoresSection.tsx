@@ -63,6 +63,15 @@ export function DisenadoresSection() {
       descripcion: "En DRESSA encontrarás piezas para cada versión de ti. ✨ Ropa deportiva para sentirte cómoda, accesorios para complementar tu look y vestidos de noche en venta y renta para brillar en ocasiones especiales.",
       instagram: "dressa.styles",
     },
+      {
+    id: 6,
+    imagen: "/images/corfere.png",
+    marca: "CORFERE",
+    disenador: "Fernanda Corona",
+    estilo: "Alta costura y streetwear",
+    descripcion: "Soy estudiante de diseño de modas en UdeG, estoy empezando con mi proyecto de marca en la que se tendrán en venta prendas tipo streetwear para hombre y mujer.",
+    instagram: "corfere.archiv",
+  },
     /** 
     */
   ];
