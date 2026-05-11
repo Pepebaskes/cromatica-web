@@ -202,6 +202,15 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-tertiary)",
       instagram: "laterraza_snacksss"
     },
+         {
+      id: 19,
+      nombre: "Beauty and Accessories",
+      categoria: "Maquillaje y accesorios",
+      descripcion: "Somos un emprendiendo en conjunto dedicado al cuidado de la piel, el maquillaje y joyeria. Con nosotras encontrarás todo tipo de maquillaje y skincare, desde productos para el cuidado de la piel hasta maquillaje para cualquier ocasion. Además, también manejamos stickers, collares, aretes y accesorios, como calentadores para piernas y más…",
+      imagen: "/images/beautyAccessories.jpeg",
+      color: "var(--cromatica-complementary)",
+      instagram: "itza.glez"
+    },
 
 
 

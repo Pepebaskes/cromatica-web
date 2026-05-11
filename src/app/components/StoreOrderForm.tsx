@@ -240,7 +240,7 @@ export function StoreOrderForm({
               className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#FF8A00] focus:ring-2 focus:ring-[#FF8A00]/20"
             >
               <option>Tarde, despues de las 4:00 pm</option>
-              <option>Manana, antes de las 12:00 pm</option>
+              <option>Mañana, antes de las 12:00 pm</option>
               <option>Noche, despues de las 7:00 pm</option>
               <option>Lo coordinamos por WhatsApp</option>
             </select>
