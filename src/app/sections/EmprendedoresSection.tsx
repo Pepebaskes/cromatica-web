@@ -211,6 +211,15 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-complementary)",
       instagram: "itza.glez"
     },
+         {
+      id: 20,
+      nombre: " Erika Jianneth Saray Santana  ",
+      categoria: "Postres y Bebidas",
+      descripcion: "Mi emprendimiento consiste en la venta de postres y bebidas preparados de manera artesanal, ofreciendo productos de calidad, con buen sabor y una excelente presentación. Entre los productos son: Pay’s de queso, nuez, capuchino, manzana, zarzamora, Panes de, elote, torta de garbanzo, capirotada de leche, etc. ",
+      imagen: "/images/erikaLaDelPay.jpeg",
+      color: "var(--cromatica-primary)",
+      instagram: ""
+    },
 
 
 
