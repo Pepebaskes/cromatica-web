@@ -220,6 +220,15 @@ export function EmprendedoresSection() {
       color: "var(--cromatica-primary)",
       instagram: ""
     },
+         {
+      id: 21,
+      nombre: " JosiusVKN",
+      categoria: "Coleciconista",
+      descripcion: " Vendedor, Jugador y Coleccionista de Cartas Coleccionables. Yu-Gi-Oh!, Pokémon y Magic The Gathering",
+      imagen: "/images/jorgeDD.JPEG",
+      color: "var(--cromatica-tertiary)",
+      instagram: ""
+    },
 
 
 

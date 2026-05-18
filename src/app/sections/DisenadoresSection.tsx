@@ -72,6 +72,7 @@ export function DisenadoresSection() {
     descripcion: "Soy estudiante de diseño de modas en UdeG, estoy empezando con mi proyecto de marca en la que se tendrán en venta prendas tipo streetwear para hombre y mujer.",
     instagram: "corfere.archiv",
   },
+  
     /** 
     */
   ];
