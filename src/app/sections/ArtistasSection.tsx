@@ -196,6 +196,14 @@ export function ArtistasSection() {
     descripcion: "STEP UP es un espacio donde el baile, la energía y la pasión se unen para ayudarte a crecer y disfrutar cada clase. Trabajamos diferentes estilos como urbano, hip hop, jazz y más, fortaleciendo coordinación, confianza, expresión y actitud.",
     instagram: "step.up.studioo",
   },
+    {
+    id: 23, // Incrementa el número
+    imagen: "/images/ADRStudio.jpeg",
+    nombre: "ADR Diseño y Construcción",
+    especialidad: "Arquitectura",
+    descripcion: " Soy Alejandro Montes Raygoza, arquitecto y fundador de ADR Diseño y Construcción, una empresa enfocada en crear espacios funcionales, modernos y con identidad. Cuento con más de cuatro años de experiencia en el desarrollo de proyectos arquitectónicos y construcción, especializándome en diseño moderno y contemporáneo, siempre buscando integrar estética, funcionalidad y calidad en cada detalle.",
+    instagram: "adrdise",
+  },
 
   /**
 
