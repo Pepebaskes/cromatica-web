@@ -43,7 +43,7 @@ export const STORE_DELIVERY_FEE = 25;
 export const storeProducts: StoreProduct[] = [
   {
     id: 'playera-cromatica',
-    name: 'Playera Cromatica 2.0',
+    name: 'Playera Cromática 2.0',
     description: 'Corte unisex, logo frontal y energia de expo para usar antes, durante y despues del festival.',
     price: 380,
     color: '#FF8A00',

@@ -53,7 +53,7 @@ export function StoreProductCard({
   };
 
   return (
-    <article className="group bg-white rounded-lg border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+    <article className="store-product-card group rounded-lg transition-all duration-300 overflow-hidden">
       <div
         className="relative aspect-[4/3] overflow-hidden"
         style={{
@@ -137,7 +137,7 @@ export function StoreProductCard({
           {product.description}
         </p>
 
-        <div className="mt-5 flex items-center justify-between rounded-lg bg-[#FFF8F0] p-2">
+        <div className="store-quantity-control mt-5 flex items-center justify-between rounded-lg p-2">
           <button
             type="button"
             aria-label={`Quitar ${product.name}`}

@@ -116,9 +116,9 @@ export function StoreOrderForm({
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white rounded-lg border border-[#FF8A00]/20 shadow-xl overflow-hidden"
+      className="store-order-form rounded-lg overflow-hidden"
     >
-      <div className="p-5 sm:p-6 bg-gradient-to-br from-[#FF8A00] via-[#FF6B9D] to-[#AB47BC] text-white">
+      <div className="store-order-header p-5 sm:p-6 text-white">
         <div className="flex items-center gap-3 mb-3">
           <PackageCheck className="w-6 h-6" />
           <h2 className="text-2xl font-black">Tu pedido</h2>
@@ -128,7 +128,7 @@ export function StoreOrderForm({
         </p>
       </div>
 
-      <div className="p-5 sm:p-6 space-y-6">
+      <div className="store-order-content p-5 sm:p-6 space-y-6">
         <div className="space-y-3">
           {selectedProducts.length === 0 ? (
             <div className="rounded-lg bg-[#FFF8F0] border border-[#FF8A00]/20 p-4 text-sm font-bold text-gray-600">

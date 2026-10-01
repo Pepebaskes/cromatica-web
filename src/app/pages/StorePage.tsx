@@ -45,39 +45,39 @@ export function StorePage() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="store-page min-h-screen">
       <Navigation />
 
-      <main className="pt-28">
-        <section className="relative overflow-hidden bg-gradient-to-b from-[#FFF8F0] via-white to-white">
-          <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#FF8A00] via-[#FF6B9D] via-[#AB47BC] to-[#26A69A]" />
+      <main className="store-main pt-28">
+        <section className="store-hero relative overflow-hidden">
+          <div className="store-topography absolute inset-0" />
 
           <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-10 md:py-16">
             <a
               href="/#hero"
-              className="inline-flex items-center gap-2 text-sm font-black text-[#FF8A00] hover:text-[#AB47BC] transition-colors mb-8"
+              className="store-return inline-flex items-center gap-2 text-sm font-black transition-colors mb-8"
             >
               <ArrowLeft className="w-4 h-4" />
-              Volver a Cromatica
+              Volver a Cromática
             </a>
 
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-12 items-start">
               <div>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-[#FF8A00]/20 mb-5">
-                  <ShoppingBag className="w-4 h-4 text-[#FF8A00]" />
-                  <span className="text-xs font-black uppercase tracking-widest text-[#AB47BC]">
+                <div className="store-kicker inline-flex items-center gap-2 px-4 py-2 mb-5">
+                  <ShoppingBag className="w-4 h-4" />
+                  <span className="text-xs font-black uppercase tracking-widest">
                     Tienda local de merch
                   </span>
                 </div>
 
                 <h1
-                  className="text-4xl sm:text-5xl lg:text-7xl font-black text-gradient leading-tight mb-5"
+                  className="store-title text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-5"
                   style={{ fontFamily: "'Poppins', sans-serif" }}
                 >
-                  Merch Cromatica
+                  Tienda Cromática
                 </h1>
 
-                <p className="max-w-2xl text-base sm:text-lg text-[var(--cromatica-text-secondary)] leading-relaxed mb-8">
+                <p className="store-copy max-w-2xl text-base sm:text-lg leading-relaxed mb-8">
                   Aparta tu merch para entrega local en {STORE_ALLOWED_CITY} antes de la expo.
                   El pedido queda como solicitud; el pago se coordina directo con el equipo.
                 </p>
@@ -90,10 +90,10 @@ export function StorePage() {
                   ].map((item) => (
                     <div
                       key={item.label}
-                      className="flex items-center gap-3 rounded-lg bg-white border border-gray-100 px-4 py-3 shadow-sm"
+                      className="store-benefit flex items-center gap-3 rounded-lg px-4 py-3"
                     >
                       <item.icon className="w-5 h-5 shrink-0" style={{ color: item.color }} />
-                      <span className="text-sm font-bold text-gray-700">{item.label}</span>
+                      <span className="text-sm font-bold">{item.label}</span>
                     </div>
                   ))}
                 </div>
