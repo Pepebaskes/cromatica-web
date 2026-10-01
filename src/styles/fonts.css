@@ -28,5 +28,8 @@
 /* Inter - Para texto de cuerpo */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+/* Barlow Condensed - Para titulares de alto contraste */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&display=swap');
+
 /* Baloo 2 - Alternativa para títulos divertidos */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap');

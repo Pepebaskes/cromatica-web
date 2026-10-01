@@ -3,8 +3,8 @@
  * COMPONENTE: FORMULARIO DE REGISTRO
  * ==========================================
  *
- * Las inscripciones de CROMATICA 2.0 estan cerradas.
- * Fecha limite: 10 de mayo de 2026.
+ * Las inscripciones de CROMATICA 3.0 estan cerradas.
+ * Fecha de apertura: por anunciar.
  *
  * El componente conserva la prop "tipo" para que RegistroSection no tenga que cambiar.
  * Cuando se abra una futura convocatoria, puedes volver a activar el formulario
@@ -23,7 +23,7 @@ interface FormularioRegistroProps {
 }
 
 const INSCRIPCIONES_CERRADAS = true;
-const FECHA_LIMITE = '10 de mayo de 2026';
+const FECHA_LIMITE = 'por anunciar';
 
 const config = {
   artista: {
@@ -81,8 +81,8 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
           Ya no estamos recibiendo inscripciones
         </p>
         <p className="text-sm md:text-base text-[var(--cromatica-text-secondary)] leading-relaxed max-w-xl mx-auto">
-          Gracias por tu interes en participar en CROMATICA 2.0. La fecha limite
-          para inscribirse fue el {FECHA_LIMITE}, por lo que el formulario ya no
+          Gracias por tu interes en participar en CROMATICA 3.0. La fecha de apertura
+          de inscripciones está {FECHA_LIMITE}, por lo que el formulario aún no
           acepta nuevos registros.
         </p>
         <p className="text-sm text-[var(--cromatica-text-muted)] mt-4">

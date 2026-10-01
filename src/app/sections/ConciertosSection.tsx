@@ -23,136 +23,10 @@ import { BandCard } from '../components/BandCard';
 export function ConciertosSection() {
   // 👉 AGREGA O MODIFICA BANDAS AQUÍ
   const bandas = [
-    
-    {
-      id: 1,
-      imagen: "/images/theTheeves.jpeg",
-      nombre: "The theeves",
-      genero: "Rock Alternativo / Dark pop",
-      horario: "20:00 - 21:00",
-      descripcion: "De las raíces de Traumatismo Floral surge The Theeves, una propuesta de rock alternativo y dark pop con una identidad inconfundible. Tras conquistar la escena regional, el cuarteto liderado por Marco Camacho y Roberto Jiménez se proyecta hacia la escena nacional este 2026 con un sonido maduro, tres nuevos sencillos y un EP que marca el inicio de su nueva era. Oscuridad, ritmo y evolución.",
-      redesSociales: {
-        instagram: "https://www.instagram.com/the_theeves?igsh=MTR5ZmgzZWZjdGdodg==",
-        spotify: "https://open.spotify.com/intl-es/artist/7oCWzo0qZvvdva9tRTAxTH",
-      },
-    },
-     
-    {
-      id: 2,
-      imagen: "/images/Clave4.jpeg",
-      nombre: "Clave 4",
-      genero: "Sierreño",
-      horario: "21:00-22:00",
-      descripcion: "Fusionamos regional con sonidos alternativos para crear una propuesta fresca y auténtica que conecta con todo tipo de público.",
-      redesSociales: {
-        instagram: "https://www.instagram.com/clave_4tro?igsh=czU5dDl6bzEzOWtq"
-        //youtube: "https://youtube.com",
-      },
-      
-    },
-    
-    {
-      id: 3,
-      imagen: "/images/khembo.jpeg",
-      nombre: "KHEMBÖ ",
-      genero: "Rock alternativo, Pop",
-      horario: "22:00 - 23:00",
-      descripcion: "Khembö no pide permiso: irrumpe. Entre guitarra, teclado, bajo, batería, violín y voces crudas, crea ritmos que golpean con una vibra indie sin filtro. La banda mezcla rock alternativo, pop, entre otras variaciones. Dejando que cada integrante imprima su esencia en cada canción. No son temas de fondo: son para gritar, para sentir. Khembö no busca lo bonito en el sonido, sino la verdad en nuestra resonancia.",
-      redesSociales: {
-        instagram: "https://www.instagram.com/_khembo_?igsh=OXB1amR2Njk1N2Fz",
-       // spotify: "https://spotify.com",
-      },
-    },
-    
-    {
-      id: 4,
-      imagen: "/images/ROB.jpeg",
-      nombre: "ROB (Return Of The Beast)",
-      genero: "Rock",
-      horario: "1:00 - 2:00",
-      descripcion: "ROB es una Banda Emergente de Rock/Alternativo relativamente *Nueva* pero con un bagaje importante de sus integrantes en la escena Underground del Grullo de ya varios años en las que han participado con diferentes proyectos que a su vez dieron la pauta para que se formará ROB qué es la culminación de la Necesidad de seguir creando y haciendo música para disfrutar.",
-      redesSociales: {
-        instagram: "https://www.instagram.com/return_ofthebeast?igsh=MXNsZHRnd2o5YXNvbA==",
-        //spotify: "https://spotify.com",
-        //youtube: "https://youtube.com",
-      },
-    },
-    
-    {
-      id: 5,
-      imagen: "/images/insurrection.jpeg",
-      nombre: "INSURRECTION",
-      genero: "Rock",
-      horario: "00:00 - 1:00",
-      descripcion: "Banda de rock originada en El Grullo en 2025, que maneja covers con un estilo propio, presencia escénica, experiencia en diferentes escenarios y pasión por el metal, nu metal, grunge, glam rock entre otros.",
-      redesSociales: {
-        instagram: "instagram.com/insurrectionrockband?igsh=MWJ5b29vcXVjZzJtMg==",
-        //facebook: "https://facebook.com",
-      },
-    },
-    
-    {
-      id: 6,
-      imagen: "/images/anuar.jpeg",
-      nombre: "Anuar Ramírez ",
-      genero: "Regional Méxicano",
-      horario: "23:00 - 00:00",
-      descripcion: "Cantante de música ranchera con 3 años de experiencia. Actualmente estudiante de artes especializado en música.Mediante la voz, expresa el amor a las raíces de la cultura mexicana.",
-      redesSociales: {
-        Instagram: "https://www.instagram.com/anu4r_ramirez?igsh=NWI1MmFyenQ4a3Ni&utm_source=qr",
-        //youtube: "https://youtube.com",
-      },
-    },
-      {
-    id: 7, // Incrementa el número
-    imagen: "/images/djBrayan.png",
-    nombre: "DJ Brayan",
-    genero: "House",
-    horario: "02:00 - 04:00",
-    descripcion: "DJ enfocado en musica House, con un estilo fresco y enérgico que busca hacer bailar a todos los asistentes. Con una selección musical cuidadosamente curada, DJ Brayan promete cerrar la noche con una experiencia inolvidable llena de ritmo y buena vibra.",
-    redesSociales: {
-      instagram: "https://www.instagram.com/brayan_dj29/", // Opcional
-    },
-  },
-        {
-    id: 8, // Incrementa el número
-    imagen: "/images/djTumy.png",
-    nombre: "DJ Tumy",
-    genero: "Electronica",
-    horario: "02:00 - 04:00",
-    descripcion: "Dj Tumy es un talentoso DJ de música electrónica, conocido por su habilidad para mezclar ritmos envolventes y crear una atmósfera vibrante en cada presentación. Con una pasión por la música electrónica y una energía contagiosa, Dj Tumy se ha ganado un lugar destacado en la escena local, ofreciendo sets que mantienen a la audiencia bailando toda la noche.",
-    redesSociales: {
-      instagram: "https://www.instagram.com/tumyglez/", // Opcional
-    },
-  },
-    
-    /**
-    */
-    
+    { id: 1, imagen: "", nombre: "", genero: "", horario: "", descripcion: "", redesSociales: {} },
+    { id: 2, imagen: "", nombre: "", genero: "", horario: "", descripcion: "", redesSociales: {} },
+    { id: 3, imagen: "", nombre: "", genero: "", horario: "", descripcion: "", redesSociales: {} },
   ];
-
-  /* 
-  ==========================================
-  👉 PARA AGREGAR UNA NUEVA BANDA:
-  ==========================================
-  
-  Copia este objeto y agrégalo al array 'bandas':
-  
-  {
-    id: 7, // Incrementa el número
-    imagen: "URL_DE_LA_IMAGEN",
-    nombre: "Nombre de la Banda",
-    genero: "Género Musical",
-    horario: "HH:MM - HH:MM",
-    descripcion: "Descripción de la banda...",
-    redesSociales: {
-      instagram: "https://...", // Opcional
-      facebook: "https://...",  // Opcional
-      spotify: "https://...",   // Opcional
-      youtube: "https://...",   // Opcional
-    },
-  },
-  */
 
   return (
     <section
@@ -166,7 +40,7 @@ export function ConciertosSection() {
         {/* Título de la sección */}
         <div className="text-center mb-16">
           <span className="badge-cromatica mb-4 inline-block">
-            Line-up 2026
+            Line-up 2026 · Por anunciar
           </span>
           <h2
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-4"

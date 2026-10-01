@@ -39,7 +39,7 @@ export function Footer() {
                   CROMÁTICA
                 </h3>
                 <span className="text-[9px] md:text-[10px] font-bold text-[#FF8A00] tracking-widest">
-                  2.0 • 2026
+                  3.0 • 2026
                 </span>
               </div>
             </div>
@@ -51,11 +51,11 @@ export function Footer() {
             <div className="inline-flex flex-col gap-1 md:gap-2 px-4 py-3 bg-white rounded-xl shadow-sm border border-[#FF8A00]/20 mx-auto md:mx-0">
               <div className="flex items-center justify-center md:justify-start gap-2 text-[#FF8A00]">
                 <Calendar className="w-3.5 h-3.5" />
-                <span className="font-bold text-xs md:text-sm">23 de Mayo, 2026</span>
+                <span className="font-bold text-xs md:text-sm">19 de diciembre de 2026</span>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2 text-[var(--cromatica-text-secondary)]">
                 <MapPin className="w-3.5 h-3.5" />
-                <span className="text-[10px] md:text-xs font-medium">El Grullo, Jalisco</span>
+                <span className="text-[10px] md:text-xs font-medium">Sede por confirmar · El Grullo, Jalisco</span>
               </div>
             </div>
           </div>

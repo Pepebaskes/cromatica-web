@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FormularioRegistro } from '../components/FormularioRegistro';
-import { Palette, Music, Store, Shirt, Car, Users } from 'lucide-react';
+import { Palette, Music, Store, Shirt, Users } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 
 export function RegistroSection() {
@@ -11,7 +11,6 @@ export function RegistroSection() {
     { id: 'banda', label: 'Banda/Músico', icono: Music },
     { id: 'empresario', label: 'Empresario', icono: Store },
     { id: 'disenador', label: 'Diseñador', icono: Shirt },
-    { id: 'auto', label: 'Auto Clásico', icono: Car },
     { id: 'danza-contemporanea', label: 'Danza', icono: Users },
   ];
 
@@ -44,7 +43,7 @@ export function RegistroSection() {
           </h2>
 
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            Selecciona tu categoría y completa tu registro para participar en CROMÁTICA 2.0
+            Selecciona tu categoría y completa tu registro para participar en CROMÁTICA 3.0
           </p>
         </div>
 
@@ -93,7 +92,6 @@ export function RegistroSection() {
             {categoriaActiva === 'banda' && <FormularioRegistro tipo="banda" />}
             {categoriaActiva === 'empresario' && <FormularioRegistro tipo="empresario" />}
             {categoriaActiva === 'disenador' && <FormularioRegistro tipo="disenador" />}
-            {categoriaActiva === 'auto' && <FormularioRegistro tipo="auto" />}
             {categoriaActiva === 'danza-contemporanea' && (
               <FormularioRegistro tipo="danza-contemporanea" />
             )}
@@ -130,13 +128,6 @@ export function RegistroSection() {
               <div className="bg-[var(--cromatica-bg-light)] p-4 rounded-lg">
                 <p className="font-semibold text-[var(--cromatica-accent)] mb-1">
                   Diseñadores
-                </p>
-                <p className="text-2xl font-bold">$50 MXN</p>
-              </div>
-
-              <div className="bg-[var(--cromatica-bg-light)] p-4 rounded-lg">
-                <p className="font-semibold text-[var(--cromatica-purple)] mb-1">
-                  Autos Clásicos
                 </p>
                 <p className="text-2xl font-bold">$50 MXN</p>
               </div>

@@ -62,16 +62,6 @@ export function ConvocatoriaSection() {
       color: "var(--cromatica-accent)",
     },
     {
-      id: 5,
-      categoria: "Show de Autos Clásicos",
-      fechaApertura: "12 de marzo",
-      fechaCierre: "15 de Mayo",
-      descripcion: "Exhibición de autos clásicos, modificados y vintage. Muestra tu pasión automotriz. El tuning también es cultura",
-      costo: "$50 MXN",
-      icono: "🚗",
-      color: "var(--cromatica-purple)",
-    },
-    {
       id: 6,
       categoria: "Danza",
       fechaApertura: "12 de marzo",

@@ -75,7 +75,7 @@ export function PatrocinadoresSection() {
             Nuestros Patrocinadores
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            El corazón de CROMÁTICA 2.0 late gracias al apoyo de estas increíbles empresas y organizaciones.
+            El corazón de CROMÁTICA 3.0 late gracias al apoyo de estas increíbles empresas y organizaciones.
           </p>
         </div>
 

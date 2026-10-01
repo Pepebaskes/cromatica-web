@@ -13,7 +13,8 @@ import { AutoCard } from '../components/AutoCard';
 
 export function AutosClasicosSection() {
   // 👉 AGREGA O MODIFICA AUTOS AQUÍ
-  const autos = [
+  const autos: any[] = [];
+  const autosArchivados = [
     {
       id: 1,
       imagen: "/images/jorgeRodriguez.jpeg",
@@ -138,7 +139,7 @@ export function AutosClasicosSection() {
               🚗 ¿Tienes un auto tuneado?
             </h3>
             <p className="text-[var(--cromatica-text-secondary)] mb-6">
-              Exhibe tu auto en CROMÁTICA 2.0. Aceptamos autos clásicos,
+              Exhibe tu auto en CROMÁTICA 3.0. Aceptamos autos clásicos,
               vintage, lowriders y modificados. Costo: $50 MXN.
             </p>
             <a href="#convocatoria" className="btn-cromatica">

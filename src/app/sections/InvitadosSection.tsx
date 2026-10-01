@@ -12,70 +12,10 @@
 export function InvitadosSection() {
   // 👉 AGREGA O MODIFICA INVITADOS AQUÍ
   const invitados = [
-    {
-      id: 1,
-      imagen: "/images/felipeLopezCara.jpeg",
-      nombre: "Felipe López Martinez",
-      titulo: "Diseñador de moda",
-      descripcion: "Reconociendo su trayectoria dentro de la comunidad artística de El Grullo Jalisco, su apoyo y su gran talento como diseñador de moda, especializado en vestidos de gala.",
-      conferencia: "",
-      horario: "",
-    },
-     
-    {
-      id: 2,
-      imagen: "/images/aleDuranFundadora.jpg",
-      nombre: "Alexandra Durán Solís ",
-      titulo: "Fundadora de la primera edición de CROMÁTICA",
-      descripcion: "Un pequeño homenaje a una de nuestras fundadoras originales y pieza clave en la creación de CROMÁTICA.",
-      conferencia: "",
-      horario: "",
-    },
-    
-    {
-      id: 3,
-      imagen: "/images/LizQuinteroIE.jpeg",
-      nombre: "Liz Quintero",
-      titulo: "Directora del Tianguis cultural de Autlán y productora general del colectivo Fuerte.",
-      descripcion: "Persona fundamental en la escena artística de la región, su trabajo como productora y promotora cultural ha sido clave para el crecimiento de la comunidad artística local.",
-      conferencia: "",
-      horario: "",
-    },
-     {
-    id: 4,
-    imagen: "/images/dulcePerez.jpeg",
-    nombre: "Dulce Pérez",
-    titulo: "Fundadora de la primera edición de CROMÁTICA",
-    descripcion: "Se le reconoce su trayectoria dentro de la comunidad artística de El Grullo Jalisco, su apoyo y su gran talento como artista, también por ser una de las fundadoras originales de CROMÁTICA.",
-    conferencia: "",
-    horario: "",
-  },
-    {
-    id: 4,
-    imagen: "/images/xiommaraEspinosa.jpeg",
-    nombre: "Xiommara Espinosa",
-    titulo: "Embajadora de la cultura 2026 de El Grullo Jalisco",
-    descripcion: "Nuestra actual Embajadora de la Cultura y fundadora de la primera edición de Expo Cromática. Emprendedora, diseñadora, bailarina y artista en cada aspecto de su esencia. Una personalidad auténtica, creativa y con una trayectoria que inspira dentro y fuera del escenario.",
-    conferencia: "",
-    horario: "",
-  },
-    /**
-    */
+    { id: 1, imagen: "", nombre: "", titulo: "", descripcion: "", conferencia: "", horario: "" },
+    { id: 2, imagen: "", nombre: "", titulo: "", descripcion: "", conferencia: "", horario: "" },
+    { id: 3, imagen: "", nombre: "", titulo: "", descripcion: "", conferencia: "", horario: "" },
   ];
-
-  /* 
-  👉 PARA AGREGAR UN NUEVO INVITADO:
-  
-  {
-    id: 4,
-    imagen: "URL_IMAGEN",
-    nombre: "Nombre Completo",
-    titulo: "Título profesional",
-    descripcion: "Bio del invitado...",
-    conferencia: "Tema de la conferencia",
-    horario: "HH:MM - HH:MM",
-  },
-  */
 
   return (
     <section

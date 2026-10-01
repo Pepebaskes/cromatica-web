@@ -13,7 +13,6 @@ export function Navigation() {
     { label: 'Artistas', href: '/#artistas' },
     { label: 'Diseñadores', href: '/#disenadores' },
     { label: 'Emprendedores', href: '/#emprendedores' },
-    { label: 'Autos', href: '/#autos' },
     { label: 'Ubicación', href: '/#ubicacion' },
     { label: 'Tienda', href: '/tienda', icon: ShoppingBag },
   ];
@@ -56,7 +55,7 @@ export function Navigation() {
                   CROMÁTICA
                 </span>
                 <span className="text-xs font-bold text-[#FF8A00] tracking-widest">
-                  2.0 • 2026
+                  3.0 • 2026
                 </span>
               </div>
             </a>

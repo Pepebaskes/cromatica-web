@@ -35,7 +35,7 @@ export function SobreEventoSection() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-4"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
-            Sobre CROMÁTICA 2.0
+            Sobre CROMÁTICA 3.0
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
             Un festival que celebra la diversidad artística y cultural de la región. 
@@ -91,14 +91,14 @@ export function SobreEventoSection() {
                   <Calendar className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[var(--cromatica-tertiary)] mb-3">
-                    Primera Edición (2023)
+                    <h3 className="text-2xl font-bold text-[var(--cromatica-tertiary)] mb-3">
+                    Tercera Edición (2026)
                   </h3>
                   <p className="text-[var(--cromatica-text-secondary)] leading-relaxed">
                     En nuestra primera edición en 2023 enfrentamos algunos retos
                      en la coordinación musical, experiencia que nos permitió aprender 
                      y fortalecer cada área del evento.
-                     Hoy regresamos con una segunda edición mucho más profesional, 
+                     Hoy preparamos una tercera edición mucho más profesional, 
                      con mejor organización, mayor compromiso y un equipo de sonido renovado, 
                      garantizando la calidad y experiencia que ustedes merecen.
                   </p>
@@ -158,7 +158,7 @@ export function SobreEventoSection() {
             className="btn-cromatica inline-flex items-center gap-2"
           >
             <Sparkles className="w-5 h-5" />
-            Únete a CROMÁTICA 2.0
+            Únete a CROMÁTICA 3.0
           </a>
         </div>
       </div>

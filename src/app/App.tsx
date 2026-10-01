@@ -58,7 +58,6 @@ import { ConvocatoriaSection } from './sections/ConvocatoriaSection';
 import { ConciertosSection } from './sections/ConciertosSection';
 import { ArtistasSection } from './sections/ArtistasSection';
 import { DisenadoresSection } from './sections/DisenadoresSection';
-import { AutosClasicosSection } from './sections/AutosClasicosSection';
 import { InvitadosSection } from './sections/InvitadosSection';
 import { PatrocinadoresSection } from './sections/PatrocinadoresSection';
 import { UbicacionSection } from './sections/UbicacionSection';
@@ -107,7 +106,7 @@ function HomePage() {
         <EmprendedoresSection />
 
         {/* Sección 7: Show de Autos Clásicos */}
-        <AutosClasicosSection />
+        {/* <AutosClasicosSection /> */}
 
         {/* Sección 8: Invitados Especiales */}
         <InvitadosSection />

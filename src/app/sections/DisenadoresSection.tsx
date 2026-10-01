@@ -15,81 +15,10 @@ import { DisenadorCard } from '../components/DisenadorCard';
 export function DisenadoresSection() {
   // 👉 AGREGA O MODIFICA DISEÑADORES AQUÍ
   const disenadores = [
-    {
-      id: 1,
-      imagen: "/images/ferchoLogo.jpeg",
-      marca: "Felipe Lopez",
-      disenador: "Felipe López Martinez",
-      estilo: "Gala",
-      descripcion: "Diseñador de alta gama, especializado en vestidos de gala, 100% grullense.",
-      instagram: "felipelopez9734",
-    },
-    
-    {
-      id: 2,
-      imagen: "/images/AleDussaLogo.jpg",
-      marca: "Alexandra Durán",
-      disenador: "Alexandra Durán",
-      estilo: "Contemporánea artesanal",
-      descripcion: "Proyecto de joyería artesanal enfocado en la creación de piezas únicas con inspiración simbólica y orgánica",
-      instagram: "aledussa",
-    },
-    
-    {
-      id: 3,
-      imagen: "/images/verania.jpeg",
-      marca: "Berry Dreams",
-      disenador: "Verania Ramírez",
-      estilo: "Upcycling y vestuarios escénicos",
-      descripcion: "Berry Dreams es una marca con el estilo Upcycling que busca la renovación de prendas preexistentes mediante la modificación o la añadidura de detalles ya sea de telas, texturas, diseños, apoyando a la sustentabilidad, así mismo también se enfoca en la realización de vestuarios escénicos para danza",
-      instagram: "berry_dreams",
-    },
-    
-    {
-      id: 4,
-      imagen: "/images/hadUrbans.png",
-      marca: "Ham Urbans",
-      disenador: "Andrea Hernández",
-      estilo: "Urban",
-      descripcion: "HAM URBANS es más que ropa, es una forma de expresión. Nos dedicamos a crear prendas únicas que combinan estilo, calidad y personalidad, pensadas para quienes quieren destacar y sentirse auténticos en cada momento , negocio o evento . Cada diseño refleja creatividad, detalle y pasión por lo que hacemos, cuidando tanto la estética como la comodidad. Nuestro objetivo es que cada persona que use nuestras prendas se sienta segura, diferente y conectada con su propio estilo.",
-      instagram: "ham_urbans_",
-    },
-        {
-      id: 5,
-      imagen: "/images/dressa.jpeg",
-      marca: "Dressa",
-      disenador: "Xiommara Espinosa",
-      estilo: "Lifestyle",
-      descripcion: "En DRESSA encontrarás piezas para cada versión de ti. ✨ Ropa deportiva para sentirte cómoda, accesorios para complementar tu look y vestidos de noche en venta y renta para brillar en ocasiones especiales.",
-      instagram: "dressa.styles",
-    },
-      {
-    id: 6,
-    imagen: "/images/corfere.png",
-    marca: "CORFERE",
-    disenador: "Fernanda Corona",
-    estilo: "Alta costura y streetwear",
-    descripcion: "Soy estudiante de diseño de modas en UdeG, estoy empezando con mi proyecto de marca en la que se tendrán en venta prendas tipo streetwear para hombre y mujer.",
-    instagram: "corfere.archiv",
-  },
-  
-    /** 
-    */
+    { id: 1, imagen: "", marca: "", disenador: "", estilo: "", descripcion: "", instagram: "" },
+    { id: 2, imagen: "", marca: "", disenador: "", estilo: "", descripcion: "", instagram: "" },
+    { id: 3, imagen: "", marca: "", disenador: "", estilo: "", descripcion: "", instagram: "" },
   ];
-
-  /* 
-  👉 PARA AGREGAR UN NUEVO DISEÑADOR:
-  
-  {
-    id: 5,
-    imagen: "URL_IMAGEN",
-    marca: "NOMBRE MARCA",
-    disenador: "Nombre del Diseñador",
-    estilo: "Tipo de moda",
-    descripcion: "Descripción...",
-    instagram: "username",
-  },
-  */
 
   return (
     <section
@@ -143,7 +72,7 @@ export function DisenadoresSection() {
               👗 ¿Eres diseñador de moda?
             </h3>
             <p className="text-[var(--cromatica-text-secondary)] mb-6">
-              Muestra tu colección en CROMÁTICA 2.0. Espacio para marcas
+              Muestra tu colección en CROMÁTICA 3.0. Espacio para marcas
               independientes, sustentables y emergentes.
             </p>
             <a href="#convocatoria" className="btn-cromatica">

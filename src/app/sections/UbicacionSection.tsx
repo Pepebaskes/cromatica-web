@@ -17,15 +17,15 @@
 export function UbicacionSection() {
   // 👉 PERSONALIZA LA UBICACIÓN AQUÍ
   const ubicacion = {
-    nombre: "Hacienda Don Quijote",
-    direccion: "Colonia Las Flores",
+    nombre: "Casino El Relicario (sede tentativa)",
+    direccion: "Sede por confirmar",
     ciudad: "El Grullo, Jalisco",
-    codigoPostal: "48740",
-    // Coordenadas reales
-    latitud: 19.797036,
-    longitud: -104.223322,
+    codigoPostal: "",
+    // Coordenadas pendientes de confirmación
+    latitud: 0,
+    longitud: 0,
     // URL de Google Maps
-    googleMapsUrl: "https://maps.app.goo.gl/ADQq1CjT9UgZXbTEA",
+    googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Casino+El+Relicario+El+Grullo+Jalisco",
   };
 
   return (
@@ -49,7 +49,7 @@ export function UbicacionSection() {
             ¿Dónde Nos Encontramos?
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            El festival se realizará a las afueras de El Grullo, Jalisco, en un hermoso espacio al aire libre que celebra la naturaleza y la cultura local. Hacienda Don Quijote, la prinicpal obra de arte es el mismo local, gracias al señor Alfredo Pimienta por el espacio. .
+            La sede está por confirmarse. La ubicación tentativa para CROMÁTICA 3.0 es el Casino El Relicario, en El Grullo, Jalisco. Actualizaremos este espacio en cuanto quede confirmada.
           </p>
         </div>
 
@@ -83,9 +83,11 @@ export function UbicacionSection() {
                     <p className="text-lg">
                       {ubicacion.ciudad}
                     </p>
-                    <p className="text-lg">
-                      C.P. {ubicacion.codigoPostal}
-                    </p>
+                    {ubicacion.codigoPostal && (
+                      <p className="text-lg">
+                        C.P. {ubicacion.codigoPostal}
+                      </p>
+                    )}
                   </div>
 
                   <a
@@ -126,17 +128,12 @@ export function UbicacionSection() {
             </div>
 
             {/* Mapa */}
-            <div className="card-glow overflow-hidden h-full min-h-[400px] lg:min-h-[600px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.2677730423716!2d-104.22332222500329!3d19.79703688156176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8425ab38b995fd09%3A0x2da11e7d24461777!2sHacienda%20Don%20Quijote!5e1!3m2!1ses!2smx!4v1772312862455!5m2!1ses!2smx"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full"
-              />
+            <div className="card-glow h-full min-h-[400px] lg:min-h-[600px] flex items-center justify-center p-8 text-center">
+              <div>
+                <p className="text-xs uppercase tracking-wide text-[var(--cromatica-primary)] mb-3">Mapa pendiente</p>
+                <p className="text-2xl font-bold mb-3">La ubicación definitiva se anunciará pronto.</p>
+                <p className="text-[var(--cromatica-text-secondary)]">Consulta la referencia tentativa en Google Maps mientras confirmamos la sede.</p>
+              </div>
             </div>
 
           </div>

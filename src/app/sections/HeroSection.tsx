@@ -31,15 +31,15 @@ import { Sparkles, Calendar, Users, Music, Palette } from 'lucide-react';
 
 export function HeroSection() {
   // 👉 PERSONALIZA ESTOS TEXTOS AQUÍ
-  const fechaEvento = "23 de Mayo, 2026";
-  const horaEvento = "11:00 AM - 1:00 AM";
-  const fraseImpactante = "Arte, Cultura, Música y Emprendimiento al aire libre";
-  const descripcionCorta = "Segunda edición del festival independiente más vibrante de la región";
+  const fechaEvento = "19 de diciembre de 2026";
+  const horaEvento = "1:00 PM · Hasta el cierre";
+  const fraseImpactante = "Arte, cultura, música y emprendimiento en un mismo lugar";
+  const descripcionCorta = "Tercera edición del festival independiente que celebra el talento de la región";
 
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-16 sm:pt-36 lg:pt-40 2xl:pt-44"
     >
       {/* ==========================================
           FONDO TROPICAL CON ELEMENTOS SUAVES
@@ -49,7 +49,7 @@ export function HeroSection() {
       */}
       
       {/* Gradiente base cálido */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#FFF8F0] via-[#FFFFFF] to-[#F0F9FF]"></div>
+      <div className="absolute inset-0 bg-[#050506] hero-topography"></div>
       
       {/* Círculo decorativo 1 - Naranja */}
       <div
@@ -95,21 +95,21 @@ export function HeroSection() {
           
           {/* Badge "Segunda Edición" */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-white rounded-full shadow-lg border-2 border-[#FF8A00]/20">
-              <Sparkles className="w-4 h-4 text-[#FF8A00]" />
-              <span className="font-bold text-sm text-[#FF8A00] uppercase tracking-wide">
-                Segunda Edición 2026
+            <span className="hero-event-badge inline-flex items-center gap-2 px-5 py-2.5">
+              <Sparkles className="hero-event-badge-icon w-4 h-4" />
+              <span className="font-bold text-sm uppercase tracking-wide">
+                Tercera Edición 2026
               </span>
             </span>
           </div>
 
         {/* Logo CROMÁTICA con texto */}
-        <div className="animate-fade-in-up w-full overflow-hidden" style={{ animationDelay: '0.4s' }}>
+        <div className="animate-fade-in-up w-full px-1" style={{ animationDelay: '0.4s' }}>
   <h1
-    className="text-[12vw] sm:text-7xl md:text-8xl lg:text-9xl font-black text-gradient text-center"
+    className="hero-title font-black text-center"
     style={{ 
       fontFamily: "'Poppins', sans-serif",
-      letterSpacing: '-0.02em',
+      letterSpacing: '0',
       lineHeight: '1.1'
     }}
   >
@@ -120,22 +120,22 @@ export function HeroSection() {
           {/* Subtítulo "2.0" */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             <span
-              className="text-6xl md:text-7xl font-black text-gradient"
+              className="hero-edition text-6xl md:text-7xl font-black"
               style={{ fontFamily: "'Poppins', sans-serif" }}
             >
-              2.0
+              3.0
             </span>
           </div>
 
           {/* Fecha y hora del evento */}
-          <div className="animate-fade-in-up space-y-2" style={{ animationDelay: '0.6s' }}>
-            <div className="flex items-center justify-center gap-3">
-              <Calendar className="w-6 h-6 text-[#FF8A00]" />
-              <p className="text-2xl md:text-3xl font-bold text-[#FF8A00]">
+          <div className="hero-event-date animate-fade-in-up space-y-2" style={{ animationDelay: '0.6s' }}>
+            <div className="hero-event-date-row flex items-center justify-center gap-3">
+              <Calendar className="w-6 h-6" />
+              <p className="text-2xl md:text-3xl font-bold">
                 {fechaEvento}
               </p>
             </div>
-            <p className="text-lg md:text-xl text-[var(--cromatica-text-secondary)]">
+            <p className="hero-event-time text-lg md:text-xl">
               {horaEvento}
             </p>
           </div>
@@ -178,7 +178,7 @@ export function HeroSection() {
             {/* Botón principal: Registrarse */}
             <a
               href="#registro"
-              className="btn-cromatica w-full sm:w-auto text-center flex items-center justify-center gap-2"
+              className="btn-cromatica hero-action hero-primary-action w-full sm:w-auto text-center flex items-center justify-center gap-2"
             >
               <Sparkles className="w-5 h-5" />
               Registrarse Ahora
@@ -187,7 +187,7 @@ export function HeroSection() {
             {/* Botón secundario: Ver convocatoria */}
             <a
               href="#convocatoria"
-              className="btn-outline w-full sm:w-auto text-center flex items-center justify-center gap-2"
+              className="btn-outline hero-action hero-secondary-action w-full sm:w-auto text-center flex items-center justify-center gap-2"
             >
               <Music className="w-5 h-5" />
               Ver Convocatoria
@@ -195,16 +195,13 @@ export function HeroSection() {
           </div>
 
           {/* Información adicional con iconos */}
-          <div
-            className="pt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 animate-fade-in-up"
-            style={{ animationDelay: '1.2s' }}
-          >
+          <div className="pt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
             {/* Dato 1: Artistas */}
             <div className="flex flex-col items-center gap-3">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FF8A00] to-[#FF6B9D] flex items-center justify-center shadow-lg">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <p className="text-4xl md:text-5xl font-black text-gradient">+</p>
+              <p className="text-4xl md:text-5xl font-black text-gradient">Próximamente</p>
               <p className="text-sm font-medium text-[var(--cromatica-text-secondary)]">
                 Artistas Participantes
               </p>
@@ -215,9 +212,9 @@ export function HeroSection() {
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#AB47BC] to-[#42A5F5] flex items-center justify-center shadow-lg">
                 <Music className="w-8 h-8 text-white" />
               </div>
-              <p className="text-4xl md:text-5xl font-black text-gradient">12h</p>
+              <p className="text-4xl md:text-5xl font-black text-gradient">Line-up</p>
               <p className="text-sm font-medium text-[var(--cromatica-text-secondary)]">
-                De Música
+                Por anunciar
               </p>
             </div>
 
@@ -226,9 +223,9 @@ export function HeroSection() {
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#26A69A] to-[#66BB6A] flex items-center justify-center shadow-lg">
                 <Palette className="w-8 h-8 text-white" />
               </div>
-              <p className="text-4xl md:text-5xl font-black text-gradient">15h</p>
+              <p className="text-4xl md:text-5xl font-black text-gradient">Sede</p>
               <p className="text-sm font-medium text-[var(--cromatica-text-secondary)]">
-                De Festival
+                Por confirmar
               </p>
             </div>
           </div>
