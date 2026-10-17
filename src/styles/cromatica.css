@@ -341,10 +341,12 @@ h2 {
 }
 
 .hero-title {
-  display: inline-block;
-  width: max-content;
-  max-width: calc(100vw - 3rem);
-  font-size: clamp(3.25rem, 9vw, 8.75rem);
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+  max-width: 100%;
+  white-space: nowrap;
+  font-size: clamp(3.1rem, 8vw, 8.25rem);
   line-height: 1 !important;
   color: #ec168c;
   background: linear-gradient(
@@ -375,8 +377,8 @@ h2 {
   }
 
   .hero-title {
-    max-width: calc(100vw - 2.5rem);
-    font-size: clamp(2.45rem, 13.5vw, 3.45rem);
+    margin-inline: auto;
+    font-size: clamp(2.2rem, 12vw, 3.2rem);
   }
 }
 

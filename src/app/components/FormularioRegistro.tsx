@@ -61,6 +61,7 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionState, setSubmissionState] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submissionError, setSubmissionError] = useState('');
 
   const handleChange = (field: keyof typeof formData, value: string) => {
     setFormData((current) => ({ ...current, [field]: value }));
@@ -70,21 +71,31 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
     event.preventDefault();
     setIsSubmitting(true);
     setSubmissionState('idle');
+    setSubmissionError('');
 
-    const { error } = await supabase.from('registros').insert({
-      tipo,
-      ...formData,
-    });
+    try {
+      const { error } = await supabase.from('registros').insert({
+        tipo,
+        ...formData,
+      });
 
-    setIsSubmitting(false);
+      if (error) {
+        throw error;
+      }
 
-    if (error) {
+      setSubmissionState('success');
+      setFormData({ nombre: '', email: '', telefono: '', descripcion: '' });
+    } catch (error) {
+      console.error('Error al guardar el registro en Supabase:', error);
       setSubmissionState('error');
-      return;
+      setSubmissionError(
+        error instanceof Error
+          ? error.message
+          : 'La solicitud fue rechazada por la base de datos.'
+      );
+    } finally {
+      setIsSubmitting(false);
     }
-
-    setSubmissionState('success');
-    setFormData({ nombre: '', email: '', telefono: '', descripcion: '' });
   };
 
   return (
@@ -162,7 +173,7 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
 
         {submissionState === 'error' && (
           <p className="rounded-lg border border-[#EC168C]/45 bg-[#EC168C]/10 px-4 py-3 text-sm font-semibold text-[#FFC0DE]" role="alert">
-            No pudimos enviar tu registro. Inténtalo de nuevo en unos minutos.
+            No pudimos guardar tu registro. {submissionError || 'Inténtalo de nuevo en unos minutos.'}
           </p>
         )}
       </form>
