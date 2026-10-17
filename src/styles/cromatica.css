@@ -342,7 +342,8 @@ h2 {
 
 .hero-title {
   display: inline-block;
-  max-width: 100%;
+  width: max-content;
+  max-width: calc(100vw - 3rem);
   font-size: clamp(3.25rem, 9vw, 8.75rem);
   line-height: 1 !important;
   color: #ec168c;
@@ -371,6 +372,11 @@ h2 {
 
   #hero .container-cromatica {
     width: 100%;
+  }
+
+  .hero-title {
+    max-width: calc(100vw - 2.5rem);
+    font-size: clamp(2.45rem, 13.5vw, 3.45rem);
   }
 }
 

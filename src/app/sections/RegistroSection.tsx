@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { FormularioRegistro } from '../components/FormularioRegistro';
 import { Palette, Music, Store, Shirt, Users } from 'lucide-react';
-import { supabase } from '../../lib/supabase';
 
 export function RegistroSection() {
   const [categoriaActiva, setCategoriaActiva] = useState<string>('artista');
