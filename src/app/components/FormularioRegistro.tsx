@@ -60,7 +60,7 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
     descripcion: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submissionState, setSubmissionState] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submissionState, setSubmissionState] = useState<'idle' | 'success' | 'email-warning' | 'error'>('idle');
   const [submissionError, setSubmissionError] = useState('');
 
   const handleChange = (field: keyof typeof formData, value: string) => {
@@ -72,6 +72,7 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
     setIsSubmitting(true);
     setSubmissionState('idle');
     setSubmissionError('');
+    let registrationSaved = false;
 
     try {
       const { error } = await supabase.from('registros').insert({
@@ -83,9 +84,35 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
         throw error;
       }
 
-      setSubmissionState('success');
+      registrationSaved = true;
       setFormData({ nombre: '', email: '', telefono: '', descripcion: '' });
+
+      const emailResponse = await fetch('/api/enviar', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: formData.email,
+          nombre: formData.nombre,
+          tipo,
+        }),
+      });
+      const emailResult = await emailResponse.json().catch(() => null);
+
+      // Algunos despliegues responden 200 sin conservar el JSON de la funcion.
+      // Si Zoho acepto la solicitud, no debemos mostrar un error falso al usuario.
+      if (!emailResponse.ok || emailResult?.success === false) {
+        setSubmissionState('email-warning');
+        return;
+      }
+
+      setSubmissionState('success');
     } catch (error) {
+      if (registrationSaved) {
+        console.error('El registro se guardo, pero fallo el correo de confirmacion:', error);
+        setSubmissionState('email-warning');
+        return;
+      }
+
       console.error('Error al guardar el registro en Supabase:', error);
       setSubmissionState('error');
       setSubmissionError(
@@ -167,7 +194,13 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
 
         {submissionState === 'success' && (
           <p className="rounded-lg border border-[#65CA77]/45 bg-[#65CA77]/10 px-4 py-3 text-sm font-semibold text-[#B7F2C2]" role="status">
-            Registro enviado. Te contactaremos con los siguientes pasos.
+            Registro enviado. Revisa tu correo para confirmar que lo recibimos.
+          </p>
+        )}
+
+        {submissionState === 'email-warning' && (
+          <p className="rounded-lg border border-[#FFB84D]/45 bg-[#FFB84D]/10 px-4 py-3 text-sm font-semibold text-[#FFE0A3]" role="status">
+            Guardamos tu registro, pero no pudimos enviar el correo de confirmacion. El equipo recibio tu informacion.
           </p>
         )}
 

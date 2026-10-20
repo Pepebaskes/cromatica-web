@@ -20,6 +20,14 @@ export function DisenadoresSection() {
     { id: 3, imagen: "", marca: "", disenador: "", estilo: "", descripcion: "", instagram: "" },
   ];
 
+  // Los objetos vacios se quedan como plantilla, pero no ocupan lugar en la pagina.
+  const disenadoresVisibles = disenadores.filter(
+    (disenador) =>
+      disenador.marca.trim() ||
+      disenador.disenador.trim() ||
+      disenador.imagen.trim()
+  );
+
   return (
     <section
       id="disenadores"
@@ -47,7 +55,7 @@ export function DisenadoresSection() {
 
         {/* Grid de diseñadores */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {disenadores.map((disenador, index) => (
+          {disenadoresVisibles.map((disenador, index) => (
             <div
               key={disenador.id}
               className="animate-fade-in-up"

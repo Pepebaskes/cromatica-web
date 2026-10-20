@@ -18,7 +18,8 @@ import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { StoreOrderForm } from '../components/StoreOrderForm';
 import { StoreProductCard } from '../components/StoreProductCard';
-import { STORE_ALLOWED_CITY, storeProducts } from '../data/storeMerch';
+import { StorePromotionCard } from '../components/StorePromotionCard';
+import { STORE_ALLOWED_CITY, storeProducts, storePromotions } from '../data/storeMerch';
 
 const initialQuantities = storeProducts.reduce<Record<string, number>>((quantities, product) => {
   quantities[product.id] = product.initialQuantity || 0;
@@ -98,7 +99,7 @@ export function StorePage() {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div id="productos" className="grid grid-cols-1 md:grid-cols-3 gap-5">
                   {storeProducts.map((product) => (
                     <StoreProductCard
                       key={product.id}
@@ -108,6 +109,24 @@ export function StorePage() {
                     />
                   ))}
                 </div>
+
+                {storePromotions.length > 0 && (
+                  <section className="mt-12" aria-labelledby="promociones-title">
+                    <div className="mb-5 flex items-end justify-between gap-4">
+                      <div>
+                        <p className="text-xs font-black uppercase tracking-widest text-[#d85ad6]">Especiales</p>
+                        <h2 id="promociones-title" className="mt-1 text-3xl font-black text-white">
+                          Promociones
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+                      {storePromotions.map((promotion) => (
+                        <StorePromotionCard key={promotion.id} promotion={promotion} />
+                      ))}
+                    </div>
+                  </section>
+                )}
               </div>
 
               <aside className="lg:sticky lg:top-28">

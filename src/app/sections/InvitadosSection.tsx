@@ -17,6 +17,11 @@ export function InvitadosSection() {
     { id: 3, imagen: "", nombre: "", titulo: "", descripcion: "", conferencia: "", horario: "" },
   ];
 
+  // Los lugares de ejemplo no se muestran hasta que agregues a un invitado real.
+  const invitadosVisibles = invitados.filter(
+    (invitado) => invitado.nombre.trim() || invitado.imagen.trim()
+  );
+
   return (
     <section
       id="invitados"
@@ -45,7 +50,7 @@ export function InvitadosSection() {
 
         {/* Grid de invitados */}
         <div className="max-w-6xl mx-auto space-y-8">
-          {invitados.map((invitado, index) => (
+          {invitadosVisibles.map((invitado, index) => (
             <div
               key={invitado.id}
               className="card-glow p-8 animate-fade-in-up"

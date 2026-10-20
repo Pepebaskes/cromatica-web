@@ -36,9 +36,17 @@ export function StoreProductCard({
   onQuantityChange,
 }: StoreProductCardProps) {
   const ProductIcon = iconMap[product.icon];
-  const productImages = product.images?.filter(Boolean) || [];
+  const [failedImages, setFailedImages] = useState<string[]>([]);
+  const productImages = (product.images || []).filter(
+    (image) => Boolean(image) && !failedImages.includes(image)
+  );
   const hasImages = productImages.length > 0;
   const [activeImage, setActiveImage] = useState(0);
+
+  const handleImageError = (image: string) => {
+    setFailedImages((current) => [...current, image]);
+    setActiveImage(0);
+  };
 
   const showPreviousImage = () => {
     setActiveImage((current) =>
@@ -72,6 +80,7 @@ export function StoreProductCard({
               alt={`${product.name} foto ${activeImage + 1}`}
               className="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
+              onError={() => handleImageError(productImages[activeImage])}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
 

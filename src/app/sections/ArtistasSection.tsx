@@ -37,6 +37,12 @@ export function ArtistasSection() {
       instagram: "" },
   ];
 
+  // Los espacios en blanco se conservan para que puedas llenarlos despues.
+  // Solo se muestra una tarjeta cuando el artista ya tiene nombre o imagen.
+  const artistasVisibles = artistas.filter(
+    (artista) => artista.nombre.trim() || artista.imagen.trim()
+  );
+
   return (
     <section
       id="artistas"
@@ -61,7 +67,7 @@ export function ArtistasSection() {
 
         {/* Grid de artistas - Masonry style */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {artistas.map((artista, index) => (
+          {artistasVisibles.map((artista, index) => (
             <div
               key={artista.id}
               className="animate-fade-in-up"

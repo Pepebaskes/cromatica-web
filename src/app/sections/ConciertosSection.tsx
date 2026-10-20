@@ -28,6 +28,11 @@ export function ConciertosSection() {
     { id: 3, imagen: "", nombre: "", genero: "", horario: "", descripcion: "", redesSociales: {} },
   ];
 
+  // Conserva los espacios para futuras bandas, sin crear tarjetas vacias.
+  const bandasVisibles = bandas.filter(
+    (banda) => banda.nombre.trim() || banda.imagen.trim()
+  );
+
   return (
     <section
       id="conciertos"
@@ -55,7 +60,7 @@ export function ConciertosSection() {
 
         {/* Grid de bandas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {bandas.map((banda, index) => (
+          {bandasVisibles.map((banda, index) => (
             <div
               key={banda.id}
               className="animate-fade-in-up"

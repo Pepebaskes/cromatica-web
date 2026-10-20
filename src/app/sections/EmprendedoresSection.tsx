@@ -19,6 +19,11 @@ export function EmprendedoresSection() {
     { id: 3, imagen: "", nombre: "", categoria: "", descripcion: "", ubicacion: "", color: "var(--cromatica-primary)", instagram: "" },
   ];
 
+  // Los espacios vacios quedan listos para editar, sin renderizar cards sin contenido.
+  const emprendedoresVisibles = emprendedores.filter(
+    (emprendedor) => emprendedor.nombre.trim() || emprendedor.imagen.trim()
+  );
+
   return (
     <section id="emprendedores" className="py-20 md:py-32 relative overflow-hidden bg-[var(--cromatica-bg-light)]">
       {/* Fondo decorativo */}
@@ -42,7 +47,7 @@ export function EmprendedoresSection() {
 
         {/* Grid de Emprendedores - 3 columnas (Igual que Artistas) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {emprendedores.map((emp, index) => (
+          {emprendedoresVisibles.map((emp, index) => (
             <div 
               key={emp.id} 
               className="card-glow group overflow-hidden flex flex-col h-full animate-fade-in-up"

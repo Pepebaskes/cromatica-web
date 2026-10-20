@@ -7,19 +7,24 @@
  * - Numero de WhatsApp que recibe pedidos
  * - Costo de entrega local
  * - Municipio permitido
- * - Productos de merch
+ * - Productos de merch que se pueden apartar
+ * - Promociones que se muestran, pero no entran al pedido
  *
  * PARA AGREGAR UN PRODUCTO:
- * 1. Duplica uno de los objetos del array "storeProducts".
- * 2. Cambia id, nombre, descripcion, precio, colores y etiqueta.
+ * 1. Duplica un objeto dentro de "storeProducts".
+ * 2. Cambia id, name, description, price, colors y tag.
  * 3. El id debe ser unico y sin espacios, por ejemplo: "gorra-cromatica".
- * 4. Pon tus fotos en public/images y agregalas en images.
+ * 4. Pon tus fotos en public/images/tienda y agregalas en images.
+ *
+ * PARA AGREGAR UNA PROMOCION:
+ * 1. Duplica la plantilla dentro de "storePromotions".
+ * 2. Una promocion NO se agrega al pedido ni necesita precio.
  *
  * EJEMPLO DE FOTOS:
  * images: [
- *   '/images/camisa-frente.png',
- *   '/images/camisa-espalda.png',
- *   '/images/camisa-detalle.png',
+ *   '/images/tienda/camisa-frente.png',
+ *   '/images/tienda/camisa-espalda.png',
+ *   '/images/tienda/camisa-detalle.png',
  * ],
  */
 
@@ -36,14 +41,26 @@ export type StoreProduct = {
   initialQuantity?: number;
 };
 
+export type StorePromotion = {
+  id: string;
+  title: string;
+  description: string;
+  tag: string;
+  color: string;
+  accent: string;
+  image?: string;
+  actionLabel?: string;
+  actionHref?: string;
+};
+
 export const STORE_WHATSAPP_PHONE = '525667718342';
 export const STORE_ALLOWED_CITY = 'El Grullo, Jalisco';
 export const STORE_DELIVERY_FEE = 25;
 
-export const storeProducts: StoreProduct[] = [
+export const storeProducts = [
   {
     id: 'playera-cromatica',
-    name: 'Playera Cromática 2.0',
+    name: 'Playera Cromática 2026',
     description: 'Corte unisex, logo frontal y energia de expo para usar antes, durante y despues del festival.',
     price: 380,
     color: '#FF8A00',
@@ -51,43 +68,11 @@ export const storeProducts: StoreProduct[] = [
     tag: 'Preventa',
     icon: 'shirt',
     images: [
-      // Cuando tengas las fotos reales, cambia estas rutas:
-      '/images/camisaCromaticaFront.jpeg',
-       '/images/camisaCromaticaBack.jpeg',
+      '/images/tienda/camisaFrente.jpeg',
+      '/images/tienda/camisaDetras.jpeg',
     ],
     initialQuantity: 1,
   },
-  /*
-  {
-    id: 'tote-cromatica',
-    name: 'Tote bag Cromatica',
-    description: 'Bolsa de tela para llevar prints, stickers, libretas y compras de los emprendedores.',
-    price: 180,
-    color: '#26A69A',
-    accent: '#42A5F5',
-    tag: 'Expo kit',
-    icon: 'bag',
-    images: [
-      // '/images/tote-frente.png',
-      // '/images/tote-detalle.png',
-    ],
-  },
-  {
-    id: 'stickers-cromatica',
-    name: 'Pack de stickers',
-    description: 'Set coleccionable con mascota, tipografia Cromatica y piezas tropicales del festival.',
-    price: 75,
-    color: '#AB47BC',
-    accent: '#FDD835',
-    tag: 'Limitado',
-    icon: 'sparkles',
-    images: [
-      // '/images/stickers-pack.png',
-      // '/images/stickers-detalle.png',
-    ],
-  },
-  */
-
   /*
   DUPLICA ESTE OBJETO PARA AGREGAR MAS MERCH:
 
@@ -101,12 +86,28 @@ export const storeProducts: StoreProduct[] = [
     tag: 'Nuevo',
     icon: 'shirt', // Opciones: 'shirt', 'bag', 'sparkles'
     images: [
-      '/images/mi-producto-1.png',
-      '/images/mi-producto-2.png',
+      '/images/tienda/mi-producto-1.png',
+      '/images/tienda/mi-producto-2.png',
     ],
   },
   */
-];
+] satisfies StoreProduct[];
+
+export const storePromotions = [
+  /*
+  {
+    id: 'promo-expo-kit',
+    title: 'Expo kit de preventa',
+    description: 'Lleva playera, tote y stickers con precio especial hasta agotar existencias.',
+    tag: 'Promocion',
+    color: '#EC168C',
+    accent: '#27B7E6',
+    image: '/images/tienda/expo-kit.jpg',
+    actionLabel: 'Ver productos',
+    actionHref: '#productos',
+  },
+  */
+] satisfies StorePromotion[];
 
 export const formatStoreCurrency = new Intl.NumberFormat('es-MX', {
   style: 'currency',
