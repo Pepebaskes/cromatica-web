@@ -17,6 +17,13 @@ export default defineConfig({
     },
   },
 
+  build: {
+    // Garantiza que el bundle de produccion se genere en UTF-8
+    // para que los acentos, emojis y caracteres especiales del español
+    // no se corrompan en el navegador.
+    charset: 'utf8',
+  },
+
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
