@@ -1,9 +1,9 @@
-﻿/**
+/**
  * ==========================================
  * COMPONENTE: FORMULARIO DE REGISTRO
  * ==========================================
  *
- * Formulario reutilizable para las convocatorias abiertas de CROMÃTICA 3.0.
+ * Formulario reutilizable para las convocatorias abiertas de CROMÁTICA 3.0.
  */
 
 import { FormEvent, useState } from 'react';
@@ -23,31 +23,31 @@ interface FormularioRegistroProps {
 const config = {
   artista: {
     titulo: 'Registro de Artista Visual',
-    icono: 'ðŸŽ¨',
+    icono: '🎨',
   },
   banda: {
     titulo: 'Registro de Banda/Musico',
-    icono: 'ðŸŽ¸',
+    icono: '🎸',
   },
   empresario: {
     titulo: 'Registro de Empresario/Stand',
-    icono: 'ðŸª',
+    icono: '🏪',
   },
   disenador: {
     titulo: 'Registro de Disenador de Moda',
-    icono: 'ðŸ‘—',
+    icono: '👗',
   },
   auto: {
     titulo: 'Registro de Auto Clasico',
-    icono: 'ðŸš—',
+    icono: '🚗',
   },
   'danza-folklorica': {
     titulo: 'Registro de Danza Folclorica',
-    icono: 'ðŸ’ƒ',
+    icono: '💃',
   },
   'danza-contemporanea': {
     titulo: 'Registro de Danza Contemporanea',
-    icono: 'ðŸ•º',
+    icono: '🕺',
   },
 };
 
@@ -85,20 +85,14 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
       }
 
       registrationSaved = true;
-
-      // Capturar los valores antes de limpiar el estado del formulario,
-      // ya que setFormData es asincrono y el closure perderia los datos.
-      const emailToSend = formData.email;
-      const nombreToSend = formData.nombre;
-
       setFormData({ nombre: '', email: '', telefono: '', descripcion: '' });
 
       const emailResponse = await fetch('/api/enviar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          email: emailToSend,
-          nombre: nombreToSend,
+          email: formData.email,
+          nombre: formData.nombre,
           tipo,
         }),
       });
@@ -155,7 +149,7 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
 
         <div className="grid gap-5 sm:grid-cols-2">
           <label className="grid gap-2 text-sm font-bold">
-            Correo electrÃ³nico
+            Correo electrónico
             <input
               required
               type="email"
@@ -167,26 +161,26 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
           </label>
 
           <label className="grid gap-2 text-sm font-bold">
-            TelÃ©fono o WhatsApp
+            Teléfono o WhatsApp
             <input
               type="tel"
               value={formData.telefono}
               onChange={(event) => handleChange('telefono', event.target.value)}
               className="w-full rounded-lg border border-white/20 bg-black/30 px-4 py-3 text-white placeholder:text-white/45 focus:border-[#27B7E6] focus:outline-none focus:ring-2 focus:ring-[#27B7E6]/20"
-              placeholder="Tu nÃºmero de contacto"
+              placeholder="Tu número de contacto"
             />
           </label>
         </div>
 
         <label className="grid gap-2 text-sm font-bold">
-          CuÃ©ntanos sobre tu propuesta
+          Cuéntanos sobre tu propuesta
           <textarea
             required
             rows={5}
             value={formData.descripcion}
             onChange={(event) => handleChange('descripcion', event.target.value)}
             className="w-full resize-y rounded-lg border border-white/20 bg-black/30 px-4 py-3 text-white placeholder:text-white/45 focus:border-[#27B7E6] focus:outline-none focus:ring-2 focus:ring-[#27B7E6]/20"
-            placeholder="Comparte una breve descripciÃ³n de tu proyecto, obra, marca o presentaciÃ³n."
+            placeholder="Comparte una breve descripción de tu proyecto, obra, marca o presentación."
           />
         </label>
 
@@ -212,7 +206,7 @@ export function FormularioRegistro({ tipo }: FormularioRegistroProps) {
 
         {submissionState === 'error' && (
           <p className="rounded-lg border border-[#EC168C]/45 bg-[#EC168C]/10 px-4 py-3 text-sm font-semibold text-[#FFC0DE]" role="alert">
-            No pudimos guardar tu registro. {submissionError || 'IntÃ©ntalo de nuevo en unos minutos.'}
+            No pudimos guardar tu registro. {submissionError || 'Inténtalo de nuevo en unos minutos.'}
           </p>
         )}
       </form>
