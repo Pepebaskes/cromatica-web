@@ -110,11 +110,11 @@ export function Footer() {
                   <div className="w-6 h-6 md:w-8 md:h-8 rounded-md md:rounded-lg bg-gradient-to-br from-[#AB47BC] to-[#42A5F5] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shrink-0">
                     <Phone className="w-3 h-3 md:w-4 md:h-4 text-white" />
                   </div>
-                  <span>+52 56 6771 8342</span>
+                  <span>+52 565 660 9692</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:tesoreria@expocromatica.com" className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm text-[var(--cromatica-text-secondary)] hover:text-[var(--cromatica-primary)] transition-all duration-300 font-medium">
+                <a href="/dossier-patrocinios.pdf" download="dossier-patrocinios.pdf" className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm text-[var(--cromatica-text-secondary)] hover:text-[var(--cromatica-primary)] transition-all duration-300 font-medium">
                   <div className="w-6 h-6 md:w-8 md:h-8 rounded-md md:rounded-lg bg-gradient-to-br from-[#26A69A] to-[#66BB6A] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shrink-0">
                     <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-white" />
                   </div>
