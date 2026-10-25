@@ -2,7 +2,7 @@
  * ==========================================
  * SECCIÓN: HERO (PORTADA PRINCIPAL)
  * ==========================================
- * 
+ *
  * Esta es la primera sección que ven los usuarios.
  * Incluye:
  * - Logo CROMÁTICA con diseño tropical
@@ -10,31 +10,39 @@
  * - Frase impactante
  * - Botones de acción
  * - Fondo cálido con elementos tropicales
- * 
+ *
  * 🔧 CÓMO PERSONALIZAR:
- * 
+ *
  * 1. Cambiar la fecha:
  *    - Busca la variable 'fechaEvento'
- * 
+ *
  * 2. Cambiar la frase:
  *    - Busca la variable 'fraseImpactante'
- * 
+ *
  * 3. Cambiar los botones:
  *    - Modifica los <a> con clase btn-cromatica
- * 
+ *
  * 4. Cambiar el fondo:
  *    - Modifica los divs decorativos
  */
 
-import { Sparkles, Calendar, Users, Music, Palette } from 'lucide-react';
-
+import {
+  Sparkles,
+  Calendar,
+  Users,
+  Music,
+  Palette,
+  MapPin,
+} from "lucide-react";
 
 export function HeroSection() {
   // 👉 PERSONALIZA ESTOS TEXTOS AQUÍ
   const fechaEvento = "19 de diciembre de 2026";
   const horaEvento = "1:00 PM · Hasta el cierre";
-  const fraseImpactante = "Arte, cultura, música y emprendimiento en un mismo lugar";
-  const descripcionCorta = "Tercera edición del festival independiente que celebra el talento de la región";
+  const fraseImpactante =
+    "Arte, cultura, música y emprendimiento en un mismo lugar";
+  const descripcionCorta =
+    "Tercera edición del festival independiente que celebra el talento de la región";
 
   return (
     <section
@@ -47,43 +55,43 @@ export function HeroSection() {
           
           Elementos decorativos que crean un ambiente tropical y diurno
       */}
-      
+
       {/* Gradiente base cálido */}
       <div className="absolute inset-0 bg-[#050506] hero-topography"></div>
-      
+
       {/* Círculo decorativo 1 - Naranja */}
       <div
         className="absolute top-20 left-10 w-[500px] h-[500px] rounded-full blur-[100px] opacity-20 animate-float"
-        style={{ 
-          background: 'radial-gradient(circle, #FF8A00 0%, transparent 70%)',
-          animationDelay: '0s' 
+        style={{
+          background: "radial-gradient(circle, #FF8A00 0%, transparent 70%)",
+          animationDelay: "0s",
         }}
       ></div>
-      
+
       {/* Círculo decorativo 2 - Rosa */}
       <div
         className="absolute bottom-20 right-10 w-[450px] h-[450px] rounded-full blur-[100px] opacity-20 animate-float"
-        style={{ 
-          background: 'radial-gradient(circle, #FF6B9D 0%, transparent 70%)',
-          animationDelay: '1s' 
+        style={{
+          background: "radial-gradient(circle, #FF6B9D 0%, transparent 70%)",
+          animationDelay: "1s",
         }}
       ></div>
-      
+
       {/* Círculo decorativo 3 - Azul */}
       <div
         className="absolute top-1/3 right-1/4 w-[400px] h-[400px] rounded-full blur-[120px] opacity-15 animate-float"
-        style={{ 
-          background: 'radial-gradient(circle, #42A5F5 0%, transparent 70%)',
-          animationDelay: '2s' 
+        style={{
+          background: "radial-gradient(circle, #42A5F5 0%, transparent 70%)",
+          animationDelay: "2s",
         }}
       ></div>
 
       {/* Círculo decorativo 4 - Verde */}
       <div
         className="absolute bottom-1/3 left-1/4 w-[380px] h-[380px] rounded-full blur-[110px] opacity-15 animate-float"
-        style={{ 
-          background: 'radial-gradient(circle, #66BB6A 0%, transparent 70%)',
-          animationDelay: '1.5s' 
+        style={{
+          background: "radial-gradient(circle, #66BB6A 0%, transparent 70%)",
+          animationDelay: "1.5s",
         }}
       ></div>
 
@@ -92,9 +100,11 @@ export function HeroSection() {
           ========================================== */}
       <div className="container-cromatica relative z-10">
         <div className="max-w-5xl mx-auto text-center space-y-10 px-4">
-          
           {/* Badge "Segunda Edición" */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div
+            className="animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             <span className="hero-event-badge inline-flex items-center gap-2 px-5 py-2.5">
               <Sparkles className="hero-event-badge-icon w-4 h-4" />
               <span className="font-bold text-sm uppercase tracking-wide">
@@ -103,22 +113,28 @@ export function HeroSection() {
             </span>
           </div>
 
-        {/* Logo CROMÁTICA con texto */}
-        <div className="animate-fade-in-up w-full px-1" style={{ animationDelay: '0.4s' }}>
-  <h1
-    className="hero-title font-black text-center"
-    style={{ 
-      fontFamily: "'Poppins', sans-serif",
-      letterSpacing: '0',
-      lineHeight: '1.1'
-    }}
-  >
-    CROMÁTICA
-  </h1>
-            </div>
+          {/* Logo CROMÁTICA con texto */}
+          <div
+            className="animate-fade-in-up w-full px-1"
+            style={{ animationDelay: "0.4s" }}
+          >
+            <h1
+              className="hero-title font-black text-center"
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                letterSpacing: "0",
+                lineHeight: "1.1",
+              }}
+            >
+              CROMÁTICA
+            </h1>
+          </div>
 
           {/* Subtítulo "2.0" */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+          <div
+            className="animate-fade-in-up"
+            style={{ animationDelay: "0.5s" }}
+          >
             <span
               className="hero-edition text-6xl md:text-7xl font-black"
               style={{ fontFamily: "'Poppins', sans-serif" }}
@@ -128,24 +144,23 @@ export function HeroSection() {
           </div>
 
           {/* Fecha y hora del evento */}
-          <div className="hero-event-date animate-fade-in-up space-y-2" style={{ animationDelay: '0.6s' }}>
+          <div
+            className="hero-event-date animate-fade-in-up space-y-2"
+            style={{ animationDelay: "0.6s" }}
+          >
             <div className="hero-event-date-row flex items-center justify-center gap-3">
               <Calendar className="w-6 h-6" />
-              <p className="text-2xl md:text-3xl font-bold">
-                {fechaEvento}
-              </p>
+              <p className="text-2xl md:text-3xl font-bold">{fechaEvento}</p>
             </div>
-            <p className="hero-event-time text-lg md:text-xl">
-              {horaEvento}
-            </p>
+            <p className="hero-event-time text-lg md:text-xl">{horaEvento}</p>
           </div>
 
           {/* Separador decorativo */}
           <div
             className="w-32 h-1.5 mx-auto rounded-full animate-fade-in-up"
             style={{
-              background: 'var(--cromatica-gradient-1)',
-              animationDelay: '0.7s',
+              background: "var(--cromatica-gradient-1)",
+              animationDelay: "0.7s",
             }}
           ></div>
 
@@ -154,7 +169,7 @@ export function HeroSection() {
             className="text-xl md:text-2xl text-[var(--cromatica-text-primary)] font-medium max-w-2xl mx-auto animate-fade-in-up"
             style={{
               fontFamily: "'Poppins', sans-serif",
-              animationDelay: '0.8s',
+              animationDelay: "0.8s",
             }}
           >
             {fraseImpactante}
@@ -163,7 +178,7 @@ export function HeroSection() {
           {/* Descripción corta */}
           <p
             className="text-base md:text-lg text-[var(--cromatica-text-secondary)] max-w-xl mx-auto animate-fade-in-up"
-            style={{ animationDelay: '0.9s' }}
+            style={{ animationDelay: "0.9s" }}
           >
             {descripcionCorta}
           </p>
@@ -173,7 +188,7 @@ export function HeroSection() {
               ========================================== */}
           <div
             className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 animate-fade-in-up"
-            style={{ animationDelay: '1s' }}
+            style={{ animationDelay: "1s" }}
           >
             {/* Botón principal: Registrarse */}
             <a
@@ -199,11 +214,13 @@ export function HeroSection() {
             {/* Dato 1: Artistas */}
             <div className="flex flex-col items-center gap-3">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FF8A00] to-[#FF6B9D] flex items-center justify-center shadow-lg">
-                <Users className="w-8 h-8 text-white" />
+                <Palette className="w-8 h-8 text-white" />
               </div>
-              <p className="text-4xl md:text-5xl font-black text-gradient">Próximamente</p>
+              <p className="text-4xl md:text-5xl font-black text-gradient">
+                Creadores en Acción
+              </p>
               <p className="text-sm font-medium text-[var(--cromatica-text-secondary)]">
-                Artistas Participantes
+                Conoce el talento y los proyectos locales
               </p>
             </div>
 
@@ -212,30 +229,37 @@ export function HeroSection() {
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#AB47BC] to-[#42A5F5] flex items-center justify-center shadow-lg">
                 <Music className="w-8 h-8 text-white" />
               </div>
-              <p className="text-4xl md:text-5xl font-black text-gradient">Line-up</p>
-              <p className="text-sm font-medium text-[var(--cromatica-text-secondary)]">
-                Por anunciar
+              <p className="text-4xl md:text-5xl font-black text-gradient">
+                Siente la Música
+              </p>
+              <p className="text-sm font-medium text-[var(--cromatica-text-secondary)] text-center">
+                El soundtrack de la expo con talento local en vivo
               </p>
             </div>
 
-            {/* Dato 3: Horas de festival */}
+            {/* Dato 3: Nueva Sede */}
             <div className="flex flex-col items-center gap-3">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#26A69A] to-[#66BB6A] flex items-center justify-center shadow-lg">
-                <Palette className="w-8 h-8 text-white" />
+                <MapPin className="w-8 h-8 text-white" />
               </div>
-              <p className="text-4xl md:text-5xl font-black text-gradient">Sede</p>
-              <p className="text-sm font-medium text-[var(--cromatica-text-secondary)]">
-                Por confirmar
+              <p className="text-4xl md:text-5xl font-black text-gradient text-center">
+                ¡Estrenamos Casa!
+              </p>
+              <p className="text-sm font-medium text-[var(--cromatica-text-secondary)] text-center">
+                Te esperamos en el Casino El Relicario
               </p>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
 
+      
+
+      {/*
       {/* ==========================================
           INDICADOR DE SCROLL
-          ========================================== */}
+          ========================================== 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <a href="#sobre" className="block">
           <div className="w-8 h-12 rounded-full border-2 border-[#FF8A00] flex items-start justify-center p-2">
@@ -243,6 +267,7 @@ export function HeroSection() {
           </div>
         </a>
       </div>
+      */}
     </section>
   );
 }
@@ -251,37 +276,37 @@ export function HeroSection() {
  * ==========================================
  * GUÍA DE PERSONALIZACIÓN RÁPIDA
  * ==========================================
- * 
+ *
  * 1. CAMBIAR FECHA:
  *    const fechaEvento = "TU NUEVA FECHA";
- * 
+ *
  * 2. CAMBIAR FRASE:
  *    const fraseImpactante = "TU NUEVA FRASE";
- * 
+ *
  * 3. CAMBIAR ESTADÍSTICAS:
  *    Modifica los números en el grid de 3 columnas
- * 
+ *
  * 4. AGREGAR MÁS BOTONES:
  *    Copia un <a> existente y personalízalo
- * 
+ *
  * 5. CAMBIAR COLORES DEL FONDO:
  *    Modifica las variables CSS en los divs con blur
- * 
+ *
  * 6. QUITAR ANIMACIONES:
  *    Elimina las clases animate-* y animationDelay
- * 
+ *
  * 7. CAMBIAR FUENTE DEL LOGO:
  *    Modifica fontFamily: "'TU FUENTE', cursive"
- * 
+ *
  * ==========================================
  * RESPONSIVE BREAKPOINTS
  * ==========================================
- * 
+ *
  * - sm: 640px (móvil grande)
  * - md: 768px (tablet)
  * - lg: 1024px (laptop)
  * - xl: 1280px (desktop)
- * 
+ *
  * Las clases como 'text-6xl sm:text-7xl md:text-8xl'
  * significan:
  * - text-6xl: tamaño base (móvil)

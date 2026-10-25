@@ -12,50 +12,12 @@ export function PatrocinadoresSection() {
   const patrocinadores = [
     {
       id: 1,
-      nombre: "Comité Estudiantil TSJ",
-      logo: "/images/comite.png", 
-      descripcion: "Impulsando el desarrollo académico y cultural de los jóvenes en la región de El Grullo.",
-      url: "https://www.instagram.com/cre_itjmm/",
-    },
-    {
-      id: 2,
-      nombre: "Boreal Eventos",
-      logo: "/images/BorealEventos.jpg",
-      descripcion: "Expertos en decoración, organización y logística para tus eventos privados",
-      url: "https://www.instagram.com/eventosboreal/",
-    },
-    
-    {
-      id: 3,
-      nombre: "Foro 9",
-      logo: "/images/Foro9.png",
-      descripcion: "Foro 9, es un espacio cultural en El Grullo con más de 10 años de trayectoria. Destaca por su cerveza artesanal, música en vivo de rock clásico y su apoyo a artistas emergentes.",
-      url: "https://www.instagram.com/foro_cheve9/",
-    },
-    
-    {
-      id: 4,
-      nombre: "HIjos de María Morales",
-      logo: "/images/hijosDeMariaMorales.jpeg",
-      descripcion: "Hijos de María Morales Shot es una marca mexicana de licor de agave saborizado, presentado en sabores como fresa, maracuyá, melón, jamaica, horchata y coco. Se comercializa como un shot de México, ideal para consumirse frío o en coctelería, destacando por sabores auténticos y tradicionales en cada trago.",
-      url: "https://www.hijosdemariamorales.com.mx/index.php/inicio",
-    },
-     {
-      id: 5, // Corregido ID duplicado
-      nombre: "Ham Urbans",
-      logo: "/images/hadUrbans.png",
-      descripcion: "HAM URBANS es más que ropa, es una forma de expresión. Nos dedicamos a crear prendas únicas que combinan estilo, calidad y personalidad, pensadas para quienes quieren destacar y sentirse auténticos en cada momento , negocio o evento . Cada diseño refleja creatividad, detalle y pasión por lo que hacemos, cuidando tanto la estética como la comodidad. Nuestro objetivo es que cada persona que use nuestras prendas se sienta segura, diferente y conectada con su propio estilo.",
-      url: "https://www.instagram.com/accounts/login/?next=%2Fham_urbans_&source=omni_redirect",
-      
-    },
-     {
-      id: 5, // Corregido ID duplicado
       nombre: "El Pase",
-      logo: "/images/elPaseElote.png",
-      descripcion: "La mejor mixología y botanas con elotes del mundo, ",
+      logo: "/images/elpase.jpg", 
+      descripcion: "Las mejores botanas y bebidas de la región, elotes, tostitos, y más para disfrutar mientras disfrutas del festival.",
       url: "https://www.instagram.com/el_pase05/",
-      
     },
+
 
     /** */
   ];
