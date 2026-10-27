@@ -28,7 +28,7 @@ export function EmprendedoresSection() {
         categoria: "Café", 
         descripcion: "Esta barra de café de El Grullo combina el sabor del cold brew con la frescura de las sodas italianas y el toque dulce de sus postres. Una propuesta fresca y original, ideal para disfrutar algo rico, refrescarse y compartir un buen momento. ☕🥤", 
         ubicacion: "Zona Comida", 
-        color: "var(--cromatica-primary)",
+        color: "var(--cromatica-secondary)",
          instagram: "flamingopop_sodas" },
          
     { id: 3, 
