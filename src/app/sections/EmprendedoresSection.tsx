@@ -14,9 +14,31 @@ import { Store, MapPin, Instagram } from 'lucide-react';
 export function EmprendedoresSection() {
   // 👉 AGREGA O MODIFICA EMPRENDEDORES AQUÍ
   const emprendedores = [
-    { id: 1, imagen: "", nombre: "", categoria: "", descripcion: "", ubicacion: "", color: "var(--cromatica-primary)", instagram: "" },
-    { id: 2, imagen: "", nombre: "", categoria: "", descripcion: "", ubicacion: "", color: "var(--cromatica-primary)", instagram: "" },
-    { id: 3, imagen: "", nombre: "", categoria: "", descripcion: "", ubicacion: "", color: "var(--cromatica-primary)", instagram: "" },
+    { id: 1, imagen: "/images/cervezaBandida.jpeg", 
+      nombre: "Cerveza Bandida", 
+      categoria: "Cerveza Artesanal", 
+      descripcion: "Cerveza Bandida es una marca de cerveza artesanal de El Grullo, Jalisco. Su propuesta se basa en la elaboración de cervezas frescas y originales, con sabores únicos y un toque creativo que refleja la esencia de la región. 🍺✨", 
+      ubicacion: "Zona Comida",
+      color: "var(--cromatica-primary)", 
+      instagram: "cerveza.bandida" },
+
+    { id: 2,
+       imagen: "/images/flamingoPop.jpeg",
+        nombre: "Flamingo Pop", 
+        categoria: "Café", 
+        descripcion: "Esta barra de café de El Grullo combina el sabor del cold brew con la frescura de las sodas italianas y el toque dulce de sus postres. Una propuesta fresca y original, ideal para disfrutar algo rico, refrescarse y compartir un buen momento. ☕🥤", 
+        ubicacion: "Zona Comida", 
+        color: "var(--cromatica-primary)",
+         instagram: "flamingopop_sodas" },
+         
+    { id: 3, 
+      imagen: "",
+      nombre: "", 
+      categoria: "", 
+      descripcion: "", 
+      ubicacion: "", 
+      color: "var(--cromatica-primary)", 
+      instagram: "" },
   ];
 
   // Los espacios vacios quedan listos para editar, sin renderizar cards sin contenido.
