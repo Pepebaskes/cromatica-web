@@ -32,13 +32,23 @@ export function EmprendedoresSection() {
          instagram: "flamingopop_sodas" },
          
     { id: 3, 
-      imagen: "",
-      nombre: "", 
-      categoria: "", 
-      descripcion: "", 
-      ubicacion: "", 
-      color: "var(--cromatica-primary)", 
+      imagen: "/images/drinksCoquetos.jpeg",
+      nombre: "Drinks Coquetos", 
+      categoria: "Mixología", 
+      descripcion: "Drinks Coquetos es una propuesta de cocteles preparados que combina sabor, creatividad y una presentación original. Con un empaque innovador y llamativo, le da un toque diferente a cada bebida, ideal para disfrutar y compartir en cualquier ocasión. 🍹✨", 
+      ubicacion: "Zona Comida", 
+      color: "var(--cromatica-tertiary)", 
       instagram: "" },
+
+      { id: 4, 
+      imagen: "/images/dacaStudios.jpeg",
+      nombre: "Daca Studios", 
+      categoria: "Streetwear", 
+      descripcion: "DACA Studios es una marca emergente de ropa streetwear que combina estilo, actitud y personalidad. En su catálogo encontrarás playeras, gorras, sudaderas, calcetas y más prendas y accesorios para expresar tu esencia y llevar tu estilo a otro nivel. 🧢🔥", 
+      ubicacion: "Zona Ventas", 
+      color: "var(--cromatica-primary)", 
+      instagram: "daca:studios" },
+      
   ];
 
   // Los espacios vacios quedan listos para editar, sin renderizar cards sin contenido.
