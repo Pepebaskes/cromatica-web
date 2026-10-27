@@ -16,11 +16,11 @@ export function ArtistasSection() {
   // 👉 AGREGA O MODIFICA ARTISTAS AQUÍ
   const artistas = [
     { id: 1, 
-      imagen: "", 
-      nombre: "", 
-      especialidad: "",
-      descripcion: "",
-      instagram: "" },
+      imagen: "/images/yulsGarcia.jpeg", 
+      nombre: "Yulss", 
+      especialidad: "Tattoo",
+      descripcion: "Soy tatuadora con 8 años de trayectoria , especializada en los estilos de anime y blackwork. Actualmente cursó la carrera de Artes, donde continuó aprendiendo y desarrollando mi estilo, explorando nuevas formas de expresión a través del tatuaje y las artes visuales.",
+      instagram: "yulsstattoo_" },
 
     { id: 2, 
       imagen: "", 
