@@ -23,18 +23,25 @@ export function ArtistasSection() {
       instagram: "yulsstattoo_" },
 
     { id: 2, 
-      imagen: "", 
-      nombre: "", 
-      especialidad: "", 
-      descripcion: "", 
-      instagram: "" },
+      imagen: "/images/dulceP.png", 
+      nombre: "Dulce Pérez", 
+      especialidad: "Pintura y dibujo", 
+      descripcion: "Artista visual con enfoque en  la pintura, mi obra explora la narrativa de la naturaleza y de personajes mediante el uso de técnicas tradicionales como el gouache, la acuarela y el óleo pastel ", 
+      instagram: "_whois.du" },
 
     { id: 3, 
-      imagen: "", 
-      nombre: "", 
-      especialidad: "", 
-      descripcion: "", 
-      instagram: "" },
+      imagen: "/images/glittereyes.jpeg", 
+      nombre: "Glitter Eyes", 
+      especialidad: "Baile", 
+      descripcion: "Somos un grupo de dance cover K-pop de El Limón, Jalisco. Nuestro trabajo es montar coreografías desde cero, cuidar cada paso, formación y outfit nosotrxs mismxs. Nos encanta bailar y lo que más disfrutamos es traer todo el estilo del K-pop al escenario.", 
+      instagram: "gliter_eyes_dc" },
+
+          { id: 4, 
+      imagen: "/images/allStar.jpg", 
+      nombre: "All Star", 
+      especialidad: "Baile", 
+      descripcion: "All Star es un grupo de dance cover enfocado en el K-pop, formado por personas que comparten el gusto por la música y el baile de este género. A través de sus presentaciones, buscan recrear las coreografías de sus artistas favoritos, poniendo en cada una esfuerzo, dedicación y mucho entusiasmo.", 
+      instagram: "allstar.grouppage" },
   ];
 
   // Los espacios en blanco se conservan para que puedas llenarlos despues.

@@ -4,7 +4,7 @@
  * ==========================================
  */
 
-import { Store, MapPin, Instagram } from 'lucide-react';
+import { Store, MapPin, Instagram } from "lucide-react";
 // local JPEG asset – the variable must match the one used below
 
 // 👇 EJEMPLO DE CÓMO IMPORTAR TUS IMÁGENES LOCALES
@@ -14,50 +14,111 @@ import { Store, MapPin, Instagram } from 'lucide-react';
 export function EmprendedoresSection() {
   // 👉 AGREGA O MODIFICA EMPRENDEDORES AQUÍ
   const emprendedores = [
-    { id: 1, imagen: "/images/cervezaBandida.jpeg", 
-      nombre: "Cerveza Bandida", 
-      categoria: "Cerveza Artesanal", 
-      descripcion: "Cerveza Bandida es una marca de cerveza artesanal de El Grullo, Jalisco. Su propuesta se basa en la elaboración de cervezas frescas y originales, con sabores únicos y un toque creativo que refleja la esencia de la región. 🍺✨", 
+    {
+      id: 1,
+      imagen: "/images/cervezaBandida.jpeg",
+      nombre: "Cerveza Bandida",
+      categoria: "Cerveza Artesanal",
+      descripcion:
+        "Cerveza Bandida es una marca de cerveza artesanal de El Grullo, Jalisco. Su propuesta se basa en la elaboración de cervezas frescas y originales, con sabores únicos y un toque creativo que refleja la esencia de la región. 🍺✨",
       ubicacion: "Zona Comida",
-      color: "var(--cromatica-primary)", 
-      instagram: "cerveza.bandida" },
+      color: "var(--cromatica-primary)",
+      instagram: "cerveza.bandida",
+    },
 
-    { id: 2,
-       imagen: "/images/flamingoPop.jpeg",
-        nombre: "Flamingo Pop", 
-        categoria: "Café", 
-        descripcion: "Esta barra de café de El Grullo combina el sabor del cold brew con la frescura de las sodas italianas y el toque dulce de sus postres. Una propuesta fresca y original, ideal para disfrutar algo rico, refrescarse y compartir un buen momento. ☕🥤", 
-        ubicacion: "Zona Comida", 
-        color: "var(--cromatica-secondary)",
-         instagram: "flamingopop_sodas" },
-         
-    { id: 3, 
+    {
+      id: 2,
+      imagen: "/images/flamingoPop.jpeg",
+      nombre: "Flamingo Pop",
+      categoria: "Café",
+      descripcion:
+        "Esta barra de café de El Grullo combina el sabor del cold brew con la frescura de las sodas italianas y el toque dulce de sus postres. Una propuesta fresca y original, ideal para disfrutar algo rico, refrescarse y compartir un buen momento. ☕🥤",
+      ubicacion: "Zona Comida",
+      color: "var(--cromatica-secondary)",
+      instagram: "flamingopop_sodas",
+    },
+
+    {
+      id: 3,
       imagen: "/images/drinksCoquetos.jpeg",
-      nombre: "Drinks Coquetos", 
-      categoria: "Mixología", 
-      descripcion: "Drinks Coquetos es una propuesta de cocteles preparados que combina sabor, creatividad y una presentación original. Con un empaque innovador y llamativo, le da un toque diferente a cada bebida, ideal para disfrutar y compartir en cualquier ocasión. 🍹✨", 
-      ubicacion: "Zona Comida", 
-      color: "var(--cromatica-tertiary)", 
-      instagram: "" },
+      nombre: "Drinks Coquetos",
+      categoria: "Mixología",
+      descripcion:
+        "Drinks Coquetos es una propuesta de cocteles preparados que combina sabor, creatividad y una presentación original. Con un empaque innovador y llamativo, le da un toque diferente a cada bebida, ideal para disfrutar y compartir en cualquier ocasión. 🍹✨",
+      ubicacion: "Zona Comida",
+      color: "var(--cromatica-tertiary)",
+      instagram: "",
+    },
 
-      { id: 4, 
+    {
+      id: 4,
       imagen: "/images/dacaStudios.jpeg",
-      nombre: "Daca Studios", 
-      categoria: "Streetwear", 
-      descripcion: "DACA Studios es una marca emergente de ropa streetwear que combina estilo, actitud y personalidad. En su catálogo encontrarás playeras, gorras, sudaderas, calcetas y más prendas y accesorios para expresar tu esencia y llevar tu estilo a otro nivel. 🧢🔥", 
-      ubicacion: "Zona Ventas", 
-      color: "var(--cromatica-primary)", 
-      instagram: "daca:studios" },
-      
+      nombre: "Daca Studios",
+      categoria: "Streetwear",
+      descripcion:
+        "DACA Studios es una marca emergente de ropa streetwear que combina estilo, actitud y personalidad. En su catálogo encontrarás playeras, gorras, sudaderas, calcetas y más prendas y accesorios para expresar tu esencia y llevar tu estilo a otro nivel. 🧢🔥",
+      ubicacion: "Zona Ventas",
+      color: "var(--cromatica-primary)",
+      instagram: "daca:studios",
+    },
+
+    {
+      id: 5,
+      imagen: "/images/magiaCrochet.jpeg",
+      nombre: "Magia Crochet",
+      categoria: "Crochet",
+      descripcion:
+        "Valeria Andrade/ Magiaacrochet_. Emprendimiento dedicado a la elaboración y comercialización de productos artesanales tejidos a crochet, incluyendo amigurumis, accesorios y artículos personalizados.",
+      ubicacion: "Zona Ventas",
+      color: "var(--cromatica-secondary)",
+      instagram: "Magiaacrochet_",
+    },
+
+        {
+      id: 6,
+      imagen: "/images/ninosCookies.png",
+      nombre: "Ninos Cookies",
+      categoria: "Postres",
+      descripcion:
+        "Ofrecemos galletas estilo New York, caracterizadas por su tamaño generoso, textura suave por dentro y variedad de sabores, ingredientes y rellenos. Además, por temporada navideña habrá galletas de jengibre decoradas, ideales para disfrutar o regalar.",
+      ubicacion: "Zona Comida",
+      color: "var(--cromatica-tertiary)",
+      instagram: "cookiesninos",
+    },
+            {
+      id: 7,
+      imagen: "/images/MiaCookies.jpeg",
+      nombre: "Mia Cookies",
+      categoria: "Postres",
+      descripcion:
+        "Mia Cookies es un emprendimiento dedicado a crear galletas deliciosas para los amantes de lo dulce. Desde las irresistibles red velvet hasta las rellenas de Nutella y Oreo, cada galleta es una invitación a disfrutar de un antojo lleno de sabor. 🍪❤️",
+      ubicacion: "Zona Comida",
+      color: "var(--cromatica-primary)",
+      instagram: "mia.cookiesss",
+    },
+                {
+      id: 7,
+      imagen: "/images/postresPily",
+      nombre: "Postres Pily",
+      categoria: "Postres",
+      descripcion:
+        "En repostería Pily te ofrecemos algunos postres como empanadas de crema pastelera, cajeta y piña, Pay de queso, panqué de zanahoria, nuez y elote , flan, chocoflan, ricas galletas, tartas de nuezetc. Además te ofrecemos una rica salsa macha para acompañar todos tus platillos. Todos los postres son elaborados diariamente ya que son del día y caseros",
+      ubicacion: "Zona Comida",
+      color: "var(--cromatica-secondary)",
+      instagram: ":Postres.pily",
+    },
   ];
 
   // Los espacios vacios quedan listos para editar, sin renderizar cards sin contenido.
   const emprendedoresVisibles = emprendedores.filter(
-    (emprendedor) => emprendedor.nombre.trim() || emprendedor.imagen.trim()
+    (emprendedor) => emprendedor.nombre.trim() || emprendedor.imagen.trim(),
   );
 
   return (
-    <section id="emprendedores" className="py-20 md:py-32 relative overflow-hidden bg-[var(--cromatica-bg-light)]">
+    <section
+      id="emprendedores"
+      className="py-20 md:py-32 relative overflow-hidden bg-[var(--cromatica-bg-light)]"
+    >
       {/* Fondo decorativo */}
       <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
         <div className="absolute top-10 left-10 w-64 h-64 bg-[var(--cromatica-primary)] rounded-full blur-[120px]"></div>
@@ -73,15 +134,16 @@ export function EmprendedoresSection() {
             Emprendedores
           </h2>
           <p className="text-lg text-[var(--cromatica-text-secondary)] max-w-2xl mx-auto">
-            Proyectos locales y marcas creativas que estarán presentes en esta edición.
+            Proyectos locales y marcas creativas que estarán presentes en esta
+            edición.
           </p>
         </div>
 
         {/* Grid de Emprendedores - 3 columnas (Igual que Artistas) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {emprendedoresVisibles.map((emp, index) => (
-            <div 
-              key={emp.id} 
+            <div
+              key={emp.id}
               className="card-glow group overflow-hidden flex flex-col h-full animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -91,8 +153,8 @@ export function EmprendedoresSection() {
                   2. Usamos 'aspect-square' para que el contenedor sea un cuadrado perfecto basado en el ancho.
               */}
               <div className="relative w-full aspect-square overflow-hidden bg-white">
-                <img 
-                  src={emp.imagen} 
+                <img
+                  src={emp.imagen}
                   alt={emp.nombre}
                   /* 'object-cover' hará que la imagen cubra todo el cuadrado. 
                     Al ser cuadrada la proporción, tus logos circulares se adaptarán mucho mejor.
@@ -100,7 +162,7 @@ export function EmprendedoresSection() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute top-4 left-4">
-                  <span 
+                  <span
                     className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-white shadow-lg"
                     style={{ backgroundColor: emp.color }}
                   >
@@ -125,9 +187,9 @@ export function EmprendedoresSection() {
                     <MapPin className="w-3.5 h-3.5" />
                     {emp.ubicacion}
                   </div>
-                  
+
                   <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <a 
+                    <a
                       href={`https://instagram.com/${emp.instagram}`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -148,8 +210,13 @@ export function EmprendedoresSection() {
         {/* CTA */}
         <div className="mt-20 text-center">
           <div className="bg-white/50 backdrop-blur-sm border border-white p-8 rounded-3xl shadow-xl inline-block max-w-xl">
-            <h4 className="text-lg font-bold mb-2 text-[var(--cromatica-text-primary)]">¿Quieres un espacio para tu marca?</h4>
-            <p className="text-sm text-[var(--cromatica-text-secondary)] mb-6">Únete a la zona de stands y muestra tus productos ante miles de asistentes.</p>
+            <h4 className="text-lg font-bold mb-2 text-[var(--cromatica-text-primary)]">
+              ¿Quieres un espacio para tu marca?
+            </h4>
+            <p className="text-sm text-[var(--cromatica-text-secondary)] mb-6">
+              Únete a la zona de stands y muestra tus productos ante miles de
+              asistentes.
+            </p>
             <a href="#convocatoria" className="btn-cromatica">
               Solicitar Stand
             </a>
